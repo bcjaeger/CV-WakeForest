@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+data
+doc/main.tex
+doc/wambrosius_example.pdf
