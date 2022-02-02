@@ -14,6 +14,9 @@
 \makeatother
 
 \definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}}}
+\makeatother
 \newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
 \newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
 \newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
@@ -48,6 +51,14 @@
 \definecolor{messagecolor}{rgb}{0, 0, 0}
 \definecolor{warningcolor}{rgb}{1, 0, 1}
 \definecolor{errorcolor}{rgb}{1, 0, 0}
+\makeatletter
+\@ifundefined{AddToHook}{}{\AddToHook{package/xcolor/after}{
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+}}
+\makeatother
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
@@ -264,7 +275,9 @@ WAKE FOREST SCHOOL OF MEDICINE \\ CURRICULUM VITAE \\[1em] (\today)
 
 \item Eastern North American Regional Advisory Board Member, 2019--present.
 
-\item Data and Safety Monitoring Board Member, 2021--present, Preventing Cognitive Decline by Reducing Blood Pressure Target Trial, R01 AG068486.
+\item Data and Safety Monitoring Board Member, 2021--present, R01 AG068486: Preventing Cognitive Decline by Reducing Blood Pressure Target Trial.
+
+\item Data and Safety Monitoring Board Member, 2021--present, R01 HL153750: Supporting Tailored Adaptive Change and Reinforcement for Medication Adherence Program (STARMAP): Randomized trial of a novel approach to improve adherence among older hypertensive women and men.
 
 \end{enumerate}
 
@@ -311,34 +324,40 @@ My current work is focused on computational optimization of the oblique random s
 
 }
 
-\mysection{GRANTS}
-\mysubsection{Current Grants}
+% \mysection{GRANTS}
+% 
+% \mysubsection{Current Grants}
+% 
+% %\mysection{GRANTS--CURRENT}
+% \begin{enumerate}
+% 
+%  \item R01HL117323 (Paul Muntner) \hfill 8/01/2017--8/30/2021
+%  
+%  NIH-NHLBI
+%  
+% {\bfseries Incorporation of a Hypertension Working Group into the Jackson Heart Study}
+% 
+% The objective of this grant is to identify novel risk factors for hypertension and potential approaches to improve hypertension control rates and reduce BP related complications among African Americans. We will integrate a strong mentorship component to help early stage investigators (ESIs), especially minority investigators, move towards independence.
+% 
+% {\bfseries Role: Biostatistician.}
+% 
+% \end{enumerate}
 
-%\mysection{GRANTS--CURRENT}
-\begin{enumerate}
-
- \item R01HL117323 (Paul Muntner) \hfill 8/01/2017--8/30/2021
- 
- NIH-NHLBI
- 
-{\bfseries Incorporation of a Hypertension Working Group into the Jackson Heart Study}
-
-The objective of this grant is to identify novel risk factors for hypertension and potential approaches to improve hypertension control rates and reduce BP related complications among African Americans. We will integrate a strong mentorship component to help early stage investigators (ESIs), especially minority investigators, move towards independence.
-
-{\bfseries Role: Biostatistician.}
-
-\item 15SFRN23900002 (Paul Muntner) \hfill 8/01/2017--8/30/2021
-
-American Heart Association
-
-{\bfseries University of Alabama Strategically Focused Hypertension Research Center}
-
-This study focuses on circadian blood pressure patterns. In a population science study, we will evaluate racial differences in nocturnal hypertension and non-dipping blood pressure. In a clinical science project, we will evaluate the effect of sodium intake on diurnal blood pressure and sleep apnea.  In basic science studies, we will study mechanisms leading to loss of diurnal blood pressure patterns.  Additionally, this grant involves the training of three post-doctoral fellows.
-
-{\bfseries Role: Biostatistician.}
-
-
-\end{enumerate}
+% \mysubsection{Past Grant History - National Institutes of Health}
+% 
+% \begin{enumerate}
+% 
+% \item 15SFRN23900002 (Paul Muntner) \hfill 8/01/2017--8/30/2021
+% 
+% American Heart Association
+% 
+% {\bfseries University of Alabama Strategically Focused Hypertension Research Center}
+% 
+% This study focuses on circadian blood pressure patterns. In a population science study, we will evaluate racial differences in nocturnal hypertension and non-dipping blood pressure. In a clinical science project, we will evaluate the effect of sodium intake on diurnal blood pressure and sleep apnea.  In basic science studies, we will study mechanisms leading to loss of diurnal blood pressure patterns.  Additionally, this grant involves the training of three post-doctoral fellows.
+% 
+% {\bfseries Role: Biostatistician.}
+% 
+% \end{enumerate}
 
 \mysection{BIBLIOGRAPHY}
 
@@ -346,7 +365,7 @@ This study focuses on circadian blood pressure patterns. In a population science
 
 
 My MyNCBI collection is available publicly  \href{https://www.ncbi.nlm.nih.gov/myncbi/byron.jaeger.1/bibliography/public/}{here}.
-As of \today, my h-index was 14 with 1073 total citations. More details can be accessed from my \href{https://scholar.google.com/citations?user=4IKD_roAAAAJ&hl=en}{scholar profile}.
+As of \today, my h-index was 14 with 1105 total citations. More details can be accessed from my \href{https://scholar.google.com/citations?user=4IKD_roAAAAJ&hl=en}{scholar profile}.
 
 \mysubsection{Peer-Reviewed Journal Articles}
 
@@ -361,20 +380,6 @@ As of \today, my h-index was 14 with 1073 total citations. More details can be a
 \item \me, Edwards LJ, Das K, Sen PK. An $R^2$ statistic for fixed effects in the generalized linear mixed model, Journal of Applied Statistics. Epub 2016 June; 44(6):1086-1105. \DOI{10.1080/02664763.2016.1193725}.
 
 \item Smith AB, \me, Pinheiro LC, Edwards LJ, Tan HJ, Nielsen ME, Reeve BB. Impact of bladder cancer on health-related quality of life. BJU Int. 2018 Apr;121(4):549-557. \DOI{10.1111/bju.14047}. Epub 2017 Nov 1. \PMID{28990272}.
-
-% abstracts
-% 12. Narang GL, Smith AB, Jaeger B, Pinheiro L, Edwards LJ, Pruthi R, et al. Changes in Health-Related Quality of Life Among Older Adults with Prostate Cancer: A Case-Control Study. Journal of the American College of Surgeons. 2017;225(4):e105. 
-% 13. Smith A, Jaeger B, Pinheiro L, Edwards L, Reeve B. MP14-13 CHANGES IN HEALTH-RELATED QUALITY OF LIFE AMONG OLDER ADULTS WITH PROSTATE CANCER: A CASE-CONTROL STUDY. The Journal of Urology. 2017;197(4S):e166–7. 
-% 21. Butler M, Kalinowski J, Shimbo D, Sims M, Booth JN, Bress AP, et al. Abstract P179: Hypertension Awareness is Associated With Negative Psychosocial Outcomes in Africans Americans in the Jackson Heart Study (JHS). Circulation. 2019;139(Suppl_1):AP179–AP179. 
-% 30. Roberts LM, Jaeger BC, Baptista LC, Harper SA, Jackson E, Gardner AK, et al. Wearable Technology To Reduce Sedentary Behavior And CVD Risk In Older Adults: A Pilot Trial: 3620 Board# 308 June 1 9: 30 AM-11: 00 AM. Medicine & Science in Sports & Exercise. 2019;51(6S):1004. 
-% \item Siddiqui M, \me, Gaddam K, Dudenbostel T, Judd E, Pollock D, et al. Spironolactone does not change 24 hour blood pressure circadian pattern in resistant hypertensive patients. Journal of Hypertension. 2019;37:e313. 
-% \item Siddiqui M, Jaeger BC, Judd E, Dudenbostel T, Pollock DM, Pollock J, et al. Novel 24-hour blood pressure profile in patients with resistant hypertension. Journal of the American College of Cardiology. 2019;73(9S1):1818–1818.
-% 42. Jaeger BC, Cantor RS, Sthanam V, Rudraraju R. Improving Mortality Predictions for Patients With Mechanical Circulatory Support Using Follow-Up Data and Machine Learning. Circulation: Genomic and Precision Medicine. 2020;13(4):e002877. 
-
-
-% tutorials
-% 40. Jaeger BC. The Use of Statistical Learning in Pediatric Research. The Journal of Pediatrics. 2020;223:231–3. 
-
 
 \item Webster-Clark M, \me, Zhong Y, Filler G, Alvarez-Elias A, Franceschini N, Díaz-González de Ferris ME. Low agreement between modified-Schwartz and CKD-EPI eGFR in young adults: a retrospective longitudinal cohort study. BMC Nephrol. 2018 Aug 6;19(1):194. \DOI{10.1186/s12882-018-0995-1}. \PMID{30081844}; \PMCID{PMC6080537.}
 
@@ -392,9 +397,9 @@ As of \today, my h-index was 14 with 1073 total citations. More details can be a
 
 \item \me, Anstey DE, Bress AP, Booth JN 3rd, Butler M, Clark D 3rd, Howard G, Kalinowski J, Long DL, Ogedegbe G, Plante TB, Shimbo D, Sims M, Supiano MA, Whelton PK, Muntner P. Cardiovascular Disease and Mortality in Adults Aged $\geq$ 60 Years According to Recommendations by the American College of Cardiology/American Heart Association and American College of Physicians/American Academy of Family Physicians. Hypertension. 2019 Feb;73(2):327-334. \DOI{10.1161/HYPERTENSIONAHA.118.12291}. \PMID{30595115}; \PMCID{PMC6392064}. 
 
-\item \me, Edwards LJ, Gurka MJ. An $R^2$ statistic for covariance model selection in the linear mixed model. Journal of Applied Statistics. 2019;46(1):164–84. \DOI{10.1080/02664763.2018.1466869}.
+\item \me, Edwards LJ, Gurka MJ. An $R^2$ statistic for covariance model selection in the linear mixed model. Journal of Applied Statistics. 2019;46(1):164--84. \DOI{10.1080/02664763.2018.1466869}.
 
-\item \me, Long DL, Long DM, Sims M, Szychowski JM, Min Y-I, et al. Oblique random survival forests. The Annals of Applied Statistics. 2019;13(3):1847–83. \DOI{10.1214/19-AOAS1261}.
+\item \me, Long DL, Long DM, Sims M, Szychowski JM, Min Y-I, et al. Oblique random survival forests. The Annals of Applied Statistics. 2019;13(3):1847--83. \DOI{10.1214/19-AOAS1261}.
 
 \item Pugliese DN, Booth JN 3rd, Deng L, Anstey DE, Bello NA, \me, Shikany JM, Lloyd-Jones D, Lewis CE, Schwartz JE, Muntner P, Shimbo D. Sex differences in masked hypertension: the Coronary Artery Risk Development in Young Adults study. J Hypertens. 2019 Dec;37(12):2380-2388. \DOI{10.1097/HJH.0000000000002175}. \PMID{31246891}; \PMCID{PMC7006727}.
 
@@ -406,57 +411,114 @@ As of \today, my h-index was 14 with 1073 total citations. More details can be a
 
 \item Akinyelure OP, Sakhuja S, Colvin CL, Clark D 3rd, \me, Hardy ST, Howard G, Cohen LP, Irvin MR, Tanner R, Carey RM, Muntner P. Cardiovascular Health and Transition From Controlled Blood Pressure to Apparent Treatment Resistant Hypertension: The Jackson Heart Study and the REGARDS Study. Hypertension. 2020 Dec;76(6):1953-1961. \DOI{10.1161/HYPERTENSIONAHA.120.15890}. Epub 2020 Nov 2. \PMID{33131312}.
 
-% \item Balas N, Yun H, \me, Aung M, Jolly PE. Factors associated with breast cancer screening behaviors in a sample of Jamaican women in 2013. Women & health. 2020;60(9):1032–9. 
-% 
-% \item Bello NA, \me, Booth III JN, Abdalla M, Anstey DE, Pugliese DN, et al. Associations of Awake and Asleep Blood Pressure and Blood Pressure Dipping with Abnormalities of Cardiac Structure: The Coronary Artery Risk Development in Young Adults (CARDIA) Study. Journal of hypertension. 2020;38(1):102. 
-% 
-% \item Bodduluri S, Nakhmani A, Reinhardt JM, Wilson CG, McDonald M-L, Rudraraju R, \me, et al. Deep neural network analyses of spirometry for structural phenotyping of chronic obstructive pulmonary disease. JCI insight. 2020;5(13). 
-% 
-% \item Booth III JN, \me, Huang L, Abdalla M, Sims M, Butler M, et al. Morning blood pressure surge and cardiovascular disease events and all-cause mortality in blacks: The Jackson Heart Study. Hypertension. 2020;75(3):835–43. 
-% 
-% \item \me, Booth III JN, Butler M, Edwards LJ, Lewis CE, Lloyd-Jones DM, et al. Development of predictive equations for nocturnal hypertension and nondipping systolic blood pressure. Journal of the American Heart Association. 2020;9(2):e013696. 
+\item Balas N, Yun H, \me, Aung M, Jolly PE. Factors associated with breast cancer screening behaviors in a sample of Jamaican women in 2013. Women Health. 2020 Oct;60(9):1032-1039. \DOI{10.1080/03630242.2020.1789260}. Epub 2020 Jul 12. \PMID{32654623}; \PMCID{PMC7494050}.
 
+\item Bello NA, \me, Booth JN 3rd, Abdalla M, Anstey DE, Pugliese DN, Lewis CE, Gidding SS, Lloyd-Jones D, Shah SJ, Schwartz JE, Shikany JM, Muntner P, Shimbo D. Associations of awake and asleep blood pressure and blood pressure dipping with abnormalities of cardiac structure: the Coronary Artery Risk Development in Young Adults study. J Hypertens. 2020 Jan;38(1):102-110. \DOI{10.1097/HJH.0000000000002221}. \PMID{31464800}; \PMCID{PMC6941789}.
 
-% 43. Jaeger BC, Tierney NJ, Simon NR. When to Impute? Imputation before and during cross-validation. arXiv preprint arXiv:201000718. 2020; 
+\item Bodduluri S, Nakhmani A, Reinhardt JM, Wilson CG, McDonald ML, Rudraraju R, \me, Bhakta NR, Castaldi PJ, Sciurba FC, Zhang C, Bangalore PV, Bhatt SP. Deep neural network analyses of spirometry for structural phenotyping of chronic obstructive pulmonary disease. JCI Insight. 2020 Jul 9;5(13):e132781. \DOI{10.1172/jci.insight.132781}. \PMID{32554922}; \PMCID{PMC7406302}.
 
-% 44. Langford AT, Akinyelure OP, Moore Jr TL, Howard G, Min Y-I, Hillegass WB, et al. Underutilization of treatment for black adults with apparent treatment-resistant hypertension: JHS and the REGARDS study. Hypertension. 2020;76(5):1600–7. 
-% 45. Muntner P, Hardy ST, Fine LJ, Jaeger BC, Wozniak G, Levitan EB, et al. Trends in blood pressure control among US adults with hypertension, 1999-2000 to 2017-2018. Jama. 2020;324(12):1190–200. 
-% 46. Sakhuja S, Booth JN, Anstey DE, Jaeger BC, Lewis CE, Lloyd-Jones DM, et al. Using predicted atherosclerotic cardiovascular disease risk for discrimination of awake or nocturnal hypertension. American Journal of Hypertension. 2020;33(11):1011–20. 
-% 47. Sakhuja S, Hardy ST, Akinyelure P, Jaeger BC, Shimbo D, Bress AP, et al. Abstract P335: Using Cardiovascular Disease Risk Versus Blood Pressure To Guide The Initiation Of Antihypertensive Medication Among Us Adults. Circulation. 2020;141(Suppl_1):AP335–AP335. 
-% 48. Sakhuja S, Hardy ST, Akinyelure P, Jaeger BC, Shimbo D, Bress AP, et al. Using Cardiovascular Disease Risk Versus Blood Pressure To Guide The Initiation Of Antihypertensive Medication Among Us Adults. In: CIRCULATION. LIPPINCOTT WILLIAMS & WILKINS TWO COMMERCE SQ, 2001 MARKET ST, PHILADELPHIA …; 2020. 
-% 49. Segar MW, Jaeger B, Patel KV, Nambi V, Ndumele CE, Correa A, et al. Development and Validation of Machine Learning-based Race-specific Models to Predict 10-year Risk of Heart Failure: A Multi-cohort Analysis. Circulation. 2020;142(Suppl_3):A196–A196. 
-% 50. Thomas SJ, Booth III JN, Jaeger BC, Hubbard D, Sakhuja S, Abdalla M, et al. Association of sleep characteristics with nocturnal hypertension and nondipping blood pressure in the CARDIA study. Journal of the American Heart Association. 2020;9(7):e015062. 
-% 51. Wisotzkey BL, Asante-Korang A, Kirklin JK, Cantor R, Koehl D, Jaeger B, et al. Risk Factors for One-year Mortality and Allograft Loss in Pediatric Heart Transplant Patients Using Machine Learning: Analysis of the Pediatric Heart Transplant Society Database. Circulation. 2020;142(Suppl_3):A14239–A14239. 
-% 52. Yano Y, Poudel B, Chen L, Sakhuja S, Jaeger B, Viera A, et al. Abstract P173: The Impact of Asleep Blood Pressure on the Prevalence of Masked Hypertension by Race/ethnicity: Analysis of Pooled Population-and Community-based Studies. Circulation. 2020;141(Suppl_1):AP173–AP173. 
-% 53. Yano Y, Poudel B, Chen L, Sakhuja S, Jaeger B, Viera A, et al. The Impact of Asleep Blood Pressure on the Prevalence of Masked Hypertension by Race/ethnicity: Analysis of Pooled Population-and Community-based Studies. In: CIRCULATION. LIPPINCOTT WILLIAMS & WILKINS TWO COMMERCE SQ, 2001 MARKET ST, PHILADELPHIA …; 2020. 
-% 54. Akinyelure OP, Jaeger BC, Moore TL, Hubbard D, Oparil S, Howard VJ, et al. Racial Differences in Blood Pressure Control Following Stroke: The REGARDS Study. Stroke. 2021;52(12):3944–52. 
-% 55. Awad MZ, Vaden RJ, Irwin ZT, Gonzalez CL, Black S, Nakhmani A, et al. Subcortical short-term plasticity elicited by deep brain stimulation. Annals of clinical and translational neurology. 2021;8(5):1010–23. 
-% 56. Bundy JD, Jaeger BC, Huffman MD, Knox SS, Thomas SJ, Shimbo D, et al. Twenty-Five-Year Changes in Office and Ambulatory Blood Pressure: Results From the Coronary Artery Risk Development in Young Adults (CARDIA) Study. American Journal of Hypertension. 2021;34(5):494–503. 
-% 57. Butts RJ, Kirklin J, Cantor R, Zhao H, Jaeger B, Nandi D, et al. Congenital Heart Disease Classification Improves SRTR Risk Estimation of Waitlist and Early Post-Transplant Mortality for Pediatric Heart Transplantation. Circulation. 2021;144(Suppl_1):A11567–A11567. 
-% 58. Cohen LP, Hubbard D, Colvin CL, Jaeger BC, Poudel B, Abdalla M, et al. Lifestyle behaviors among adults recommended for ambulatory blood pressure monitoring according to the 2017 ACC/AHA blood pressure guideline. American Journal of Hypertension. 2021;34(11):1181–8. 
-% 59. Goyal P, Yum B, Navid P, Chen L, Kim DH, Roh J, et al. Frailty and Post-hospitalization Outcomes in Patients With Heart Failure With Preserved Ejection Fraction. The American Journal of Cardiology. 2021;148:84–93. 
-% 60. Guo B, Jaeger BC, Rahman A, Long DL, Yi N. Spike-and-Slab Generalized Additive Models and Scalable Algorithms for High-Dimensional Data. arXiv preprint arXiv:211014449. 2021; 
-% 61. Hardy ST, Chen L, Cherrington AL, Moise N, Jaeger BC, Foti K, et al. Racial and Ethnic Differences in Blood Pressure Among US Adults, 1999–2018. Hypertension. 2021;78(6):1730–41. 
-% 62. Hardy ST, Sakhuja S, Jaeger BC, Oparil S, Akinyelure OP, Spruill TM, et al. Maintaining Normal Blood Pressure Across the Life Course: The JHS. Hypertension. 2021;77(5):1490–9. 
-% 63. Hardy ST, Sakhuja S, Jaeger BC, Urbina EM, Suglia SF, Feig DI, et al. Trends in Blood Pressure and Hypertension Among US Children and Adolescents, 1999-2018. JAMA network open. 2021;4(4):e213917–e213917. 
-% 64. Harper SA, Bassler JR, Peramsetty S, Yang Y, Roberts LM, Drummer D, et al. Resveratrol and exercise combined to treat functional limitations in late life: A pilot randomized controlled trial. Experimental gerontology. 2021;143:111111. 
-% 65. Jaeger BC, Akinyelure OP, Sakhuja S, Bundy JD, Lewis CE, Yano Y, et al. Number and timing of ambulatory blood pressure monitoring measurements. Hypertension Research. 2021;44(12):1578–88. 
-% 66. Jaeger BC, Cantor R, Sthanam V, Xie R, Kirklin JK, Rudraraju R. Improving outcome predictions for patients receiving mechanical circulatory support by optimizing imputation of missing values. Circulation: Cardiovascular Quality and Outcomes. 2021;14(9):e007071. 
-% 67. Li S, Schwartz JE, Shimbo D, Muntner P, Shikany JM, Booth JN, et al. Estimated Prevalence of Masked Asleep Hypertension in US Adults. JAMA cardiology. 2021;6(5):568–73. 
-% 68. Muntner P, Jaeger BC, Hardy ST, Foti K, Reynolds K, Whelton PK, et al. Age-specific prevalence and factors associated with normal blood pressure among US adults. American journal of hypertension. 2021; 
-% 69. Sakhuja S, Colvin CL, Akinyelure OP, Jaeger BC, Foti K, Oparil S, et al. Reasons for Uncontrolled Blood Pressure Among US Adults: Data From the US National Health and Nutrition Examination Survey. Hypertension. 2021;78(5):1567–76. 
-% 70. Segar MW, Jaeger BC, Patel KV, Nambi V, Ndumele CE, Correa A, et al. Development and Validation of Machine Learning-Based Race-Specific Models to Predict 10-Year Risk of Heart Failure: A Multi-Cohort Analysis. Circulation. 2021; 
-% 71. Segar MW, Patel KV, Vaduganathan M, Caughey MC, Jaeger BC, Basit M, et al. Development and validation of optimal phenomapping methods to estimate long-term atherosclerotic cardiovascular disease risk in patients with type 2 diabetes. Diabetologia. 2021;64(7):1583–94. 
-% 72. Tajeu GS, Colvin C, Hardy ST, Gaye B, Bress AP, Jaeger B, et al. Prevalence, Risk Factors And Cardiovascular Outcomes Associated With Persistent Blood Pressure Control: The Jackson Heart Study. Circulation. 2021;143(Suppl_1):A064–A064. 
-% 73. Turkson-Ocran R-AN, Miller ER, Zhao D, Pilla S, Duan D, Jaeger B, et al. Abstract MP14: The Effect Of Time-restricted Feeding On 24-hour Ambulatory Blood Pressure: Results From The Time-restricted Intake Of Meals (TRIM) Study. Circulation. 2021;143(Suppl_1):AMP14–AMP14. 
-% 74. Turkson-Ocran R-AN, Miller ER, Zhao D, Pilla S, Duan D, Jaeger B, et al. The Effect Of Time-restricted Feeding On 24-hour Ambulatory Blood Pressure: Results From The Time-restricted Intake Of Meals (TRIM) Study. In: CIRCULATION. LIPPINCOTT WILLIAMS & WILKINS TWO COMMERCE SQ, 2001 MARKET ST, PHILADELPHIA …; 2021. 
-% 75. Zhang Y, Schwartz JE, Jaeger BC, An J, Bellows BK, Clark III D, et al. Association Between Ambulatory Blood Pressure and Coronary Artery Calcification: The JHS. Hypertension. 2021;77(6):1886–94. 
-% 76. Jaeger BC, Sakhuja S, Hardy ST, Akinyelure OP, Bundy JD, Muntner P, et al. Predicted cardiovascular risk for United States adults with diabetes, chronic kidney disease, and at least 65 years of age. Journal of Hypertension. 2022;40(1):94–101. 
-% 77. Kim J, Arora P, Kwon SY, Parcha V, Levitan EB, Jaeger BC, et al. Relation of Abdominal Obesity to Risk of Atrial Fibrillation (From the Reasons for Geographic and Racial Differences in Stroke [REGARDS] Study). The American journal of cardiology. 2022;162:116–21. 
-% 78. Long DL, Guo B, McClure LA, Jaeger BC, Tison SE, Howard G, et al. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Annals of epidemiology. 2022;66:13–9. 
-% 79. Bhatt SP, Balte PP, Schwartz JE, Jaeger BC, Cassano PA, Chaves PH, et al. Pooled Cohort Probability Score for Subclinical Airflow Obstruction. 
+\item Booth JN 3rd, \me, Huang L, Abdalla M, Sims M, Butler M, Muntner P, Shimbo D. Morning Blood Pressure Surge and Cardiovascular Disease Events and All-Cause Mortality in Blacks: The Jackson Heart Study. Hypertension. 2020 Mar;75(3):835-843. \DOI{10.1161/HYPERTENSIONAHA.119.14233}. Epub 2020 Feb 3. \PMID{32008430}; \PMCID{PMC7035156}.
 
+\item \me, Booth JN 3rd, Butler M, Edwards LJ, Lewis CE, Lloyd-Jones DM, Sakhuja S, Schwartz JE, Shikany JM, Shimbo D, Yano Y, Muntner P. Development of Predictive Equations for Nocturnal Hypertension and Nondipping Systolic Blood Pressure. J Am Heart Assoc. 2020 Jan 21;9(2):e013696. \DOI{10.1161/JAHA.119.013696}. Epub 2020 Jan 9. \PMID{31914878}; \PMCID{PMC7033845}.
+
+\item Langford AT, Akinyelure OP, Moore TL Jr, Howard G, Min YI, Hillegass WB, Bress AP, Tajeu GS, Butler M, \me, Yano Y, Shimbo D, Ogedegbe G, Calhoun D, Booth JN 3rd, Muntner P. Underutilization of Treatment for Black Adults With Apparent Treatment-Resistant Hypertension: JHS and the REGARDS Study. Hypertension. 2020 Nov;76(5):1600-1607. \DOI{10.1161/HYPERTENSIONAHA.120.14836}. Epub 2020 Sep 14. \PMID{32924633}; \PMCID{PMC7685176}.
+
+\item \me. Tutorial: The Use of Statistical Learning in Pediatric Research. The Journal of Pediatrics. 2020;223:231--3. 
+
+\item Muntner P, Hardy ST, Fine LJ, \me, Wozniak G, Levitan EB, Colantonio LD. Trends in Blood Pressure Control Among US Adults With Hypertension, 1999-2000 to 2017-2018. JAMA. 2020 Sep 22;324(12):1190-1200. \DOI{10.1001/jama.2020.14545}. \PMID{32902588}; \PMCID{PMC7489367}.
+
+\item Sakhuja S, Booth JN, Anstey DE, \me, Lewis CE, Lloyd-Jones DM, Schwartz JE, Shimbo D, Shikany JM, Sims M, Muntner P. Using Predicted Atherosclerotic Cardiovascular Disease Risk for Discrimination of Awake or Nocturnal Hypertension. Am J Hypertens. 2020 Nov 3;33(11):1011-1020. \DOI{10.1093/ajh/hpaa099}. \PMID{32657334}; \PMCID{PMC7608525}.
+
+\item Akinyelure OP, \me, Moore TL, Hubbard D, Oparil S, Howard VJ, Howard G, Buie JN, Magwood GS, Adams RJ, Bonilha L, Lackland DT, Muntner P. Racial Differences in Blood Pressure Control Following Stroke: The REGARDS Study. Stroke. 2021 Dec;52(12):3944-3952. \DOI{10.1161/STROKEAHA.120.033108}. Epub 2021 Sep 2. \PMID{34470498}.
+ 
+\item Awad MZ, Vaden RJ, Irwin ZT, Gonzalez CL, Black S, Nakhmani A, \me, Bentley JN, Guthrie BL, Walker HC. Subcortical short-term plasticity elicited by deep brain stimulation. Ann Clin Transl Neurol. 2021 May;8(5):1010-1023. \DOI{10.1002/acn3.51275}. Epub 2021 Apr 7. \PMID{33826240}; \PMCID{PMC8108424}.
+
+\item Bundy JD, \me, Huffman MD, Knox SS, Thomas SJ, Shimbo D, Booth JN, Lewis CE, Edwards LJ, Schwartz JE, Muntner P. Twenty-Five-Year Changes in Office and Ambulatory Blood Pressure: Results From the Coronary Artery Risk Development in Young Adults (CARDIA) Study. Am J Hypertens. 2021 May 22;34(5):494-503. \DOI{10.1093/ajh/hpaa189}. \PMID{33201230}; \PMCID{PMC8140654}.
+
+\item Cohen LP, Hubbard D, Colvin CL, \me, Poudel B, Abdalla M, Langford A, Hardy ST, Sims M, Lewis CE, Muntner P, Shimbo D. Lifestyle behaviors among adults recommended for ambulatory blood pressure monitoring according to the 2017 ACC/AHA blood pressure guideline. Am J Hypertens. 2021 Jul 16:hpab110. \DOI{10.1093/ajh/hpab110}. Epub ahead of print. \PMID{34270687}.
+
+\item Goyal P, Yum B, Navid P, Chen L, Kim DH, Roh J, \me, Levitan EB. Frailty and Post-hospitalization Outcomes in Patients With Heart Failure With Preserved Ejection Fraction. Am J Cardiol. 2021 Jun 1;148:84-93. \DOI{10.1016/j.amjcard.2021.02.019}. Epub 2021 Mar 3. \PMID{33667443}.
+
+\item Hardy ST, Chen L, Cherrington AL, Moise N, \me, Foti K, Sakhuja S, Wozniak G, Abdalla M, Muntner P. Racial and Ethnic Differences in Blood Pressure Among US Adults, 1999-2018. Hypertension. 2021 Dec;78(6):1730-1741. \DOI{10.1161/HYPERTENSIONAHA.121.18086}. Epub 2021 Nov 1. \PMID{34719937}.
+
+\item Hardy ST, Sakhuja S, \me, Oparil S, Akinyelure OP, Spruill TM, Kalinowski J, Butler M, Anstey DE, Elfassy T, Tajeu GS, Allen NB, Reges O, Sims M, Shimbo D, Muntner P. Maintaining Normal Blood Pressure Across the Life Course: The JHS. Hypertension. 2021 May 5;77(5):1490-1499. \DOI{10.1161/HYPERTENSIONAHA.120.16278}. Epub 2021 Mar 22. \PMID{33745299}; \PMCID{PMC8564773}.
+
+\item Hardy ST, Sakhuja S, \me, Urbina EM, Suglia SF, Feig DI, Muntner P. Trends in Blood Pressure and Hypertension Among US Children and Adolescents, 1999-2018. JAMA Netw Open. 2021 Apr 1;4(4):e213917. \DOI{10.1001/jamanetworkopen.2021.3917}. \PMID{33792732}; \PMCID{PMC8017470}.
+
+\item Harper SA, Bassler JR, Peramsetty S, Yang Y, Roberts LM, Drummer D, Mankowski RT, Leeuwenburgh C, Ricart K, Patel RP, Bamman MM, Anton SD, \me, Buford TW. Resveratrol and exercise combined to treat functional limitations in late life: A pilot randomized controlled trial. Exp Gerontol. 2021 Jan;143:111111. \DOI{10.1016/j.exger.2020.111111}. Epub 2020 Oct 15. \PMID{33068691}; \PMCID{PMC7855904}.
+
+\item \me, Akinyelure OP, Sakhuja S, Bundy JD, Lewis CE, Yano Y, Howard G, Shimbo D, Muntner P, Schwartz JE. Number and timing of ambulatory blood pressure monitoring measurements. Hypertens Res. 2021 Dec;44(12):1578-1588. \DOI{10.1038/s41440-021-00717-y}. Epub 2021 Aug 11. \PMID{34381194}.
+
+\item \me, Cantor R, Sthanam V, Xie R, Kirklin JK, Rudraraju R. Improving Outcome Predictions for Patients Receiving Mechanical Circulatory Support by Optimizing Imputation of Missing Values. Circ Cardiovasc Qual Outcomes. 2021 Sep;14(9):e007071. \DOI{10.1161/CIRCOUTCOMES.120.007071}. Epub 2021 Sep 14. \PMID{34517728}; \PMCID{PMC8455450}.
+
+\item Li S, Schwartz JE, Shimbo D, Muntner P, Shikany JM, Booth JN 3rd, Allen NB, \me, Bress AP, King JB, Clark D 3rd, Butler KR, Correa A, Moran AE, Bellows BK, Zhang Y. Estimated Prevalence of Masked Asleep Hypertension in US Adults. JAMA Cardiol. 2021 May 1;6(5):568-573. \DOI{10.1001/jamacardio.2020.5212}. \PMID{33112362}; \PMCID{PMC7593881}.
+
+\item Muntner P, \me, Hardy ST, Foti K, Reynolds K, Whelton PK, Bowling CB. Age-specific prevalence and factors associated with normal blood pressure among US adults. Am J Hypertens. 2021 Oct 2:hpab154. \DOI{10.1093/ajh/hpab154}. Epub ahead of print. \PMID{34599824}.
+
+\item Sakhuja S, Colvin CL, Akinyelure OP, \me, Foti K, Oparil S, Hardy ST, Muntner P. Reasons for Uncontrolled Blood Pressure Among US Adults: Data From the US National Health and Nutrition Examination Survey. Hypertension. 2021 Nov;78(5):1567-1576. \DOI{10.1161/HYPERTENSIONAHA.121.17590}. Epub 2021 Oct 13. \PMID{34644171}.
+
+\item Segar MW, \me, Patel KV, Nambi V, Ndumele CE, Correa A, Butler J, Chandra A, Ayers C, Rao S, Lewis AA, Raffield LM, Rodriguez CJ, Michos ED, Ballantyne CM, Hall ME, Mentz RJ, de Lemos JA, Pandey A. Development and Validation of Machine Learning-Based Race-Specific Models to Predict 10-Year Risk of Heart Failure: A Multicohort Analysis. Circulation. 2021 Jun 15;143(24):2370-2383. \DOI{10.1161/CIRCULATIONAHA.120.053134}. Epub 2021 Apr 13. \PMID{33845593}.
+
+\item Segar MW, Patel KV, Vaduganathan M, Caughey MC, \me, Basit M, Willett D, Butler J, Sengupta PP, Wang TJ, McGuire DK, Pandey A. Development and validation of optimal phenomapping methods to estimate long-term atherosclerotic cardiovascular disease risk in patients with type 2 diabetes. Diabetologia. 2021 Jul;64(7):1583-1594. \DOI{10.1007/s00125-021-05426-2}. Epub 2021 Mar 13. \PMID{33715025}.
+
+\item Zhang Y, Schwartz JE, \me, An J, Bellows BK, Clark D 3rd, Langford AT, Kalinowski J, Ogedegbe O, Carr JJ, Terry JG, Min YI, Reynolds K, Shimbo D, Moran AE, Muntner P. Association Between Ambulatory Blood Pressure and Coronary Artery Calcification: The JHS. Hypertension. 2021 Jun;77(6):1886-1894. \DOI{10.1161/HYPERTENSIONAHA.121.17064}. Epub 2021 Apr 26. \PMID{33896192}; \PMCID{PMC8119358}.
+
+\item \me, Sakhuja S, Hardy ST, Akinyelure OP, Bundy JD, Muntner P, Whelton PK. Predicted cardiovascular risk for United States adults with diabetes, chronic kidney disease, and at least 65 years of age. J Hypertens. 2022 Jan 1;40(1):94-101. \DOI{10.1097/HJH.0000000000002982}. \PMID{34420013}.
+
+\item Kim J, Arora P, Kwon SY, Parcha V, Levitan EB, \me, Soliman EZ, Howard VJ. Relation of Abdominal Obesity to Risk of Atrial Fibrillation (From the Reasons for Geographic and Racial Differences in Stroke [REGARDS] Study). Am J Cardiol. 2022 Jan 1;162:116-121. \DOI{10.1016/j.amjcard.2021.08.065}. \PMID{34903337}.
+
+\item Long DL, Guo B, McClure LA, \me, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol. 2021 Nov 3;66:13-19. \DOI{10.1016/j.annepidem.2021.10.010}. Epub ahead of print. \PMID{34742867}.
+
+\item Levitt EB, Patch DA, Mabry S, Terrero A, \me, Haendel MA, Chute CG, Quade JH, Ponce B, Theiss S, Spitler CA, Johnson JP. Association Between COVID-19 and Mortality in Hip Fracture Surgery in the National COVID Cohort Collaborative (N3C): A Retrospective Cohort Study. J Am Acad Orthop Surg Glob Res Rev. 2022 Jan 4;6(1):e21.00282. \DOI{10.5435/JAAOSGlobal-D-21-00282}. \PMID{34982060}; \PMCID{PMC8735795}.
 
 \end{enumerate}
+
+\mysubsection{Presentations at Professional Meetings}
+
+\begin{enumerate}
+
+\item Narang GL, Smith AB, \me, Pinheiro L, Edwards LJ, Pruthi R, et al. Changes in Health-Related Quality of Life Among Older Adults with Prostate Cancer: A Case-Control Study. Journal of the American College of Surgeons. 2017;225(4):e105. 
+
+
+\item Smith A, Jaeger B, Pinheiro L, Edwards L, Reeve B. MP14-13 CHANGES IN HEALTH-RELATED QUALITY OF LIFE AMONG OLDER ADULTS WITH PROSTATE CANCER: A CASE-CONTROL STUDY. The Journal of Urology. 2017;197(4S):e166--7
+
+\item \me, LJ Edwards, MJ Gurka. An R-squared Statistic for Covariance Model Selection in the Linear Mixed Model. ENAR Spring Meeting, Atlanta, GA 2018.
+
+\item \me, LJ Edwards, MJ Gurka. An R-squared Statistic for Covariance Model Selection in the Linear Mixed Model. Joint Statistical Meeting, Vancouver 2018
+
+\item LC Baptista, \me, SD Anton, AA Bavry, EM Handberg, et al. Change in Metabolic and Inflammatory Biomarkers after a 24-Week Multimodal Intervention. 9th International Conference on Frailty and Sarcopenia Research, Miami, FL 2019
+
+\item \me, DL Long, DM Long, M Sims, J Szychowski, Y Min, et al. Oblique Random Survival Forests. ICSA Applied Statistics Symposium, Raleigh, NC 2019.
+
+\item D Gupta, \me, R Cantor, D Koehl, N Bansal, Prolonged Hospital Length Of Stay After Pediatric Heart Transplantation And Its Impact On Outcomes: A PHTS Database Analysis. AHA Scientific Sessions, Philadelphia, PA 2019.
+
+\item Butler M, Kalinowski J, Shimbo D, Sims M, Booth JN, Bress AP, Tanner RM, \me Fredericks S, Ogedegbe G, Spruill TM. Abstract P179: Hypertension Awareness is Associated With Negative Psychosocial Outcomes in Africans Americans in the Jackson Heart Study (JHS). Circulation. 2019;139(Suppl\_1):AP179--AP179
+
+\item Roberts LM, \me, Baptista LC, Harper SA, Jackson E, Gardner AK, et al. Wearable Technology To Reduce Sedentary Behavior And CVD Risk In Older Adults: A Pilot Trial: 3620 Board no. 308 June 1 9: 30 AM-11: 00 AM. Medicine and Science in Sports and Exercise. 2019;51(6S):1004.
+
+\item Siddiqui M, \me, Judd E, Dudenbostel T, Pollock DM, Pollock J, et al. Novel 24-hour blood pressure profile in patients with resistant hypertension. Journal of the American College of Cardiology. 2019;73(9S1):1818--1818.
+
+\item Siddiqui M, \me, Gaddam K, Dudenbostel T, Judd E, Pollock D, et al. Spironolactone does not change 24 hour blood pressure circadian pattern in resistant hypertensive patients. Journal of Hypertension. 2019;37:e313.
+
+\item \me, Cantor RS, Sthanam V, Rudraraju R. Improving Mortality Predictions for Patients With Mechanical Circulatory Support Using Follow-Up Data and Machine Learning. Circulation: Genomic and Precision Medicine. 2020;13(4):e002877.
+
+\item Sakhuja S, Hardy ST, Akinyelure P, \me, Shimbo D, Bress AP, et al. Abstract P335: Using Cardiovascular Disease Risk Versus Blood Pressure To Guide The Initiation Of Antihypertensive Medication Among Us Adults. Circulation. 2020;141(Suppl\_1):AP335--AP335.
+
+\item Segar MW, \me, Patel KV, Nambi V, Ndumele CE, Correa A, et al. Development and Validation of Machine Learning-based Race-specific Models to Predict 10-year Risk of Heart Failure: A Multi-cohort Analysis. Circulation. 2020;142(Suppl\_3):A196--A196.
+
+\item Thomas SJ, Booth III JN, \me, Hubbard D, Sakhuja S, Abdalla M, et al. Association of sleep characteristics with nocturnal hypertension and nondipping blood pressure in the CARDIA study. Journal of the American Heart Association. 2020;9(7):e015062.
+
+\item Wisotzkey BL, Asante-Korang A, Kirklin JK, Cantor R, Koehl D, \me, et al. Risk Factors for One-year Mortality and Allograft Loss in Pediatric Heart Transplant Patients Using Machine Learning: Analysis of the Pediatric Heart Transplant Society Database. Circulation. 2020;142(Suppl\_3):A14239--A14239.
+
+\item Yano Y, Poudel B, Chen L, Sakhuja S, \me, Viera A, et al. Abstract P173: The Impact of Asleep Blood Pressure on the Prevalence of Masked Hypertension by Race/ethnicity: Analysis of Pooled Population-and Community-based Studies. Circulation. 2020;141(Suppl\_1):AP173--AP173.
+
+\item Butts RJ, Kirklin J, Cantor R, Zhao H, \me, Nandi D, et al. Congenital Heart Disease Classification Improves SRTR Risk Estimation of Waitlist and Early Post-Transplant Mortality for Pediatric Heart Transplantation. Circulation. 2021;144(Suppl\_1):A11567--A11567
+
+\item Tajeu GS, Colvin C, Hardy ST, Gaye B, Bress AP, \me, et al. Prevalence, Risk Factors And Cardiovascular Outcomes Associated With Persistent Blood Pressure Control: The Jackson Heart Study. Circulation. 2021;143(Suppl\_1):A064--A064.
+
+\item Turkson-Ocran R-AN, Miller ER, Zhao D, Pilla S, Duan D, \me, et al. Abstract MP14: The Effect Of Time-restricted Feeding On 24-hour Ambulatory Blood Pressure: Results From The Time-restricted Intake Of Meals (TRIM) Study. Circulation. 2021;143(Suppl\_1):AMP14--AMP14.
+
+\end{enumerate}
+
 
 \end{document}
