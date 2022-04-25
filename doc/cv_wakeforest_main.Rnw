@@ -98,7 +98,7 @@ WAKE FOREST SCHOOL OF MEDICINE \\ CURRICULUM VITAE \\[1em] (\today)
 
 \bfseries \large CURRENT ACADEMIC TITLE
 
-\>\> \AR{Assistant Professor} \\
+\>\> Assistant Professor \\
 
 \\
 % {\bfseries\large \AR{ADMINISTRATIVE TITLE}}
@@ -126,7 +126,7 @@ WAKE FOREST SCHOOL OF MEDICINE \\ CURRICULUM VITAE \\[1em] (\today)
 {\bfseries\large  EDUCATION}  \\
 \>2008--2012\> Furman University \\
 \>\>Greenville, South Carolina \\
-\>\>B.S. \emph{summa cum laude} (Mathematics) \\
+\>\>B.S. \emph{magna cum laude} (Mathematics) \\
 \\
 \>2012--2017\> Gillings School of Global Public Health \\
 \>\>Chapel Hill, North Carolina \\
@@ -190,7 +190,11 @@ WAKE FOREST SCHOOL OF MEDICINE \\ CURRICULUM VITAE \\[1em] (\today)
 
 \> 2019--2021 \>Member, Doctoral Committee for Charles F. Murchison, UAB Biostatistics.\\\>\>\hspace{0.25in}``Application of Longitudinal Machine Learning Methods in Multi-Study\\\>\>\hspace{0.275in} Alzheimer's Disease Datasets'' \\
 
-\> 2019--2021 \>Member, Doctoral Committee for Boyi Guo, UAB Biostatistics.\\\>\>\hspace{0.25in}``Bayesian Hierarchical Additive Models'' \\
+\> 2019--Present \>Member, Doctoral Committee for Boyi Guo, UAB Biostatistics.\\\>\>\hspace{0.25in}``Bayesian Hierarchical Additive Models'' \\
+
+\> 2019--Present \>Member, Doctoral Committee for Swati Sakhuja, UAB Epidemiology\\\>\>\hspace{0.25in}``Racial Differences in Auxiliary Ambulatory Blood Pressure Parameters'' \\
+
+\> 2021--Present \>Member, Project TOOLBOX Document Management Review Working Group \\\>\>\hspace{0.25in}WFSM Department of Biostatistics and Data Science.
 
 
 \end{tabbing}
@@ -260,44 +264,61 @@ WAKE FOREST SCHOOL OF MEDICINE \\ CURRICULUM VITAE \\[1em] (\today)
 
 \hskip 1cm I am an Assistant Professor in the Department of Biostatistics and Data Science in the Division of Public Health Sciences at Wake Forest School of Medicine (WFSM). After receiving my PhD in Statistics at the University of Chapel Hill in North Carolina, I spent four years in the Department of Biostatistics at the University of Alabama at Birmingham School of Public Health and joined the WFSM faculty in 2021. At Birmingham, I was a Biostatistician of the Jackson Heart Study Hypertension Working Group and the American Heart Association Strategically Focused Research Network. I am currently serving as a member of the Regional Advisory Board for the Eastern North American Region of the International Biometric Society.
 
-My current work is focused on computational optimization of the oblique random survival forest, a machine learning algorithm I previously developed. I have studied the etiology of hypertension and cardiovascular disease from the perspective of observational cohort studies that tracked health behaviors, socioeconomic factors, and diet and exercise habits throughout mid-life. TODO: Add details on work at WFSM. 
+My current work at WFSM is focused on computational optimization of the oblique random survival forest, a machine learning algorithm I previously developed. I have studied the etiology of hypertension and cardiovascular disease from the perspective of observational cohort studies that tracked health behaviors, socioeconomic factors, and diet and exercise habits throughout mid-life. I am also involved in the Molecular Transducers of Physical Activity Consortium (MoTrPAC) and am currently developing an R package to help investigators in MoTrPAC apply standardized data processing pipelines to the developing MoTrPAC databases in a secure and reproducible manner. In addition, I am leading an investigation of long-term mortality for participants in the Systolic blood PRessure INtervention Trial (SPRINT) as a co-investigator in the SPRINT MIND research group. I am also leading an investigation of trends in blood pressure among Veterans who filled an initial prescription for antihypertensive medication as part of a pilot study funded by the Hypertension working Group at UAB. Last, I am supporting analyses of physical activity examining the association between fitness levels in early adulthood and mortality as a member of the Multi-Ethnic Study of Atherosclerosis (MESA) field center at WFSM.
 
 }
 
-% \mysection{GRANTS}
-% 
-% \mysubsection{Current Grants}
-% 
-% %\mysection{GRANTS--CURRENT}
-% \begin{enumerate}
-% 
-%  \item R01HL117323 (Paul Muntner) \hfill 8/01/2017--8/30/2021
-%  
-%  NIH-NHLBI
-%  
-% {\bfseries Incorporation of a Hypertension Working Group into the Jackson Heart Study}
-% 
-% The objective of this grant is to identify novel risk factors for hypertension and potential approaches to improve hypertension control rates and reduce BP related complications among African Americans. We will integrate a strong mentorship component to help early stage investigators (ESIs), especially minority investigators, move towards independence.
-% 
-% {\bfseries Role: Biostatistician.}
-% 
-% \end{enumerate}
+\mysection{GRANTS}
 
-% \mysubsection{Past Grant History - National Institutes of Health}
-% 
-% \begin{enumerate}
-% 
-% \item 15SFRN23900002 (Paul Muntner) \hfill 8/01/2017--8/30/2021
-% 
-% American Heart Association
-% 
-% {\bfseries University of Alabama Strategically Focused Hypertension Research Center}
-% 
-% This study focuses on circadian blood pressure patterns. In a population science study, we will evaluate racial differences in nocturnal hypertension and non-dipping blood pressure. In a clinical science project, we will evaluate the effect of sodium intake on diurnal blood pressure and sleep apnea.  In basic science studies, we will study mechanisms leading to loss of diurnal blood pressure patterns.  Additionally, this grant involves the training of three post-doctoral fellows.
-% 
-% {\bfseries Role: Biostatistician.}
-% 
-% \end{enumerate}
+\mysubsection{Current Grants}
+
+\begin{enumerate}
+
+\item U24 AR071113 (Miller/Pahor/Rejeski) \hfill 12/01/2016--11/30/2022 
+
+NIH
+
+{\bfseries MoTrPAC }
+
+The Consortium Coordinating Center (CCC) for the Molecular Transducers of Physical Activity Consortium (MoTrPAC) will provide support for the organization, administration, planning, standardization, documentation, monitoring, and reporting activities necessary for the success of the MoTrPAC. The CCC will play a pivotal role in ensuring the cohesion of the MoTrPAC by enhancing communication and integration across the study. The CCC will promote strategies to integrate the MoTrPAC activities with the input from the Data Safety Monitoring Board (DSMB), External Scientific Advisors, other experts, and the NIH. 
+
+{\bfseries Role: Co-investigator}
+
+\item R01 AG055606-02A1 (Reboussin) \hfill 06/15/2017--05/31/2024
+  
+NIA
+
+{\bfseries SPRINT MIND 2020}
+
+Alzheimer’s disease has been estimated to effect >46 million individuals globally and 5.8 million persons in the United States. This number is expected to double by 2050.  Thus far only one strategy to prevent age-related cognitive impairment has proven to be effective in a randomized controlled trial: the intensive SBP lowering intervention in SPRINT.  By obtaining an additional visit with the SPRINT cohort, the proposed study would provide important evidence to inform clinical decision-making on the potential for treatment of hypertension to postpone cognitive decline. 
+
+{\bfseries Role: Co-investigator}
+
+\item R01HL117323 (Paul Muntner) \hfill 07/01/2021--06/30/2025
+
+NIH-NHLBI
+
+{\bfseries Incorporation of a Hypertension Working Group into the Jackson Heart Study}
+
+The objective of this grant is to identify novel risk factors for hypertension and potential approaches to improve hypertension control rates and reduce BP related complications among African Americans. We will integrate a strong mentorship component to help early stage investigators (ESIs), especially minority investigators, move towards independence.
+
+{\bfseries Role: Co-investigator}
+
+  \item 75N92020D00007 (Bertoni) \hfill 12/19/2019--12/18/2026
+  
+  NHLBI
+  
+{\bfseries Multi-Ethnic Study of Atherosclerosis (MESA) Field Center (FC)}
+
+The scientific objectives are to (1) enhance statistical power to perform analyses of predictors of clinical outcomes, particularly in informative subgroups; (2) study the progression of subclinical to clinical CVD; and (3) identify new risk factors or interactions among factors that inform disease pathophysiology. The operational goals are to (1) continue cohort follow-up and information collection to document clinical events; (2) continue to foster scientific collaborations; and (3) conduct a limited clinical examination of the MESA participants as a platform for ancillary study examination components. 
+
+{\bfseries Role: Co-investigator}
+
+\end{enumerate}
+
+\mysubsection{Past Grant History}
+
+Available upon request
 
 \mysection{BIBLIOGRAPHY}
 
@@ -469,6 +490,12 @@ As of \today, my h-index was \Sexpr{scholar_prof$h_index} with \Sexpr{scholar_pr
 
 \mysubsection{Invited Extramural Presentations}
 
-\item September 28, 2021 \me. Happier Version Control using Git and GitHub with Rstudio. American Statistical Assocation Statistical Learning and Data Science Webinar
+\begin{enumerate}
+
+\item September 28, 2021 \me. Happier Version Control using Git and GitHub with Rstudio. American Statistical Assocation Statistical Learning and Data Science Webinar. \href{https://bcjaeger.github.io/seminar-git/#1}{Slides here}
+
+\item April 20, 2022 \me. Introduction to R. Biostatistics, Epidemiology, and Research Design (BERD): Lunch \& Learn. \href{https://bcjaeger.github.io/lunch-and-learn/#1}{Slides here}
+
+\end{enumerate}
 
 \end{document}
