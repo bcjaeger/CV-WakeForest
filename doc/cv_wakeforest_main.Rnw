@@ -245,6 +245,7 @@ WAKE FOREST SCHOOL OF MEDICINE \\ CURRICULUM VITAE \\[1em] (\today)
 \begin{tabbing}
 \hspace{0.25in} \= 2011--Present \hspace{0.25in} \=  Member, Eastern North American Region, International Biometric Society\\
 \> 2016--Present \> Member, American Statistical Association\\
+\> 2022--Present \> Member, American Geriatric Society\\
 \end{tabbing}
 
 \mysection{HONORS AND AWARDS}
@@ -256,7 +257,8 @@ WAKE FOREST SCHOOL OF MEDICINE \\ CURRICULUM VITAE \\[1em] (\today)
 \>2012\> DeLany Medal for Excellence in Mathematics, Furman University\\
 \>2016\> Big Data to Knowledge Scholarship\\
 \>2017\> Distinguished Student Paper Award, Eastern North American Region\\
-\>2019\> Finalist; American Heart Association Best Artificial Intelligence and Machine\\\>\>\hspace{0.25in}Learning Paper Award 
+\>2019\> Finalist; American Heart Association Best Artificial Intelligence and Machine\\\>\>\hspace{0.25in}Learning Paper Award \\
+\>2022\> American Geriatric Society's Presidential Poster Award
 \end{tabbing}
 
 \mysection{PROFESSIONAL INTERESTS {\normalfont\emph{(Last updated \today)}}}
@@ -272,17 +274,21 @@ My current work at WFSM is focused on computational optimization of the oblique 
 
 \mysubsection{Current Grants}
 
+Approximately 87\% of my salary is covered by the projects below. 
+
 \begin{enumerate}
 
 \item U24 AR071113 (Miller/Pahor/Rejeski) \hfill 12/01/2016--11/30/2022 
 
 NIH
 
-{\bfseries MoTrPAC }
+{\bfseries MoTrPAC}
 
-The Consortium Coordinating Center (CCC) for the Molecular Transducers of Physical Activity Consortium (MoTrPAC) will provide support for the organization, administration, planning, standardization, documentation, monitoring, and reporting activities necessary for the success of the MoTrPAC. The CCC will play a pivotal role in ensuring the cohesion of the MoTrPAC by enhancing communication and integration across the study. The CCC will promote strategies to integrate the MoTrPAC activities with the input from the Data Safety Monitoring Board (DSMB), External Scientific Advisors, other experts, and the NIH. 
+The Consortium Coordinating Center (CCC) for the Molecular Transducers of Physical Activity Consortium (MoTrPAC) will provide support for the organization, administration, planning, standardization, documentation, monitoring, and reporting activities necessary for the success of the MoTrPAC. The CCC will play a pivotal role in ensuring the cohesion of the MoTrPAC by enhancing communication and integration across the study. The CCC will promote strategies to integrate the MoTrPAC activities with the input from the Data Safety Monitoring Board (DSMB), External Scientific Advisors, other experts, and the NIH.
 
 {\bfseries Role: Co-investigator}
+
+{\bfseries Effort: 25\%}
 
 \item R01 AG055606-02A1 (Reboussin) \hfill 06/15/2017--05/31/2024
   
@@ -294,25 +300,78 @@ Alzheimer’s disease has been estimated to effect >46 million individuals globa
 
 {\bfseries Role: Co-investigator}
 
+{\bfseries Effort: 15\%}
+
+  
+\item UL1 TR001420-05 (McClain) \hfill 06/2017--05/2024 
+
+NIH
+
+{\bfseries Wake Forest Clinical and Translational Science Award}
+
+The purpose of this Clinical and Translational Science Award (CTSA) application is to synergize the fundamental positive changes that the Translational Science Institute has already brought to bear at Wake Forest Baptist Health. Strategic Goal 5: Promote research sustainability by increasing efficiency through effective organization, governance, collaboration, and communication. 
+
+{\bfseries Role: Co-investigator}
+
+{\bfseries Effort: 10\%}
+
 \item R01HL117323 (Paul Muntner) \hfill 07/01/2021--06/30/2025
 
 NIH-NHLBI
 
 {\bfseries Incorporation of a Hypertension Working Group into the Jackson Heart Study}
 
-The objective of this grant is to identify novel risk factors for hypertension and potential approaches to improve hypertension control rates and reduce BP related complications among African Americans. We will integrate a strong mentorship component to help early stage investigators (ESIs), especially minority investigators, move towards independence.
+The objective of this grant is to identify novel risk factors for hypertension and potential approaches to improve hypertension control rates and reduce BP related complications among African Americans. We will integrate a strong mentorship component to help early stage investigators, especially minority investigators, move towards independence.
 
-{\bfseries Role: Co-investigator}
+{\bfseries Role: Sub-Primary Investigator}
 
-  \item 75N92020D00007 (Bertoni) \hfill 12/19/2019--12/18/2026
+{\bfseries Effort: 13.5\%}
+
+\item 75N92020D00007 (Bertoni) \hfill 12/19/2019--12/18/2026
   
-  NHLBI
+NHLBI
   
 {\bfseries Multi-Ethnic Study of Atherosclerosis (MESA) Field Center (FC)}
 
 The scientific objectives are to (1) enhance statistical power to perform analyses of predictors of clinical outcomes, particularly in informative subgroups; (2) study the progression of subclinical to clinical CVD; and (3) identify new risk factors or interactions among factors that inform disease pathophysiology. The operational goals are to (1) continue cohort follow-up and information collection to document clinical events; (2) continue to foster scientific collaborations; and (3) conduct a limited clinical examination of the MESA participants as a platform for ancillary study examination components. 
 
 {\bfseries Role: Co-investigator}
+
+{\bfseries Effort: 13\%}
+
+\item U24 HL155802-01A1 (Pajewski) \hfill 09/2021--08/2026
+
+NHLBI
+
+{\bfseries Data Coordinating Center for the Long-Term Effectiveness of the Anti-obesity medication Phentermine: The LEAP Trial}
+
+The goal of this trial is to assess the long term effectiveness of Phentermine for weight loss and blood pressure reduction.
+
+{\bfseries Effort: 8\%}
+
+\item R01 DK128803-01 (Ix) \hfill 08/2021--03/2025
+
+NIH
+
+{\bfseries Kidney Tubule Dysfunction and Future Risk of Acute Kidney Injury}
+
+This project aims to evaluate the relationship of tubule dysfunction at times of health with future risk of acute kidney injury due to sepsis, after cardiac surgery, and in heart failure patients.
+
+{\bfseries Role: Sub-Primary Investigator}
+
+{\bfseries Effort: 2.5\%}
+
+\item Pilot Award (Jaeger) \hfill 04/2022--03/2023
+  
+Wake Forest Center for Biomedical Informatics
+  
+{\bfseries Accelerating the Oblique Random Survival Forest}
+
+The scientific objectives are to (1) optimize routines to fit oblique random survival forests, (2) implement routines in an open-source software package, and (3) disseminate the software along with a separate benchmark of routines in the software through public channels.
+
+{\bfseries Role: Primary investigator}
+
+{\bfseries Effort: 0\%}
 
 \end{enumerate}
 
@@ -333,7 +392,7 @@ scholar_prof <- get_profile(scholar_id)
 
 
 My MyNCBI collection is available publicly  \href{https://www.ncbi.nlm.nih.gov/myncbi/byron.jaeger.1/bibliography/public/}{here}.
-As of \today, my h-index was \Sexpr{scholar_prof$h_index} with \Sexpr{scholar_prof$total_cites} total citations. More details can be accessed from my \href{https://scholar.google.com/citations?user=4IKD_roAAAAJ&hl=en}{scholar profile}.
+As of \today, my h-index was \Sexpr{scholar_prof$h_index} with \Sexpr{scholar_prof$total_cites} total citations. I have a total of 58 articles in peer-reviewed journals, with 15 second author and 11 first author publications. More details can be accessed from my \href{https://scholar.google.com/citations?user=4IKD_roAAAAJ&hl=en}{scholar profile}.
 
 \mysubsection{Peer-Reviewed Journal Articles}
 
@@ -439,6 +498,22 @@ As of \today, my h-index was \Sexpr{scholar_prof$h_index} with \Sexpr{scholar_pr
 
 \item Levitt EB, Patch DA, Mabry S, Terrero A, \me, Haendel MA, Chute CG, Quade JH, Ponce B, Theiss S, Spitler CA, Johnson JP. Association Between COVID-19 and Mortality in Hip Fracture Surgery in the National COVID Cohort Collaborative (N3C): A Retrospective Cohort Study. J Am Acad Orthop Surg Glob Res Rev. 2022 Jan 4;6(1):e21.00282. \DOI{10.5435/JAAOSGlobal-D-21-00282}. \PMID{34982060}; \PMCID{PMC8735795}.
 
+\item \me, Sakhuja S, Hardy ST, Akinyelure OP, Bundy JD, Muntner P, Whelton PK. Predicted cardiovascular risk for United States adults with diabetes, chronic kidney disease, and at least 65 years of age. J Hypertens. 2022 Jan 1;40(1):94-101. \DOI{10.1097/HJH.0000000000002982}. \PMID{34420013}.
+
+\item Long DL, Guo B, McClure LA, \me, Tison SE, Howard G, Judd SE, Howard VJ, Plante TB, Zakai NA, Koh I, Cheung KL, Cushman M. Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations. Ann Epidemiol. 2022 Feb;66:13-19. DOI{10.1016/j.annepidem.2021.10.010}. Epub 2021 Nov 3. \PMID{34742867}; \PMCID{PMC8920757}.
+
+\item Gabriel KP, \me, Sternfeld B, Dooley EE, Carnethon MR, Jacobs Jr DR, Lewis CE, Hornikel B, Reis JP, Schreiner PJ, Shikany JM. Factors Associated with Age-related Declines in Cardiorespiratory Fitness from Early Adulthood through Midlife: CARDIA. Medicine \& Science in Sports \& Exercise. 2022 Feb 28.
+
+\item Sakhuja S, \me, Akinyelure OP, Bress AP, Shimbo D, Schwartz JE, Hardy ST, Howard G, Drawz P, Muntner P. Potential impact of systematic and random errors in blood pressure measurement on the prevalence of high office blood pressure in the United States. J Clin Hypertens (Greenwich). 2022 Mar;24(3):263-270. \DOI{10.1111/jch.14418}. Epub 2022 Feb 9. \PMID{35137521}; \PMCID{PMC8925005}.
+
+\item Bundy JD, Rahman M, Matsushita K, \me, Cohen JB, Chen J, Deo R, Dobre MA, Feldman HI, Flack J, Kallem RR, Lash JP, Seliger S, Shafi T, Weiner SJ, Wolf M, Yang W, Allen NB, Bansal N, He J; CRIC Study Investigators. Risk Prediction Models for Atherosclerotic Cardiovascular Disease in Patients with Chronic Kidney Disease: The CRIC Study. J Am Soc Nephrol. 2022 Mar;33(3):601-611. \DOI{10.1681/ASN.2021060747}. Epub 2022 Feb 10. \PMID{35145041}; \PMCID{PMC8975076}.
+
+\item Yano Y, Poudel B, Chen L, Sakhuja S, \me, Viera AJ, Shimbo D, Clark DT, Anstey DE, Lin FC, Lewis CE, Shikany JM, Rana JS, Correa A, Lloyd-Jones DM, Schwartz JE, Muntner P. Impact of asleep and 24-hour blood pressure data on the prevalence of masked hypertension by race/ethnicity. Am J Hypertens. 2022 Mar 18:hpac027. \DOI{10.1093/ajh/hpac027}. Epub ahead of print. \PMID{35303061}.
+
+\item Murchison CF, \me, Szychowski JM, Cutter GR, Roberson ED, Kennedy RE. Influence of Subject-Specific Effects in Longitudinal Modelling of Cognitive Decline in Alzheimer's Disease. J Alzheimers Dis. 2022 Mar 21. doi: 10.3233/JAD-215553. Epub ahead of print. PMID: 35342087.
+
+\item Muntner P, \me, Hardy TS, Foti K, Reynolds K, Whelton PK, Bowling CB. Age-Specific Prevalence and Factors Associated With Normal Blood Pressure Among US Adults, American Journal of Hypertension, Volume 35, Issue 4, April 2022, Pages 319–327, \DOI{10.1093/ajh/hpab154}
+
 \end{enumerate}
 
 \mysubsection{Presentations at Professional Meetings}
@@ -486,6 +561,10 @@ As of \today, my h-index was \Sexpr{scholar_prof$h_index} with \Sexpr{scholar_pr
 
 \item Turkson-Ocran R-AN, Miller ER, Zhao D, Pilla S, Duan D, \me, et al. Abstract MP14: The Effect Of Time-restricted Feeding On 24-hour Ambulatory Blood Pressure: Results From The Time-restricted Intake Of Meals (TRIM) Study. Circulation. 2021;143(Suppl\_1):AMP14--AMP14.
 
+\item S Sakhuja, \me, Y Yano, D Shimbo, CE Lewis, et al. Abstract P117: Association Of Ambulatory Blood Pressure Monitoring Parameters With Left Ventricular Hypertrophy: Analysis Of Pooled Population- And Community-based Studies. Circulation 145 (Suppl\_1), AP117-AP117.
+
+\item Akinyelure OP, \me, Oparil S, Carson AP, Safford M, Howard G, Muntner P, Hardy ST. Social Determinants Of Health And Uncontrolled Blood Pressure In A National Cohort Of Black And White US Adults. Circulation. 2022 Mar 1;145(Suppl\_1):A052-.
+
 \end{enumerate}
 
 \mysubsection{Invited Extramural Presentations}
@@ -495,6 +574,41 @@ As of \today, my h-index was \Sexpr{scholar_prof$h_index} with \Sexpr{scholar_pr
 \item September 28, 2021 \me. Happier Version Control using Git and GitHub with Rstudio. American Statistical Assocation Statistical Learning and Data Science Webinar. \href{https://bcjaeger.github.io/seminar-git/#1}{Slides here}
 
 \item April 20, 2022 \me. Introduction to R. Biostatistics, Epidemiology, and Research Design (BERD): Lunch \& Learn. \href{https://bcjaeger.github.io/lunch-and-learn/#1}{Slides here}
+
+\item June 21, 2022 \me. Oblique random survival forests version 2.0: faster and more interpretable. Invited speaker at the International Chinese Statistical Association. \href{https://bcjaeger.github.io/aorsf-bench}{Slides here}
+
+\end{enumerate}
+
+\mysubsection{R Packages}
+
+<<echo = FALSE, message = FALSE, warning = FALSE>>=
+
+library(cranlogs)
+library(table.glue)
+library(dplyr)
+
+dl_stats <- cran_downloads(packages = c("r2glmm", 
+                                        "obliqueRSF",
+                                        "table.glue"),
+                           from = '2013-01-01',
+                           to = 'last-day') |> 
+  group_by(package) |> 
+  summarize(count = table_value(sum(count))) |> 
+  as_inline('package', 'count')
+
+@
+
+
+
+\begin{enumerate}
+
+\item \href{https://github.com/bcjaeger/r2glmm}{r2glmm}: Computes the model $R^2$ and semi-partial $R^2$ with confidence limits for the linear and generalized linear mixed model. Total downloads from CRAN: \Sexpr{dl_stats$r2glmm}
+
+\item \href{https://github.com/bcjaeger/table.glue}{table.glue}: Translate double and integer valued data into character values formatted for tabulation in manuscripts or other types of academic reports. Total downloads from CRAN: \Sexpr{dl_stats$table.glue}
+ 
+\item \href{https://github.com/bcjaeger/obliqueRSF}{obliqueRSF}: Oblique random survival forests incorporate linear combinations of input variables into random survival forests. Regularized Cox proportional hazard models are used to identify optimal linear combinations of input variables. Total downloads from CRAN: \Sexpr{dl_stats$obliqueRSF}
+
+\item \href{https://github.com/bcjaeger/aorsf}{aorsf}: Fit, interpret, and make predictions with oblique random survival forests. Oblique decision trees are notoriously slow compared to their axis based counterparts, but 'aorsf' runs as fast or faster than axis-based decision tree algorithms for right-censored time-to-event outcomes. aorsf is not on CRAN yet and is currently \href{https://github.com/ropensci/software-review/issues/532}{under review at ROpenSci}
 
 \end{enumerate}
 

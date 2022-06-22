@@ -1,0 +1,3426 @@
+%Walter Ambrosius
+
+\documentclass[11pt]{myarticle}
+%\usepackage[draft=true]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+  	colorlinks=true,
+	linkcolor=blue,     
+   	urlcolor=blue,
+}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{color}
+\usepackage{soul}  %Use \hl{Blah} for notes.
+
+
+%*******************************************************************************************
+%Annual Review stuff
+\newcommand{\AR}[1]{\hl{#1}}  %To be used for highlighting some sections for my annual review.
+\renewcommand{\AR}[1]{#1}  %Use this when I want to hide the highlighting needed for annual reviews.
+%*******************************************************************************************
+
+
+\usepackage{float}
+%\break
+%\includepdf{VIEW_DCC_1_SpecificAims.pdf} will include a pdf
+
+%needed for pdftk to work properly (used to encrypt the output, reformat, etc.)
+\pdfminorversion=4
+
+
+\rhead{\underline{\large Walter T. Ambrosius}\\\today}
+%\cfoot{\thepage\ of \pageref{LastPage}}
+\cfoot{\thepage\ of \pageref{LastPageWTA}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\addtolength{\headheight}{\baselineskip}
+\addtolength{\headheight}{1.1pt}
+\addtolength{\headsep}{-20pt}
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+\lhead{{\large\bfseries\leftmark}\\{\bfseries\rightmark}}
+
+\newcommand{\mysection}[1]{\section*{#1}}
+\newcommand{\mysubsection}[1]{\subsection*{#1}}
+\newcommand{\myitem}{\item[]}
+\newcommand{\supref}[1]{$^\ref{#1}$}
+
+\newcommand{\lf}{\\ \> \>}
+\newcommand{\WTA}{{\bfseries Ambrosius WT}}
+\newcommand{\WA}{{\bfseries Ambrosius W}}
+
+\newcommand{\PMID}[1]{\href{http://www.ncbi.nlm.nih.gov/pubmed/?term=#1}{PMID:  {#1}.}}
+\newcommand{\PMCID}[1]{\href{http://www.ncbi.nlm.nih.gov/pmc/articles/#1/}{PMCID:  {#1}.}}
+\newcommand{\DOI}[1]{\href{http://doi.org/#1}{doi:{#1}.}}  %starting in 2010?
+\newcommand{\mybox}{\rule{8pt}{8pt}}
+
+
+\usepackage{walter}
+\setlength{\parindent}{0pt}
+
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+\newenvironment{packed_item}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+\begin{document}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}
+{\bfseries\Large
+WAKE FOREST  SCHOOL OF MEDICINE\\
+CURRICULUM VITAE}
+\\ (\today)
+\end{center}
+
+
+
+\begin{tabbing}
+\hspace{1.85 in}\= \hspace{1.05in}\=\\
+{\bfseries \large NAME}\>\>Walter T. Ambrosius, Ph.D.\\
+\\
+{\bfseries\large  CURRENT ACADEMIC TITLE}\>\>Professor (with tenure)\\
+\\
+{\bfseries\large \AR{ADMINISTRATIVE TITLE}}\>\>\AR{Chair, Department of Biostatistics and Data Science}\\
+\\
+{\bfseries\large  ADDRESS}
+%\>Residence \> 4101 Greenvale Court\\
+%\>\>Winston-Salem, North Carolina 27104\\
+%\>\>(336) 760-3410\\
+%\\
+%\> Business 
+\>\>Department of Biostatistics and Data Science\\
+\>\>Division of Public Health Sciences\\
+\>\>Wake Forest School of Medicine\\
+\>\>Medical Center Boulevard\\
+\>\>Winston-Salem, North Carolina 27157\\
+\>\>(336) 716-6281\\% voice, (336) 716-6427 facsimile\\
+\>\>{\tt Walter.T.Ambrosius@wakehealth.edu}\\
+\\
+%{\bfseries\large  PERSONAL INFORMATION}  \\
+%\> Birthplace\> Lincoln, Nebraska\\
+%\> Citizenship\>U.S.A.\\
+%\\
+{\bfseries\large  EDUCATION}  \\
+\>1987--1991\> Washington University\\
+\>\>St. Louis, Missouri\\
+\>\>A.B. \emph{summa cum laude} (Mathematics with a \lf minor in Computer Science)\\
+\\
+\>1987--1991\>Washington University\\
+\>\>St. Louis, Missouri\\
+\>\>A.M. (Statistics)\\
+\\
+\>1991--1995\>The University of Chicago\\
+\>\>Chicago, Illinois\\
+\>\>Ph.D. (Statistics)\\
+\\
+\>\>Research Advisor:  Yali Amit, Ph.D.\\
+\>\>Thesis:  \emph{Deformable Templates and Image Compression}
+%\hspace{0.82in}Ph.D. Dissertation (1995)\>\>Deformable Templates and Image Compression\\
+%\>\>Advisor:  Yali Amit, Ph.D.\\
+\end{tabbing}
+
+
+%\mysection{POSTDOCTORAL TRAINING}
+%\mysection{UNIFORMED SERVICE}
+%\mysection{PROFESSIONAL LICENSURE}
+%\mysection{SPECIALTY CERTIFICATION}
+
+
+\mysection{EMPLOYMENT}
+\mysubsection{Academic Appointments}
+\markboth{EMPLOYMENT (Continued)}{Academic Appointments (Continued)}
+\begin{tabbing}
+\hskip 0.2in \emph{The University of Chicago, Chicago, Illinois}\\
+\hspace{0.25in} \= 1995 \hspace{0.7in} \= Instructor, Department of Statistics\\
+\\
+
+\hskip 0.2in \emph{Indiana University School of Medicine, Indiana University, Indianapolis, Indiana}\\
+\>1995--2001\>Assistant Professor, Division of Biostatistics, Department of Medicine\\
+\>1999--2001\>Adjunct Faculty Member, Department of Public Health\\
+\>2000--2001\>Associate Member of the Graduate Faculty\\
+\>2001\>Associate Professor, Division of Biostatistics, Department of Medicine\\
+\>2001\>Adjunct Faculty Member, Center for Enhancing Quality of Life in Chronic Illness, \\
+\>\>\hspace{0.25in}Indiana University School of Nursing\\
+
+\hskip 0.2in \emph{Wake Forest School of Medicine, Wake Forest University, Winston-Salem, North Carolina}\\
+\>2001--2009\>Associate Professor,  Department of Biostatistics and Data Science,
+            Division of \\\>\>\hspace{0.25in}Public Health Sciences\\
+%\>2001--2006\>Associate Professor, Section on Biostatistics, Department of Public Health Sciences, \\\>\>
+%Wake Forest University School of Medicine, Winston-Salem, North Carolina\\
+%\\
+\>2003--Present\>\AR{Member of the Graduate Faculty}\\
+\> 2006--2012\>Director, Design and Analysis Unit,  Office of Research\\
+\> 2008--Present \>\AR{Member, Sticht Center on Aging}\\
+\>2008--Present\>\AR{Member, Primate Center}\\
+\>2009--Present\>\AR{Professor (with tenure 2012--), Department of Biostatistics and Data Science, } 
+		\\\>\>\hspace{0.25in}\AR{Division of Public Health Sciences}\\
+\>2012--Present\>\AR{Chair, Department of Biostatistics and Data Science, Division
+            of Public Health}  \\\>\>\hspace{0.25in} \AR{Sciences}\\
+\>2016--Present\>\AR{Professor, Clinical and Translational Science Institute (secondary appointment)}\\ 
+\>2018--Present\>\AR{Member, Center for Biomedical Informatics}\\
+\>2019--Present\>\AR{Associate Faculty of Women in Medicine in Science (WIMS)}\\
+\end{tabbing}
+
+\mysubsection{Professional Experience} 
+\begin{tabbing}
+\hspace{0.25in} \= 1990--1991 \hspace{0.38in}\= Head Computer Consultant, Department of Mathematics Computer Lab, \\
+\>\>\hspace{0.25in}Washington University, St. Louis, Missouri\\
+\>1991\> Data Analyst, Department of Psychiatry, Washington University, St. Louis,\\\>\>\hspace{0.25in}Missouri\\
+\>1991--1992\> Grader, Department of Statistics, University of Chicago, Chicago, Illinois\\
+\>1992\> Summer Intern, Preclinical Statistics, Searle Pharmaceutical Company, Skokie, \\\>\>\hspace{0.25in}Illinois\\
+\>1991--1993\> Unpaid Consultant, Center for Health Administration Studies, University of \\\>\>\hspace{0.25in}
+Chicago, Chicago, Illinois\\
+\>1992--1994\> Teaching Assistant, Department of Statistics, University of Chicago, Chicago,\\\>\>\hspace{0.25in}Illinois\\
+\end{tabbing}
+
+
+\mysection{ADMINISTRATIVE SERVICE}
+
+\mysubsection{Institutional  Service}
+\begin{tabbing}
+\hspace{0.25in} \= 1995--2001\hspace{0.25in}\=Member, General Clinical Research Center Advisory Committee, Indiana University\lf\hspace{0.25in} School of Medicine (IUSM)\\
+\> 1996 \>Member, Non-Tenured Faculty Referendum Committee, IUSM\\
+\> 1998--2001\>Alternate Member, Institutional Review Board, 
+Indiana University-Purdue \lf \hspace{0.25in} University Indianapolis (IUPUI)\\
+\> 1999--2001\>Member, Institutional Animal Care and Use Committee,   IUPUI\\
+\> 1999--2001\>Elected Member, IUPUI Faculty Council\\
+\> 2000--2001\>Member, Medical School Library Committee, IUSM\\
+\> 2001--2010\>Member, General Clinical Research Center Advisory Committee,
+		Wake Forest\lf \hspace{0.25in} School of Medicine (WFSM)\\
+\> 2001--2010\>Member, General Clinical Research Center Executive Committee, WFSM\\
+\> 2006, 2008\>Reviewer, Internal Study Section, Office of Research, WFSM\\
+\> 2006--2012\>Director, Design and Analysis Unit, Office of Research, WFSM\\
+\>2007--2009\> Co-Director,
+Research Design, Epidemiology, Biostatistics, and Clinical Research \lf \hspace{0.25in}Ethics, 
+Wake Forest University Translational Science Institute\\
+\>2008--2011\>Member, Institutional Data and Safety Monitoring Board (I-DSMB), WFSM\\
+\>2008--2011\>Member, Conflict of Interest in Research Committee, WFSM\\
+\>2009--2010\>Member, Dean's Advisory Committee, WFSM (Included service
+on the\lf\hspace{0.25in}subcommittee drafting the Guidelines and Functions of the Faculty 
+Representative \lf\hspace{0.25in}Council (2010).)\\
+\>2010--2012\>Member, Internal Communications Advisory Board, WFBH\\
+\>2010--2012\>Member, Chair-Elect (2010--2011), and Chair (2011--2012), Faculty Representative\lf\hspace{0.25in} Council, WFSM\\
+%\>2010--2011\>Chair-Elect, Faculty Representative Council, WFSM\\
+%\>2011--2012\>Chair, Faculty Representative Council, WFSM\\
+\>2011\>Member, Faculty Compensation Advisory Committee, WFBH\\
+\>2011--2013\>Member, Centers/Cores Advisory Committee, WFSM\\
+\>2013--2014\>Member, MD Education Oversight Committee, WFSM\\
+\>2015--\>\AR{Member, CTSI Cabinet and Director of the Biostatistics, Epidemiology, and Study} \lf\hspace{0.25in}\AR{Design (BERD), WFSM}\\
+\>2015--2018\>Member, Promotion and Tenure Committee, WFSM\\
+\>2016--2017\>Member, Women in Medicine and Science (WIMS) Committee and the Work-Life 
+\lf\hspace{0.25in} Subcommittee, WFSM\\
+\>2016--2017\>Member, Faculty Compensation and Incentive Working Group, WFSM\\
+\>2017\>Member, Search Committee, Director, Center for Biomedical Informatics, WFSM\\
+\>2017--2018\>Member, Research Infrastructure and Compensation Committee, WFSM\\
+\>2017--\>\AR{Chair, Comprehensive Cancer Center DSMB, WFSM}\\
+\>2020--2021\>Research Faculty Compensation Strategic Combination Work Group, Atrium Health  \lf\hspace{0.25in} and WFSM\\
+\>2020--2021\>Research Data \& Analytics Strategic Combination Work Group, Atrium Health and  \lf\hspace{0.25in}WFSM\\
+\>2021--\>Governance Data and Analytics Leadership Council, Information \& Analytics Services, \lf\hspace{0.25in}Atrium Health\\
+\>2021--\>Atrium Health 2025 Strategy Working Group on Digital Health, Atrium Health\\
+
+\end{tabbing}
+
+
+\markboth{ADMINISTRATIVE SERVICE (Cont)}{Institutional  Service (Continued)}
+\mysubsection{Departmental  Service}
+\begin{tabbing}
+\hspace{0.25in} \= 1995--1998 \hspace{0.25in} \= Member, Computer Committee, 
+Department of Medicine, IUSM\\
+\> 2001--2004\>Chair, Faculty Search Committee, Section on Biostatistics,
+              Department of Public\lf\hspace{0.25in} Health Sciences, WFSM\\
+\> 2001--2007\>Member, Computer Committee, Department of Biostatistics and Data Science, \lf\hspace{0.25in} Division of 
+Public Health Sciences, WFSM\\
+\> 2005--2006\>Member, Biostatistics Curriculum Committee, Department of Biostatistics and Data\lf\hspace{0.25in}Science,
+                  Division of Public Health Sciences, WFSM\\
+\>2007--2010\>Member, Computer Oversight Committee,
+Department of Biostatistics and Data \lf \hspace{0.25in}Science,
+Division of Public Health Sciences, WFSM\\
+\>2009--2010\>Member, Recruitment Committee,
+Section on Statistical Genetics and \lf\hspace{0.25in}  Bioinformatics,
+Department of Biostatistics and Data Science,
+Division of Public  \lf\hspace{0.25in} Health Sciences, WFSM\\
+\>2012--\>\AR{Chair, Department of Biostatistics and Data Science, WFSM}\\
+\end{tabbing}
+
+
+
+%\markboth{PROFESSIONAL APPOINTMENTS AND ACTIVITIES (Cont)}{Adjunct Appointments (Continued)}
+
+%\mysubsection{Hospital affiliations}
+
+\mysection{EXTRAMURAL APPOINTMENTS AND SERVICE}
+
+
+\mysubsection{Funding Agency Reviewer}
+
+\begin{enumerate}
+
+\item 
+NIH-NIAMS:  Special Emphasis Panel Member, ``Assessment and Assistance for NIAMS Clinical Trials,'' March 21, 2001.
+
+\item NIH-NHLBI, Special Emphasis Panel Member, 
+``Trials Assessing Innovative Strategies to Improve Clinical Practice Through Guidelines in
+Heart, Lung, and Blood Diseases,''  March 12--13, 2002.
+
+\item NIH-NHLBI, Special Emphasis Panel Member, ``Summer Institute for
+Training in Biostatistics (SIBS),'' June 5, 2003.
+\label{SIBS1}
+
+\item NIH-NCI, Special Emphasis Panel Member, Review of a P01 Application, June 11, 2004.
+
+\item NIH-NCI, Special Emphasis Panel Member, ``Subcommittee E-Cancer
+Epidemiology, Prevention \& Control,''  August 4, 2004.
+
+\item NIH-NIAMS, Special Emphasis Panel Member ``Assessment and Assistance for
+NIAMS Clinical Studies,''  April 18, 2006.
+
+\item NIH-NHLBI, Special Emphasis Panel Member, ``Weight Loss in Obese Adults with Cardiovascular Risk Factors:
+Clinical Interventions (U01),''  June 20--21, 2006.
+
+\item NIH-NHLBI, Ad hoc Member, Clinical Trials Review Committee (CLTR), June 26, 2006.
+
+\item NIH-NHLBI, Special Emphasis Panel Member, ``Summer Institute for Training on Biostatistics (SIBS),'' June 27, 2006.
+\label{SIBS2}
+
+\item NIH-NHLBI, Study Section Member, Clinical Trials Review Committee (CLTR),  August 2006--June 30, 2010.
+
+\item NIH-NHLBI, Special Emphasis Panel Member, ``National Registry of Genetically Triggered Thoracic Aortic Aneurysms and Cardiovascular
+Conditions (GenTAC),'' May 12, 2010.
+
+\item Pennsylvania   Department of Health and Oak Ridge Associated Universities, Special Emphasis Panel Member,
+``Pennsylvania Interim Performance Review,''  November 18, 2011.
+
+\item NIH, Special Emphasis Panel Member,  ZRG1 BBBP-V,
+``Alzheimer's Disease Pilot Clinical Trials,'' February 12, 2012.
+
+\item NIH-NHLBI, Special Emphasis Panel Member, 
+ZHL1 CSR-D, ``Biostatistics Training Summer Program (T15),'' September 6, 2012.
+
+\item NIH-NIDDK, Special Emphasis Panel Member,
+ZDK1 GRB-J, ``RFA DK13-008 USRDS Special Study Centers (U01),'' December 19, 2013.
+
+\item NIH-NHLBI, Special Emphasis Panel Member,
+ZHL1 CSR-H (F2), ``NHLBI Summer Training R25 Review,'' October 20, 2015.
+\label{SIBS3}
+
+\item NIH-NHLBI, Special Emphasis Panel Member,
+ZHL1 CSR-G (F2), ``CLTR SEP,'' December 1, 2016.
+
+\end{enumerate}
+
+\mysubsection{Editorial Boards}
+\begin{enumerate}
+\item \AR{Assistant Editor for Biostatistics, Journal of the American Geriatrics Society, 2016--2020}
+\end{enumerate}
+
+\markboth{EXTRAMURAL APPOINTMENTS AND SERVICE (Continued)}{Funding Agency Reviewer (Continued)}
+\markboth{EXTRAMURAL APPOINTMENTS AND SERVICE (Continued)}{\ }
+
+\mysubsection{Journal Reviewer}
+\begin{packed_enum}
+\item Stroke
+\item The American Statistician
+\item Bone
+\item Medical Image Analysis
+\item Osteoporosis International
+\item Journal of Bone and Mineral Research
+\item Controlled Clinical Trials
+\item Statistics in Medicine
+\item Archives of Internal Medicine
+\item JAMA Internal Medicine
+\item \AR{Journal of the American Geriatrics Society}
+\item \AR{Journal of Gerontology: Medical Sciences}
+\item \AR{Epidemiologic Methods}
+\item American Journal of Epidemiology
+\end{packed_enum}
+
+\markboth{EXTRAMURAL APPOINTMENTS AND SERVICE (Continued)}{Journal Reviewer (Continued)}
+
+\mysubsection{Advisory Boards}
+\begin{enumerate}
+
+\item DSMB Member, 2002--2010, Delivery Room Management Of Premature
+Infants At High Risk Of Respiratory Distress Syndrome: 
+The Delivery Room Management Trial, Vermont Oxford Network.
+%Calls before, one on 6/5/2006
+
+\item Special Reviewer, 2004--2006, 
+External advisory committee for the Epilepsy Program Project
+Grant at the University of Minnesota (Ilo Leppik, MD, PI).
+%April 16, 2004, April 22, 2005, and November 11, 2005, reviewed entire P50 in March 2006
+
+\item Protocol Review Committee Member, 2004--2005, 
+NIH-NIDDK Protocol Review Committee for Longitudinal
+Assessment of Bariatric Surgery.  U01DK066557.
+%December 16, 2004 for LABS-1
+%April 27, 2005 for LABS-2
+
+\item DSMB Member, 2005--2007, 
+Specialized Centers of Clinically Oriented Research (SCCOR) 
+on Molecular Determinants of Coronary Artery Disease
+at the Cleveland Clinic (Eric J. Topol, MD and then Edward Plow, PhD, PI).
+
+\item DSMB Member, 2006--2015, NIH-NIDDK Longitudinal Assessment of Bariatric Surgery,\\
+\url{http://www.niddklabs.org}.
+
+\item DSMB Chair, 2008--2014, Family Help Ontario (FHON):  A Randomized Trial,
+Funded by Canadian Institutes of Health Research (CIHR) (Patrick McGrath, PhD, PI).
+%\url{http://www.bringinghealthhome.com/team/}.
+
+\item External Expert Panel, 2012--2018, Assessing Long Term Outcomes of Living Donation (ALTOLD) study,
+NIH-NIDDK, R01DK066013.
+
+\item DSMB Member and Executive Secretary, 2013--2018, Depression Screening RCT in ACS patients: Quality of Life and Cost Outcomes (CODIACS QoL), funded by NIH-NHLBI (Karina Davidson, PhD, PI).  R01HL114924.
+
+\item \AR{DSMB Member, 2014--2019, Restoring Insulin Secretion (RISE), funded by NIH-NIDDK, U01DK094406.}
+%First meeting 3/18/2014, last meeting 7/15/2019
+
+\item \AR{DSMB Member, 2014--Present, Best Endovascular versus Best Surgical Therapy in Patients with Critical Limb Ischemia (BEST-CLI), funded by NIH-NHLBI, U01HL107407.}
+
+
+\item \AR{DSMB Member, 2016--Present, PReventing Osteoporosis Using Denosumab (PROUD), funded by NIA  R01AG052123.}
+
+\item Chair, 2016, Working group on ``Considerations for a Comparative Effectiveness Trial for Primary Prevention of Cardiovascular Disease using PCSK9 Inhibitors,'' PCORI.
+See \url{http://www.pcori.org/blog/comparing-treatments-lower-cholesterol} for the report which was published May 10, 2017.
+
+\item Member, ``Development of Comparator Groups in Behavioral and Social Science Clinical Trials,'' Office of Behavioral and Social Sciences Research, NIH.  Meeting April 12--13, 2017.  This  resulted in paper~\ref{ComparatorGroups} listed on page~\pageref{ComparatorGroups}.
+
+%\item DSMB Member, 2017--Present, ``Vaginal microbiome seeding and health outcomes in Cesarean-delivered neonates: a randomized controlled trial."
+%Vanguard funded by Commonsense, Inc.; grant will be submitted to NICHD for the rest of the study.
+%Resigned in 2018
+
+\item \AR{Member, 2018--Present, External Evaluation Committee, TrialNet, NIH-NIDDK.}
+
+\item \AR{DSMB Member, 2019--Present, Improving Quality of Life of Prostate Cancer Survivors with Androgen Deficiency, NIA  R01AG060539.}
+
+\item \AR{DSMB Member, 2019--Present, Enhancing Lifestyles for the Metabolic Syndrome (ELM) trial, Rush University Medical Center and the McGowan Charitable Fund.}
+
+\item \AR{DSMB Member, 2019--Present,  Atherosclerosis Intervention with Novel Tissue Selective Estrogen Complex Therapy trial, NIA R01AG058691.}
+
+\item \AR{Workshop participant, August 26--27, 2019, Coronary Artery Imaging: State of the Evidence for Primary Prevention, NHLBI.}
+This  resulted in paper~\ref{CACWorkshop} listed on page~\pageref{CACWorkshop}.
+
+\item \AR{DSMB Member, 2019--Present, Testosterone in Cancer Survivors (TCS) Trial, NCI R01CA239208.}
+
+\item Member, 2019--2020, Late Breaking Session Evaluation Committee (For the Scientific Sessions in November), American Heart Association.
+
+\item \AR{DSMB Member, 2020--Present, Innovative Approach to Geriatric Osteoporosis, NIA R01AG066825.}
+
+\item Workshop participant, February 19 and 26, 2021, Early Treatment in High Lifetime Risk of CVD:
+What Prevention Trials are Feasible and Will Change Clinical Practice?, NHLBI.
+
+
+
+\end{enumerate}
+
+\markboth{EXTRAMURAL APPOINTMENTS AND SERVICE (Continued)}{Advisory Boards (Continued)}
+
+
+%\mysubsection{Visiting Faculty Appointments}
+
+
+\mysection{PROFESSIONAL MEMBERSHIPS AND SERVICE}
+
+\mysubsection{Memberships}
+
+\begin{tabbing}
+\hspace{0.25in} \= 1991--Present \hspace{0.25in} \= \AR{Member, American Statistical Association}\\
+\> 1992--2002\> Member, Institute of Mathematical Statistics\\
+\> 1995--Present\> \AR{Member, Association of Clinical and Translational Statisticians
+(was the}\lf\hspace{0.25in}\AR{Association of General Clinical Research Center Statisticians until 2009)} \\
+\> 1999--2008\> Member, Eastern North American Region, International Biometric Society\\
+\> 2011--Present\> \AR{Member, Society for Clinical Trials}\\
+\end{tabbing}
+
+%\markboth{\ }{\ }
+%\markboth{PROFESSIONAL MEMBERSHIPS AND SERVICE}{}
+
+\mysubsection{Officer Positions Held}
+\label{OfficerPositionsHeld}
+\begin{tabbing}
+\hspace{0.25in} \= 1997--1998 \hspace{0.25in}\= President, Central Indiana Chapter, American Statistical Association\\
+\> 2000--2005\> President-Elect (2000-2001), President (2002--2003) and Past-President (2004--2005), 
+         \lf\hspace{0.25in} Association of GCRC Statisticians (now the Association of Clinical and \lf\hspace{0.25in} Translational Statisticians)\\
+\> 2002	\>Program Chair, Section on Teaching of Statistics in the Health Sciences, American \lf\hspace{0.25in} Statistical Association
+(This included membership in the committee planning \lf\hspace{0.25in} the  2002 Joint Statistical Meetings.)\\
+\> 2004--2006 \>Chair-Elect (2004), Chair (2005), and Past-Chair (2006), Section on Teaching of \lf \hspace{0.25in}
+Statistics in the Health Sciences, American Statistical Association\\
+\> 2010	\>Program Chair, Section on Statistical Consulting, American Statistical Association \lf\hspace{0.25in}
+(This included membership in the committee 
+planning the 2010 Joint Statistical \lf\hspace{0.25in} Meetings.)\\
+\> 2013--2015 \>Chair-Elect (2013), Chair (2014), and Past-Chair (2015), Section on Statistical\lf\hspace{0.25in}
+ Consulting, American Statistical Association\\
+ \>2018--2021\>\AR{Leadership Team, 
+ North American Biostatistics Chairs Committee (Co-Chair Elect}\lf\hspace{0.25in}
+ 	 \AR{2018--19, Co-Chair 2019--20, and Past Co-Chair 2020--21)} \\
+\>2020--2023\>\AR{Region 4 \& 5 Representative, Caucus for Academic Representatives, American}\lf\hspace{0.25in} \AR{Statistical Association}\\
+%My term is 9/1/2020-8/31/2023
+\end{tabbing}
+
+\markboth{PROFESSIONAL MEMBERSHIPS AND SERVICE (Continued)}{Officer Positions Held (Continued)}
+
+\mysubsection{Sessions and Meetings Organized}
+\label{SessionsOrganized}
+
+\begin{tabbing}
+\hspace{0.25in} \= 2002 \hspace{0.25in} \= Association of GCRC Statisticians Annual Meeting, New York, 
+August 10--11, 2002.\\
+\>2002\>``Teaching Outside of the Classroom (Invited Session),'' Section on Teaching of Statistics
+\lf\hspace{0.25in} in the Health Sciences, American Statistical Association, New York, August 13, 2002.\\
+
+\> 2003 \>Association of GCRC Statisticians Annual Meeting, San Francisco, August 2--3, 2003.\\
+
+\>2007\> ``Summer Institutes for Training in Biostatistics (SIBS): Addressing the Biostatistician \lf\hspace{0.25in}
+Shortage (Invited Panel),''
+Section on Teaching of Statistics in the Health Sciences, \lf\hspace{0.25in}
+American Statistical Association, Salt Lake City, July 30, 2007.\\
+\end{tabbing}
+
+
+
+\mysection{HONORS AND AWARDS}
+\begin{tabbing}
+\hspace{0.25in} \= 1991\phantom{--Present} \hspace{0.25in} \=  Graduated \emph{summa cum laude\/}, Washington University\\
+\>1991\>Phi Beta Kappa, Washington University\\
+\>1991\>Omicron Delta Kappa annual prize in Scholarship, Washington University\\
+\>1991\>Honorable mention, National Science Foundation Fellowship\\
+\>1991--1994\>McCormick Fellowship, The University of Chicago\\
+\>1991--1993\>Department of Education Fellowship\\
+\>1992--1993\> The University of Chicago Statistics Department 2nd prize for consulting\\
+\>1999\>Best Invited Paper (with Amita K. Manatunga), Section on Teaching of\lf Statistics in the Health Sciences, Joint Statistical Meetings, Baltimore, MD.\\
+\>2011\>Wake Forest School of Medicine \emph{Team Science Award} presented to the ACCORD\lf Study Team\\
+\>2016\>Clinical Research Forum's Top 10 Clinical Research Achievement Award and the\lf Herbert Pardes Clinical Excellence Research Award ($1^{st}$ place), awarded to the\lf SPRINT Research Group (see paper \ref{SPRINTPrimary} on page \pageref{SPRINTPrimary}).\\
+\>2017\>Wake Forest School of Medicine \emph{Team Science Award} presented to the SPRINT\lf Study Team\\
+\>2018\>Wake Forest School of Medicine \emph{Team Science Award} presented to the LIFE\lf Study Team\\
+\end{tabbing}
+
+%\markboth{HONORS AND AWARDS}{\ }
+%\markboth{\ }{\ }
+
+
+%\mysection{PUBLIC OUTREACH}
+
+
+\mysection{PROFESSIONAL INTERESTS {\normalfont\emph{(Last updated 2020-09-06)}}}
+{\setlength\parindent{1cm}
+
+\hskip 1cm I am a Professor in and Chair of the Department of Biostatistics and Data Science in the Division of Public Health Sciences at Wake Forest School of Medicine (WFSM). After receiving my PhD in Statistics at the University of Chicago, I spent six years in the Division of Biostatistics at the Indiana University School of Medicine and joined the WFSM faculty in 2001. At Indiana, I was the PI of the Biostatistics Core of the Center for Enhancing Quality of Life in Chronic Illness, which was funded by NIH-NINR. I am a past-president of the Association of GCRC Statisticians (now the Association of Clinical and Translational Statisticians) and have served as Section Chair and Program Chair for two sections of the American Statistical Association (the Section on Statistical Consulting and the Section on Teaching Statistics in the Health Sciences).
+Additionally, I am serving on the Leadership Team for the North American Biostatistics Chairs Committee where I served as Co-Chair Elect (2018--2019), Co-Chair (2019--2020), and Past Co-Chair (2020--2021) and I am the Region 4 \& 5 Representative to the Caucus of Academic Representatives for the American Statistical Association.
+
+My current work is primarily in coordinating centers, particularly for large NIH-funded clinical trials. I am currently an MPI (and PI of the data coordinating center (DCC)) for PRagmatic EValuation of evENTs And Benefits of Lipid-lowering in oldEr adults (PREVENTABLE, 1U19AG065188, N=20,000) and PI of the DCC for PROmote weight loss in obese PAD patients to preVEnt mobility Loss: The PROVE Trial (1U24HL141732, N=212). I direct the Biostatistics, Epidemiology, and Research Design (BERD) program in our CTSA. I previously served as MPI for ENabling Reduction of low-Grade Inflammation in SEniors) Pilot Study (ENRGISE, 5U01AG050499) and worked on the Systolic Pressure Intervention Trial (SPRINT, Co-I and chair of the Design and Analysis Subcommittee, NHLBI), Action to Control Cardiovascular Risk in Diabetes (ACCORD, Co-I, NHLBI), the ACCORD Eye Study (PI of coordinating center, NEI), the Lifestyle Interventions and Independence for Elders (LIFE) Study (Co-I, NIA), and the COMprehensive Post-Acute Stroke Services Study (COMPASS, Co-I, PCORI).
+
+I served as a faculty member in 2004-2019 for the NIH Office of Behavioral and Social Sciences Research Summer Institute on Design and Conduct of Randomized Clinical Trials Involving Behavioral Interventions, served a term as a member of the Clinical Trials Review Committee for NHLBI (CLTR), and serve on several DSMBs. My methodological work includes work in longitudinal data, study design, quality control, and genetic epidemiology.
+}
+
+
+
+\mysection{GRANTS}
+\mysubsection{Current Grants}
+
+%\mysection{GRANTS--CURRENT}
+\begin{enumerate}
+
+\markboth{PROFESSIONAL INTERESTS (Continued)}{\ }
+%\markboth{\ }{\ }
+
+
+
+
+ 
+ \item 5R01AG050725-02 (Brian Focht) \hfill 4/1/2016--3/31/2021\\
+NIH-NIA\\
+{\bfseries Comprehensive Lifestyle Intervention Program for Knee Osteoarthritis (OA) Patients (CLIP-OA)}\\
+CLIP-OA is a two-arm, 24 month randomized controlled trial, in collaboration with the Central Ohio Arthritis Foundation (AF), to determine the comparable efficacy of a community- based Exercise and Dietary Weight Loss (EX+DWL) program versus the AF's Walk With Ease Exercise (EX) program which is now the focus of AF's self- management programming, in producing clinically meaningful improvements in relevant OA outcomes among older overweight or obese knee OA patients.   WFSM is managing the data and performing all statistical analyses.  This provides 6\% of my salary.\\
+ {\bfseries Role:  Co-Investigator and PI of WFSM subcontract.}
+ 
+ 
+\item 
+5R01HL144112 (Jarret Berry) \hfill 8/15/2018--4/30/2021\\
+NIH-NHLBI\\
+{\bfseries Biomarkers of Myocardial Injury, Blood Pressure, and Cardiovascular Outcomes in SPRINT}\\
+This is an analysis-only ancillary study to SPRINT.  The goal is to assess whether biomarkers of myocardial injury can be used to identify people who would receive the greatest benefit from intensive BP treatment.  This provides 5\% of my salary.\\
+{\bfseries Role:  Co-Investigator and PI of WFSM subcontract.}
+
+
+\item 1U24HL141732 (Walter Ambrosius)  \hfill 6/10/2019--5/31/2025\\
+NIH-NHLBI\\
+{\bfseries The PROmote weight loss in obese PAD patients to preVEnt mobility loss Trial (The PROVE Trial) Data Coordinating Center}\\
+We are serving as the data coordinating center for PROVE.  
+We will be randomizing 212 participants with peripheral artery disease (PAD) with BMI $>28\ \text{kg/m}^2$  to one of two conditions:  weight loss and exercise (WL+EX) or exercise alone (EX).  Both groups  will receive an exercise intervention as that is part of standard-of-care therapy for PAD.  This  provides 10\% of my salary. \\
+ {\bfseries Role:  Principal Investigator.}
+
+
+\item 2UL1TR001420 (Don McClain)  \hfill 7/1/2019--6/30/2024\\
+NIH-NCATS\\
+{\bfseries Wake Forest Clinical and Translational Science Award (CTSA)}\\
+The mission of the Wake Forest Translational Science Institute (TSI) is to provide an innovative, efficient, and sustainable research infrastructure to accelerate WF's transformation, and thus speed the translation of discoveries to improve health.  The CTSA award will synergize the fundamental positive changes that the TSI has already brought to bear at Wake Forest Baptist Health.
+This  provides 15\% of my salary. \\
+ {\bfseries Role:  Director of Biostatistics, Epidemiology, and Research Design (BERD).}
+
+
+\item\label{PREVENTABLE}
+\AR{1U19AG065188 (KP Alexander, WT Ambrosius, AF Hernandez, JD Williamson, MPIs) \hfill 9/30/2019--8/31/2026\\
+NIH-NIA}\\
+{\bfseries \AR{PRagmatic EValuation of evENTs And Benefits of Lipid-lowering in oldEr adults (PREVENTABLE)}}\\
+\AR{PREVENTABLE is a 20,000 participant pragmatic randomized trial comparing 40 mg of atorvastatin vs. placebo on a combined primary outcome of all-cause mortality, dementia, and persistent disability in older adults over 75 years of age without prior cardiovascular disease.
+The total cost of PREVENTABLE is approximately \$90 million.
+This  provides 30\% of my salary.} \\
+ {\bfseries \AR{Role:  MPI, PI of the Data Coordinating Center.}}
+
+
+
+
+\item 5R33AG061456 (Kirkland, Kritchevsky, Kuchel, and Tchkonia, MPIs) \hfill 2/1/2019--11/30/2023
+NIH-NIA\\
+{\bfseries Translational Geroscience Network}\\
+We propose a Translational Geroscience Network (TGN) as a national resource starting with a few centers to work together using common measures and protocols in a network to conduct complementary, small-scale, proof-of- concept ``use case'' clinical trials (2-3 per year) using re-purposed drugs for which preclinical or clinical data already exist, such as a multicenter trial of senolytics for idiopathic pulmonary fibrosis, a trial of a different drug to reduce senescent cell burden and alleviate frailty in older women, and a trial of metformin to enhance immune responses to influenza vaccination. We will streamline and harmonize approvals, recruitment, sample collection, SOPs, and analytic procedures across the TGN. We will use standard reference analytical techniques, establish statistical and data management support, and develop a biobanking and repository network.
+This  provides 4\% of my salary
+\\
+ {\bfseries Role:  Co-I, Co-Chair of the Data Management and Statistical Analysis Subcommittee.}
+
+\item In addition to the above grants, 30\% of my salary is covered as Chair of the Department of Biostatistics and Data Science.
+
+\markboth{GRANTS (Continued)}{Current Grants (Continued)}
+
+\end{enumerate}
+
+
+\mysubsection{Pending Grants}
+
+\begin{enumerate}
+
+\item Available upon request.
+
+%\markboth{GRANTS--PENDING (Continued)}{\ }
+
+%\item Cooperative Lifestyle Intervention Program-Osteoarthritis (CLIP-T2DM), Marsh/Bertoni, %NHLBI, 9/1/2015--8/31/2010.
+%This would provide 15/10/10/10/15\% of my salary.  Role:  Co-Investigator.
+
+%\item Cooperative Lifestyle Intervention Program-Osteoarthritis (CLIP-OA), Focht/Rejeski, NHLBI, 4/1/2016--3/31/2021.
+%This would provide 15/10/10/10/15\% of my salary.  Role:  Co-Investigator.
+
+%\item {\Huge Add TIC, LIFE-Kidney resubmission, ENRGISE-COG.}
+
+
+\begin{comment}
+\item  \label{VIEW}
+R01-HL114548 (Submitted October 5, 2011) (Walter Ambrosius)\hfill 7/1/2012--6/30/2020\\
+NIH-NHLBI\\
+{\bfseries
+Value of Imaging in Enhancing the Wellness of Your Heart (VIEW) Trial --- Data Coordinating Center}\\
+The Value of Imaging in Enhancing the Wellness of Your Heart (VIEW) trial is designed as an RCT in 30,000 participants, men 45 to $<$70 years old and women 55 to $<$80 years old, at ``low'' (5\% to $<$10\% ten-year) risk of future CHD events based on Framingham risk score. We will evaluate whether coronary artery calcium testing leads to improved patient outcomes when coupled with atorvastatin therapy in participants found to have subclinical atherosclerosis by CT. This effectiveness trial will track primary outcomes consisting of time until a major CVD composite of non-fatal M), resuscitated cardiac arrest, probable or definite angina with revascularization, non-fatal stroke (not TIA), or death due to any CVD (MI, stroke, other CVD). 
+Entire project direct costs:  \$31,641,578. This would provide 50\% of my salary.\\
+{\bfseries Role:  Principal Investigator}
+\end{comment}
+
+
+\end{enumerate}
+
+%\mysection{PAST GRANT HISTORY}
+\mysubsection{Past Grant History---National Institutes of Health}
+\begin{enumerate}
+
+\markboth{GRANTS (Continued)}{\ }
+
+\item R01-HS007719 (Clement J. McDonald) \hfill 7/1/1994--6/30/1998\\
+NIH-AHRQ
+{\bfseries Computer Records, Guidelines, 
+Quality \& Efficient Care}\\
+Entire project direct cost: \$1,835,893, Indirect Cost: \$460,650.
+\\ {\bfseries Role:  Biostatistician}
+
+\item M01-RR000750 (Doris H. Merritt) \hfill 12/1/1994--11/30/1999\\
+NIH-NCRR\\
+{\bfseries General Clinical Research Center}\\
+Entire project total cost: \$9,548,232.  \\ 
+{\bfseries Role:  Biostatistician}
+
+\item R01-AG013408 (Munro Peacock) \hfill 9/30/1995--8/31/1999\\
+NIH-NIA\\
+{\bfseries Comparison of Bone Strength and Muscle 
+Strength at Hip}\\
+Entire project total cost:  \$514,513. \\ 
+{\bfseries Role:  Biostatistician}
+
+\markboth{GRANTS (Continued)}{Past Grant History---NIH (Continued)}
+
+
+\item P01-AG005793 (C. Conrad Johnston, Jr.) \hfill 9/30/1995--9/29/2000\\
+NIH-NIA\\
+{\bfseries Some Determinants of Bone Mass in the Elderly}\\
+Entire project total cost: \$5,065,753.
+\\ {\bfseries Role:  Co-Investigator}
+
+\item R01-HL054062 (Robert Tepper)  \hfill 3/1/1996--2/29/2000\\
+NIH-NHLBI\\
+{\bfseries Growth of Airways and Lung Parenchyma in Normal Infants}\\
+Entire Project Total Cost:  \$2,393,652.
+\\ {\bfseries Role:  Biostatistician}
+
+\item R01-HL035795 (J. Howard Pratt) \hfill 7/1/1996--6/30/2001\\
+NIH-NHLBI\\
+{\bfseries Blood Pressure Control in 
+Juveniles - A Longitudinal Study}\\
+Entire Project Total Cost:  \$2,114,045.  
+%1999--2000 Direct Costs:  \$263,881. 
+\\ {\bfseries Role:  Co-Investigator}
+
+\item R01-AI038968 (Gregory Zimet)  \hfill 1/1/1997--12/31/1999\\
+NIH-NIAID\\
+{\bfseries Hepatitis B Vaccine Acceptance among 
+STD Patients}\\
+Total Cost \$512,974.
+\\ {\bfseries Role:  Co-Investigator}
+
+\item R01-NR004536 (Joan K. Austin) \hfill 9/1/1997--5/31/2002\\
+NIH-NINR\\
+{\bfseries Epilepsy Youth Outcomes:  Neurological 
+and Family Factors}\\
+1999-2000 Direct Costs:  \$124,000. \\ {\bfseries Role:  Biostatistician}
+
+\item N01-HC95178 (Robert P. Byington)\hfill 9/30/1999--12/31/2012\\
+NIH-NHLBI\\
+{\bfseries
+Action to Control Cardiovascular Risk in Diabetes--Coordinating Center (ACCORD)}\\
+Entire project direct costs:  \$23,946,619. This provided 10\% of my salary starting in about 2002 or 2003.\\
+{\bfseries Role:  Co-Investigator}
+
+
+\item M01-RR000750 (D. Craig Brater)  \hfill 12/1/1999--11/30/2004\\
+NIH-NCRR\\
+{\bfseries General Clinical Research Center}\\
+ Total Costs: \$12,635,350.
+%  1999--2000 Direct Costs:  \$1,796,975.
+\\ {\bfseries Role:  Biostatistician}
+
+\markboth{GRANTS (Continued)}{Past Grant History--National Institutes of Health (Continued)}
+
+\item NIH, Linda DiMeglio, MD, Bisphosphonate Therapy for Osteogenesis Imperfecta.  
+This was a Clinical Associate Physician (CAP) award through the GCRC. 
+\\ {\bfseries Role:  Biostatistician}
+
+\item P30-NR005035 (Joan K. Austin) \hfill 2/15/2000--1/31/2005\\
+NIH-NINR\\
+{\bfseries Center for Enhancing Quality of Life in Chronic Illness}\\
+2000--2001 Direct Costs:  \$193,201.
+\\ {\bfseries Role:  Principal Investigator of Biostatistics Support Core}
+
+\item R37-NS022416 (Joan K. Austin) \hfill 3/1/2000--2/28/2005\\
+{\bfseries Childhood Epilepsy:  Factors Affecting Adaptation}
+\\ {\bfseries Role:  Biostatistician}
+
+\item R01-HL067360 (J. Howard Pratt)  \hfill 6/5/2000--5/31/2004\\
+NIH-NHLBI\\
+{\bfseries Low-Renin Hypertension in African Americans}\\
+Year 1 Direct Costs:  \$225,000.
+\\ {\bfseries Role:  Co-Investigator}
+
+\item P01-AG018397 (Michael Econs) \hfill 7/1/2000--6/30/2005\\
+NIH-NIA\\
+{\bfseries Genetic Determinants of Bone Fragility}\\
+Year 1 Direct Costs:  \$1,512,978.
+\\ {\bfseries Role:  Biostatistician}
+
+\item M01-RR007122 (William Applegate)  \hfill 3/1/2001--2/28/2006\\
+{\bfseries General Clinical Research Center}\\
+2003--2004 Direct Costs:  \$3,013,024.\\
+%This provided 25\% of my salary.\\
+{\bfseries Role:  Biostatistician}
+
+\item R01-AG018702 (Marco Pahor) \hfill 8/15/2001--7/31/2004\\
+NIH-NIA\\
+{\bfseries Gene Polymorphisms and Prevention of Disability}\\
+{\bfseries Role:  Biostatistician}
+
+\item R01-HL068901 (Marco Pahor) \hfill 2/1/2002--1/31/2005\\
+NIH-NHLBI\\
+{\bfseries ACE Inhibition and Novel Cardiovascular Risk Factors}\\
+2002--2003 Direct Costs:  \$1,477,022.\\
+{\bfseries Role:  Co-Investigator}
+
+
+
+\item P30-AG021332 (Marco Pahor)  \hfill 9/30/2002--6/30/2007\\
+NIH-NIA\\
+{\bfseries Claude D. Pepper Older Americans Independence Center}\\
+      2002--2003 Direct Costs:  \$999,265.\\
+{\bfseries Role:  Co-Leader, Biostatistics and Data Management Core}
+
+
+\item N01-HC95178 (Walter T. Ambrosius) \hfill 7/1/2003--12/31/2012\\
+NIH-NEI\\
+{\bfseries ACCORD Eye Study--Coordinating Center}\\
+Entire project direct costs:  \$3,359,677. This provided 35\% of my salary.\\
+{\bfseries Role:  Principal Investigator of the sub study coordinating center}
+
+
+\item  
+\label{CLIPGrant1}
+R01-HL076441 (W. Jack Rejeski) \hfill 8/1/2005--4/30/2011\\
+NIH-NHLBI\\
+{\bfseries Cooperative Lifestyle Intervention Program (CLIP)}\\
+%This is a subcontract with Wake Forest University Reynolda Campus.  The aims of the study are 
+%to compare the effects of the three treatment arms on 18-month change in distance walked 
+%during a six-minute walk test, a reliable and valid measure of mobility disability.
+W. Jack Rejeski, Reynolda Campus, is the PI.
+Entire project direct costs: \$2,341,517.
+This provided 10\% of my salary.\\
+{\bfseries Role:  Co-Investigator, PI of WFSM subcontract}
+
+\item R01-DK069514 (Ann Schwartz) \hfill 9/15/2005--6/30/2011\\
+NIH-NIDDK\\
+{\bfseries Intensive Glycemic Control and Skeletal Health (An ACCORD Substudy)}\\
+%In 7,145 of 
+%the ACCORD participants, fractures and falls will be determined by self-report every 
+%12 months, with reported fractures adjudicated centrally using medical records.  
+%Change in bone mineral density at the hip and lumbar spine will be determined in a 
+%subsample (N=130) using dual energy absorptiometry (DEXA).
+Ann Schwartz, University of California, San Francisco, is the PI.
+Entire project direct costs (subcontract): \$208,233. 
+This provided 5\% of my salary.\\
+{\bfseries Role:  Co-Investigator, PI of WFSM subcontract}
+
+\item M01-RR007122 (William Applegate) \hfill 3/1/2006--2/28/2011\\
+\label{GCRCGrant}
+NIH-NCRR\\
+{\bfseries General Clinical Research Center}\\
+%The GCRC is designed to:  1) promote, support, and enhance excellence in clinical 
+%research; 2) provide a nucleus to develop and strengthen research programs and 
+%educational activities; 3) facilitate interactions between physician scientists 
+%and basic scientists; 4) stimulate junior faculty and students to include clinical 
+%research in their career objectives; and 5) serve as an educational resource for 
+%clinical research.
+Entire project direct costs:  \$16,832,645. This provided 5\% of my salary most recently.
+Please note that it provided 25\% of my salary until I voluntarily gave up 20\% to become
+Director of the Design and Analysis Unit.\\
+{\bfseries Role:  Biostatistician}
+
+
+
+
+
+\item R43-DK062518 (Patrick Walker) \hfill 10/1/2007--2/28/2008\\
+NIH-NIDDK\\
+{\bfseries Predicting Microalbuminuria in Type 2 Diabetes (An ACCORD Substudy)}\\
+%In 600 of the ACCORD participants, urinary catalytic iron and markers of oxidative stress will
+%be measured to test the hypothesis that these markers precide the onset of 
+%diabetic microabuminuria.  The long-term goal is to evaluate the utility of increased 
+%urinary catalytic iron and a marker of oxidative stress to predict the development of 
+%microalbuminuria in patients with Type 2 diabetes. 
+%Patrick Walker, Nephropathology Associates, is the PI.
+Entire project total costs (subcontract):  \$15,246. This provided 5\% of my salary.\\
+{\bfseries Role:  Principal Investigator of subcontract}
+%Subcontract is actually from Tulane which is a subcontract to Nephropathology Associates.
+
+\item Translational Science Institute \hfill 10/1/2007--6/30/2009\\
+Wake Forest School of Medicine\\
+I served as Co-Director of the 
+Research Design, Epidemiology, Biostatistics, and Clinical Research Ethics Program
+of the TSI.  This provided 2.5\% of my salary.
+
+\item U01-AG022376 (Marco Pahor) \hfill 9/1/2009--8/31/2015\\
+NIA\\
+{\bfseries Lifestyle Interventions and Independence for Elders (LIFE)}\\
+This is a subcontract with the University of Florida.  Wake Forest University 
+ serves as the Data Management, Analysis and Quality Control Center for 
+this study. The major goal of this project is to provide definite evidence 
+in the use of physical exercise to prevent physical and mobility disability in 
+older persons.
+This provided 7 to 10\% of my salary.\\
+{\bfseries Role:  Co-Investigator}
+
+
+\item HHSN268200900040C (David Reboussin)  \hfill  9/14/2009--3/22/2019\\
+NIH-NHLBI\\
+{\bfseries Systolic Blood Pressure Intervention Trial (SPRINT) Coordinating Center}\\
+This trial is testing the effects of intensive SBP lowering compared with 
+standard lowering:  a comparison of a SBP goal of $<$120 mmHg versus $<$140 mmHg 
+for a SBP difference of 10-15 mm Hg between two randomized groups.  
+The primary endpoint is incident CVD events identified over a 5 year follow-up.
+This provided 20\% of my salary.\\
+{\bfseries Role:  Co-Investigator}
+
+
+\item N01-HC95178 (Robert P. Byington)\hfill 1/1/2011--4/30/2015\\
+NIH-NHLBI\\
+{\bfseries
+Action to Control Cardiovascular Risk in Diabetes (ACCORD) Follow-Up Study--Coordinating Center (ACCORDION)}\\
+ACCORDION is an observational follow-up of participants who were recruited, treated, and followed in the
+ACCORD trial.
+Entire project direct costs:  \$23,946,619. This provided 5 to 15\% of my salary.\\
+{\bfseries Role:  Co-Investigator}
+
+\item R01-HL107241 (Mark Supiano)\hfill 9/1/2011--6/30/2017\\
+NIH-NHLBI\\
+{\bfseries
+SPRINT Pulse Wave Velocity Ancillary Study}\\
+This ancillary study to the Systolic Blood Pressure Intervention Trial (SPRINT) study will investigate potentially useful clinical measures and surrogate biomarkers of vascular stiffness to determine if measures of vascular stiffness should be should be considered as a therapeutic target over and above the reduced peripheral systolic blood pressure that will be achieved in the intensive treatment arm of the SPRINT study.
+Entire subcontract direct costs:  \$73,835. This provided 5\% of my salary.\\
+{\bfseries Role:  Co-Investigator, PI of WFSM subcontract}
+
+\begin{comment}
+\item U01-AG022376 (Marco Pahor, Ambrosius PI of WFSM subcontract)
+\hfill 9/1/2009--8/31/2015\\
+NHLBI\\
+{\bfseries Physical Exercise to Prevent Disability (LIFE) NHLBI Respirometry Supplement}\\
+This is a subcontract with the University of Florida
+to add respirometry measures to LIFE.
+This provided 3.5\% of my salary.\\
+{\bfseries Role:  Co-Investigator, PI of WFSM subcontract}
+\end{comment}
+
+
+
+\item N01-HC95178 (Walter T. Ambrosius)\hfill 12/20/2011--4/30/2015\\
+NIH-NHLBI\\
+{\bfseries
+Action to Control Cardiovascular Risk in Diabetes (ACCORD) Follow-Up Study--Eye Substudy Coordinating Center (ACCORDION-Eye)}\\
+ACCORDION-Eye adds retinal photographs at 8-years to ACCORDION.
+Entire project direct costs:  \$2,232,990. This provided 4\% of my salary.  \\
+{\bfseries Role:  Principal Investigator}
+
+\item R18-HL076441 (Walter ``Jack'' Rejeski and Anthony P. Marsh)\hfill 3/1/2012--2/28/2017\\
+NIH-NHLBI\\
+{\bfseries  Cooperative Lifestyle Intervention Program-II (CLIP-II)}\\
+%Building on CLIP (\ref{CLIPGrant1} on page \pageref{CLIPGrant1}), we now propose to increase the translational significance of our interventions by having them delivered exclusively by community partners with our staff as “trainers and advisers” for desired behavior change. In addition, this study will provide the first large scale randomized controlled clinical trial to evaluate the effects of diet-induced weight loss (WL) on mobility in obese, older adults with CVD or the MetS as compared to WL combined with physical activity. The dual primary outcomes will be the 400MWT and muscle strength.
+Entire subcontract direct costs:  \$426,826. This provided 2\% of my salary.  \\
+{\bfseries Role:  Co-Investigator, PI of WFSM subcontract}
+
+\item 1R01DK098234
+(Joachim ``Joe'' Ix and Michael Schlipak) \hfill 1/1/2014--12/31/2017\\
+NIH-NIDDK\\
+{\bfseries Kidney Tubular Damage and Dysfunction Identify a Novel Axis of 
+Chronic Kidney Disease}\\
+%This ancillary study to the Systolic Blood Pressure Intervention Trial (SPRINT) study will investigate the hypothesis that kidney tubular disfunction are measurable contributors to CKD pathogenesis and prognosis. 
+%Dysfunction of the kidney tubules will be assessed by three indices: (1) renal tubule resistance to hormone actions of FGF23 and PTH; (2) acid/base homeostasis; and (3) urine protein reabsorptive capacity.
+% Among 2,566 SPRINT participants with eGFR $<60$ml/min/1.73 ${\rm m}^2$ at baseline, we will: (1) determine the association of kidney tubular dysfunction and injury with risk of CVD events, (2) determine the association of kidney tubular dysfunction and injury with CKD progression, and (3) determine whether randomization to intensive blood pressure management arm of the trial slows progression of kidney tubular dysfunction and injury over time compared with standard blood pressure management.\\
+This is an ancillary study to the Systolic Blood Pressure Intervention Trial (SPRINT) study.  
+%The goals of this study are to examine the association of markers of kidney tubule dysfunction and damage with cardiovascular disease risk, risk of progression of kidney disease, and lastly to examine the effects of intensive vs. standard blood pressure control on changes in the markers of kidney tubule dysfunction and damage over time.\\
+Entire project direct costs:  \$1,994,764. This provided 5\% of my salary. \\
+{\bfseries Role:  Co-Investigator, PI of WFSM subcontract}
+
+\item 1UL1TR001420 (Don McClain)  \hfill 8/13/2015--6/30/2019\\
+NIH-NCATS\\
+{\bfseries Wake Forest Clinical and Translational Science Award (CTSA)}\\
+The mission of the Wake Forest Translational Science Institute (TSI) is to provide an innovative, efficient, and sustainable research infrastructure to accelerate WF's transformation, and thus speed the translation of discoveries to improve health.  The CTSA award will synergize the fundamental positive changes that the TSI has already brought to bear at Wake Forest Baptist Health.\\
+This  provided 10\% of my salary. \\
+ {\bfseries Role:  Director of Biostatistics, Epidemiology, and 
+Research Design (BERD).}
+
+\item PCS-11403-14531 (Pamela Duncan) \hfill 7/1/2015--6/30/2020\\
+Patient Centered Outcomes Research Institute (PCORI)\\
+{\bfseries COMprehensive Post-Acute Stroke Services (COMPASS)}\\
+The goal of this pragmatic cluster randomized trial of 50 NC hospitals is to determine the effectiveness of Comprehensive post-acute stroke services (COMPASS), a patient-centered intervention uniting transitional care management services and elements of early supported discharge in stroke patients discharged directly home.\\
+This  provided 5\% of my salary. \\
+ {\bfseries Role:  Co-Investigator.}
+
+
+\item 1U01AG050499
+(Walter T. Ambrosius and Marco Pahor, Multiple PIs)
+\hfill 9/1/2015--6/30/2019 \\
+NIH-NIA\\
+{\bfseries ENabling Reduction of low-Grade Inflammation in SEniors (ENRGISE)} \\
+This is a 300-participant pilot study in response to \href{http://grants.nih.gov/grants/guide/rfa-files/RFA-AG-15-006.html}{RFA-AG-15-006}.  We will examine losartan and fish oil $(\Omega-3$ as the active ingredient) in hopes of reducing systemic inflammation (IL-6) and examine the relationship between IL-6 and walking speed.  The ultimate goal will
+be to test one or both of these interventions in a full-scale trial to prevent mobility disability.
+Wake Forest will serve as the Data Management, Analysis and Quality Control Center for ENRGISE.\\
+Entire project direct costs:  \$4,757,421.
+This provided 12\% of my salary. \\
+{\bfseries Role:  Multiple PI (with Marco Pahor at the University of Florida).}
+
+
+\item  PCORI-CDRD-1306-04608  (Kenneth D. Mandl)    \hfill 10/13/2015--10/12/2018 \\
+Patient Centered Outcomes Research Institute (PCORI)\\
+{\bfseries Scalable Collaborative Infrastructure for a Learning Healthcare System (SCILHS)}\\
+%SCILHS seeks to improve healthcare and advance medical knowledge by instrumenting hospitals and health systems using a common clinical and translational research IT framework and by giving weight to patient experience and goals all along the research continuum. SCILHS engages patients as collaborators to build on an existing network of hospitals and health systems that are standardized on a clinical and translational research IT and regulatory framework. SCILHS is a step toward answering the Institute of Medicine’s call for a learning healthcare system that generates and applies “the best evidence for the collaborative healthcare choices of each patient and provider; to drive the process of discovery as a natural outgrowth of patient care; and to ensure innovation, quality, safety, and value in healthcare.  Regulatory: A senior member of the Wake Forest University Health Sciences Human Subject Protections Office and/or Chair/Vice Chair of our IRB will participate actively in the development and streamlining of policies and processes that will enable SCILHS-wide comparative effectiveness research as well as ways to streaming consent of patients for contact for research.  This is a subcontract from Harvard University School of Medicine.  Entire project direct costs:  \$290,600.   
+This provided 1\% of my salary.
+
+
+\item 1U24AR071113 (M Pahor, ME Miller, WJ Rejeski, \& RP Tracy, MPIs) \hfill 12/6/2016--11/30/2022\\
+NIH-Office of the Director\\
+{\bfseries MoTrPAC Consortium Coordinating Center}\\
+The University of Florida, WFSM, Wake Forest Reynolda, and the University of Vermont have joined forces to serve as the Consortium Coordinating Center for the Molecular Transducers of Physical Activity Consortium (MoTrPAC).  The goals of MoTrPAC are to utilize clinical and animal studies supported 
+by bioinformatics and chemical analyses will achieve the Molecular Transducers of Physical Activity Consortium (MoTrPAC) goals of assessing the molecular changes that occur in response to physical activity.
+This provided 20\% of my salary until September 2019 and 10\% of my salary for October 2019 before I had to give this up because
+PREVENTABLE (see project~\ref{PREVENTABLE} on page~\pageref{PREVENTABLE}) got funded.\\
+ {\bfseries Role:  Co-Investigator.}
+
+
+\end{enumerate}
+
+\mysubsection{Past Grant History---Professional Societies}
+\begin{enumerate}
+\item  (Matthew S. Johnson)  \hfill 5/1/1997--4/30/1998\\
+Cardiovascular and Interventional Radiology Research and Education Foundation (CIRREF) \\
+{\bfseries Percutaneous 
+periadventitial heparin delivery via crosslinked liquid polymer}\\
+Total Cost \$25,000.  \\ {\bfseries Role:  Biostatistician}
+
+\item (Joseph McMahon)  \hfill 7/1/1999--6/30/2001\\
+American Lung Association (ALA)\\
+{\bfseries Patient Preferences for Obstructive Sleep Apnea Treatment}\\
+ Year 1 Direct Cost: \$25,000.
+\\ {\bfseries Role:  Biostatistician}
+
+\item (David C. Goff) \hfill 2000--2003\\
+Association for Prevention Teaching and Research (ATPM)\\
+{\bfseries The North Carolina Achieving Cardiac Excellence Project}\\
+	2002--2003 Direct Costs:  \$130,081.  \\
+%This provided 10\% of my salary.\\
+	{\bfseries Role:  Co-Investigator}
+
+%\markboth{GRANTS--PAST GRANT HISTORY (Continued)}{Professional Societies (Continued)}
+
+\end{enumerate}
+
+\mysubsection{Past Grant History---Industry/Professional Society}
+\begin{enumerate}
+\item  
+(Richard Gunderman)\\
+General Electric/Association of University Radiologists\\
+{\bfseries Role:  Biostatistician}
+\end{enumerate}
+
+\mysubsection{Past Grant History---Industry}
+\begin{enumerate}
+\item
+(Sharon Moe)\\
+Abbott Laboratories\\
+{\bfseries
+An evaluation of the effects of vitamin D 
+supplementation on immune system parameters in hemodialysis patients with low parathyroid 
+hormone levels.}
+\\ {\bfseries Role:  Biostatistician}
+\end{enumerate}
+
+\mysubsection{Past Grant History---Intramural}
+\begin{enumerate}
+
+\item (Walter Ambrosius, Janet Tooze, Carol Shively, and Shellie Ellis)\hfill 4/1/2008--6/30/2008\\
+Wake Forest University Translational Science Institute\\
+{\bfseries Community Engagement Statistics Core}
+\\{\bfseries Role:  Co-Principal Investigator}
+
+%\markboth{GRANTS:  PAST GRANT HISTORY (Continued)}{\ }
+
+\end{enumerate}
+
+%\mysubsection{Other}
+%\begin{enumerate}
+%\item 1
+%\end{enumerate}
+
+
+\markboth{GRANTS (Continued)}{\ }
+
+
+\mysection{BIBLIOGRAPHY}
+
+My MyNCBI collection is available publicly  \href{http://www.ncbi.nlm.nih.gov/myncbi/browse/collection/41164902/?sort=date&direction=descending}{here}.
+As of April 22, 2021 my Google h-index was 58, see
+\href{http://scholar.google.com/citations?hl=en&user=CCl5uO0AAAAJ}{http://scholar.google.com/citations?hl=en\&user=CCl5uO0AAAAJ}.
+%http://tinyurl.com/WTAmbrosiusGoogleScholar
+
+%\href{http://www.ncbi.nlm.nih.gov/myncbi/browse/collection/41164902/?sort=date&direction=descending}{MyNCBI} collection is available.
+
+\mysubsection{Peer-Reviewed Journal Articles}
+
+
+\begin{enumerate}
+\item
+Saxen MA, \WTA, Rehemtula AF, Russell AL, Eckert GJ.  
+Sustained relief of oral aphthous ulcer pain from topical diclofenac in hyaluronan: 
+A randomized, double blind clinical trial. Oral Surgery, Oral Medicine, Oral Pathology, 
+Oral Radiology, \& Endodontics, 1997, 84(4):356--361.
+\PMID{9347497}
+
+
+
+\item
+Bloem LJ, Foroud TM, \WTA, Tewksbury DA, Pratt JH.  Association of the Angiotensinogen Gene to Serum 
+Angiotensinogen in Blacks and Whites. Hypertension, 1997, 29(5):1078--1082.
+\PMID{9149669}
+
+\item
+Edwards-Brown MK, Farlow MR, Bognanno J, Durek JL, \WTA.  Clinical utility of inversion recovery MR 
+imaging in the diagnosis of multiple sclerosis.  International Journal of Neuroradiology, 1997, 3:13--17.
+PMID not available but found at \href{https://scholar.google.com/scholar?hl=en&as_sdt=0,34&cluster=13259164388101129803}{Google Scholar}.
+
+\item
+Johnson MS, Shah H, Harris VJ, Snidow JJ, \WTA, Trerotola SO.  Comparison of digital subtraction and 
+cut film arteriography in the evaluation of suspected thoracic aortic injury. Journal of Vascular and 
+Interventional Radiology, 1997, 8(5):799--807.
+\PMID{9314371}
+	
+\markboth{BIBLIOGRAPHY (Continued)}{Peer-Reviewed Journal Articles (Continued)}	
+	
+\item
+Trerotola SO, Johnson MS, Harris VJ, Shah H, \WTA, McKuskey M, Kraus MA.  Outcome of tunneled 
+hemodialysis catheters placed via the right internal jugular by interventional radiologists. 
+Radiology, 1997; 203(2):489--495.
+\PMID{9114110}
+\DOI{10.1148/radiology.203.2.9114110}
+	
+\item
+Tepper RS, Eigen H, Stevens J, Angelicchio C, Kisling J, \WTA, Heilman DK.  Lower respiratory illness 
+in infants with cystic fibrosis: Evaluation of treatment with intravenous hydrocortisone.  Pediatric 
+Pulmonology, 1997, 24(1):48--51.
+\PMID{9261853}
+	
+\item
+Davey MS, Zerin JM, Reilly C, \WTA.  Mild renal pelvic dilation is not reflective of vesicoureteral 
+reflux.  Pediatric Radiology, 1997, 27(12):908--911.
+\PMID{9388279}
+\DOI{10.1007/s002470050268}
+
+\item
+Pratt JH, Manatunga AK, Hanna MP, \WTA.  Effect of administered potassium on the renin-aldosterone 
+axis in young blacks compared with whites.  Journal of Hypertension, 1997, 15(8):877--883.
+\PMID{9280211}
+
+
+%\markboth{BIBLIOGRAPHY (Continued)}{\ }
+
+\item
+Mori S, Harruff R, \WA, Burr DB.  Trabecular bone volume and microdamage accumulation in the femoral 
+heads of women with and without femoral neck fractures. Bone, December 1997, 21(6):521--526.
+\PMID{9430242}
+
+\item
+\WTA, Compton JA, Bowsher RA, Pratt JH.  Relation of race, gender, and age differences to serum leptin 
+concentrations in children and adolescents people.  Hormone Research, 1998, 49(5):240--246.
+\PMID{9568809}
+\DOI{10.1159/000023178}
+
+\item
+Johnson MS, Stine SB, Shah H, Harris VJ, \WTA, Trerotola SO. Possible Pulmonary Embolus:  Evaluation 
+with Digital Subtraction versus Cut-Film Angiography-Prospective Study in 80 patients.  Radiology 
+1998; 207(1):131--138.
+\PMID{9530308}
+\DOI{10.1148/radiology.207.1.9530308}	
+	
+\item
+Stockberger SM Jr., Liang Y, Hicklin JA, Wass JL, \WTA, Kopecky KK.  Objective Measurement of Motion 
+in Patients Undergoing Spiral CT Examinations.  Radiology, March 1998, 206(3):625--629.
+\PMID{9494477}
+\DOI{10.1148/radiology.206.3.9494477}
+
+\item
+Stockberger  SM Jr., Hicklin JA, Liang Y, Wass JL, \WTA.  Spiral CT with Ionic and Nonionic Contrast 
+Material: Evaluation of Patient Motion and Scan Quality.  Radiology, March 1998, 206(3):631--636.
+\PMID{9494478}
+\DOI{10.1148/radiology.206.3.9494478}
+
+\item
+Brashear A, \WTA, Eckert GJ, Siemers ER.  Comparison of treatment of tardive dystonia and 
+idiopathic cervical dystonia with Botulinum Toxin Type A.  Movement Disorders, 1998, 13(1):158--161.
+\PMID{9452343}
+\DOI{10.1002/mds.870130130}
+
+\item
+Burr DB, Turner CH, Naick P, Forwood MR, \WTA, Hasan MS, Pidaparti R.  Does Microdamage Accumulation 
+Affect the Mechanical Properties of Bone?  Journal of Biomechanics, 1998, 31(4):337--345.
+\PMID{9672087}
+
+\item
+Peacock M, Liu G, Carey MA, \WTA, Turner CH, Hui SL, Johnston CC Jr. Bone Mass and Structure at the 
+Hip in Men and Women Over the Age of 60.  Osteoporosis International, 1998, 8(3):231--239.
+\PMID{9797907}
+
+%\markboth{BIBLIOGRAPHY (Continued)}{Journal Articles (Continued)}
+
+\item
+Pratt JH, \WTA, Tewksbury DA, Wagner MA, Zhou L, Hanna MP.  The Serum Angiotensinogen Concentration 
+in Relation to Gonadal Hormones, Body Size, and Genotype in Growing Young People.  Hypertension, 1998, 32(5):875--879.
+\PMID{9822447}
+
+\item
+Trerotola SO, Johnson MS, Shah H, Kraus MA, McKusky M, \WTA, Harris VJ, Snidow JJ.  
+Tunneled hemodialysis catheters: use of a silver-coated catheter for prevention of infection--a randomized study.
+Radiology, 1998, 207(2):491--496.
+\PMID{9577500}
+\DOI{10.1148/radiology.207.2.9577500}
+
+\item
+Stockberger SM, \WTA, Khamis MG, Bergan KA, Younger CL, Davidson DD.  Abdominal and Pelvic Fine 
+Needle Aspiration Biopsies: Can we perform them well using Small Needles?  Abdominal Imaging, 
+1999; 24(4):321--328.
+\PMID{10390551}
+
+\item
+Pratt JH, Rebhun JF, Zhou L, \WTA, Newman SA, Gomez-Sanchez CE, Mayes DF. Levels of 
+Mineralocorticoids in Whites and Blacks.  Hypertension, 1999; 34(2):315--319.
+\PMID{10454460}
+
+\item
+\WTA, Bloem LJ, Zhou L, Rebhun JF, Snyder PM, Wagner MA, Guo C, Pratt JH.  Genetic Variants 
+in the Epithelial Sodium Channel in Relation to Aldosterone and Potassium Excretion and Risk 
+for Hypertension.  Hypertension, 1999, 34(4):631--637.
+\PMID{10523338}
+
+\item Trerotola SO, Shah H, Johnson M, Namyslowski J, Moresco K, Patel N, Kraus M, Gassensmith C, 
+\WTA.  Randomized comparison of high flow versus conventional hemodialysis catheters.  
+Journal of Vascular \& Interventional Radiology, 1999, 10(8):1032--1038.
+\PMID{10496704}
+
+\item
+Brashear A, Bergan K, Wojcieszek J, Siemers ER, \WTA.  Patients perception in stopping or 
+continuing treatment of cervical dystonia with botulinum toxin type A.  Movement Disorders, 
+2000, 15(1):150--153.
+\PMID{10634256}
+
+\item
+Jones M, Castile R, Davis S, Kisling J, Filbrun D, Flucke R, Emsley C, \WA, Tepper RS.  
+Forced Expiratory Flows and Volumes in Infants:  Normative Data and Lung Growth.  
+American Journal of Respiratory and Critical Care Medicine, 2000, 161(2 Pt 1):353--359.
+\PMID{10673171}
+\DOI{10.1164/ajrccm.161.2.9903026}
+
+\item
+Johnson MS, Bergmann CA, Carmody TJ, Dreesen RG, Barry JJ, Barina C, Orazi A, \WTA.  
+Local Delivery of Nadroparin via Hydrogel-Loaded Angioplasty Balloon: Effect Upon Platelet 
+Deposition and Smooth Muscle Cell Proliferation, An Experimental Study.  Journal of Vascular 
+\& Interventional Radiology, 2000, 11(1):115--122.
+\PMID{10693723}
+
+\item
+\label{WTASLHA}
+\WTA, Hui SL.  A Quality Control measure in longitudinal studies with continuous outcomes.  Statistics in Medicine, 
+2000, 19(10):1339--1362.
+\PMID{10814982}
+
+\item
+Pratt JH, \WTA, Wagner MA, Maharry K.  Molecular Variations in the Calcium-Sensing Receptor 
+in Relation to Sodium Balance and Presence of Hypertension in Blacks and Whites.  
+American Journal of Hypertension, 2000, 13(6 Pt 1):654--658.
+\PMID{10912749}
+
+\item
+Peacock M, Liu G, Carey M, McClintock R, \WA, Hui S, Johnston CC Jr.  Effect of 
+Calcium or 25OH Vitamin D3 Dietary Supplementation on Bone Loss at the Hip in Men and Women over 
+the Age of 60.  Journal of Clinical Endocrinology \& Metabolism, 2000, 85(9):3011--3019.
+\PMID{10999778}
+\DOI{10.1210/jcem.85.9.6836}
+
+\item
+Trerotola SO, Kuhn-Fulton J, Johnson MS, Shah H, \WTA, Kneebone PH.  Tunneled Infusion 
+Catheters:  Increased Incidence of Symptomatic Venous Thrombosis after Subclavian versus 
+Internal Jugular Venous Access.  Radiology, 2000, 217(1):89--93.
+\PMID{11012428}
+\DOI{10.1148/radiology.217.1.r00oc2789}
+
+\item
+Zhou L, \WTA, Newman SA, Wagner MA, Pratt JH.  Heart Rate as a Predictor of Future Blood 
+Pressure in Schoolchildren.  American Journal of Hypertension, 2000, 13(10):1082--1087.
+\PMID{11041162}
+
+\item
+Considine RV, Cooksey RC, Williams LB, Fawcett RL, Zhang P, \WTA, Whitfield RM, Jones RM, 
+Inman M, Huse J, McClain DA.  Hexosamines Regulate Leptin Production in Human Subcutaneous 
+Adipocytes.  Journal of Clinical Endocrinology \& Metabolism, 2000, 85(10):3551--3556.
+\PMID{11061500}
+\DOI{10.1210/jcem.85.10.6916}
+
+\item
+Huberty TJ, Austin JK, Harezlak J, Dunn DW, \WTA.  Informant Agreement in Behavior Ratings 
+for Children with Epilepsy.  Epilepsy and Behavior, 2000, 1(6):427--435.
+\PMID{12737832}
+\DOI{10.1006/ebeh.2000.0119}
+
+\item
+Gunderman R, \WTA, Cohen M.  Radiology reporting in an academic children's hospital:  
+what referring physicians think.  Pediatric Radiology, 2000, 30(5):307--314.
+\PMID{10836592}
+\DOI{10.1007/s002470050746}
+
+\item
+Ramchandani R, Shen X, Emsley CL, \WTA, Gunst SJ, Tepper RS.  Differences in airway structure in 
+immature and mature rabbits.  Journal of Applied Physiology, 2000, 89(4):1310--1316.
+\PMID{11007563}
+\DOI{10.1152/jappl.2000.89.4.1310}
+
+\item
+Trerotola SO, McLennan G, Davidson D, Lane K, \WTA, Lazzaro C, Dreesen RG.  
+Preclinical in vivo testing of the Arrow-Trerotola percutaneous thrombolytic device for 
+venous thrombosis.  Journal of Vascular \& Interventional Radiology, January 2001, 12(1):95--103.
+\PMID{11200360}
+
+\item
+Austin JK, Harezlak J, Dunn DW, Huster GA, Rose DF, \WTA.  Behavior Problems in Children Before First 
+Recognized Seizures.  Pediatrics, January 2001, 107(1):115--122.
+\PMID{11134444}
+
+\item
+Jakubowski H, \WTA, Pratt JH.  Genetic determinants of homocysteine thiolactonase activity in humans:  
+implications for atherosclerosis.  Federation of European Biochemical Societies Letters, February 
+2001, 491(1-2):35--39.
+\PMID{11226414}
+
+\item
+Eigen H, Bieler H, Grant D, Christoph K, Terrill D, Heilman DK, \WTA, Tepper RS.  Spirometric Pulmonary 
+Function in Healthy Preschool Children.  American Journal of Respiratory and Critical Care Medicine, March 2001, 163(3 Pt 1):619--623.
+\PMID{11254514}
+\DOI{10.1164/ajrccm.163.3.2002054}
+
+\item
+Patel NH, Sacks D, Patel RI, Moresco KP, Ouriel K, Gray RJ, \WTA, Lewis CA. SCVIR reporting standards 
+for the treatment of acute limb ischemia with use of transluminal removal of arterial thrombus. Journal of Vascular and Interventional Radiology, 2001; 12(5):559--570.
+\PMID{11340133}
+
+\item
+\WTA, Newman S, Pratt JH.  Rates of Change of Obesity in Black and White Children.  Ethnicity 
+\& Disease, July 2001, 11(2):303--310.
+\PMID{11456005}
+
+\item
+Moe SM, Zekonis M, Harezlak J, \WTA, Gassensmith CM, Murphy CL, Russell RR, Batiuk TD.  A Placebo 
+Controlled Trial to Evaluate  Immunodulatory Effects of Paricalcitol.  American Journal of Kidney 
+Disease, October 2001, 38(4):792--802.
+\PMID{11576883}
+\DOI{10.1053/ajkd.2001.27697}
+
+\item
+Pratt JH, Eckert GJ, Newman S, \WTA.  Blood Pressure Responses to Small Doses of Amiloride and Spironolactone in Normotensive Subjects.  Hypertension, November 2001, 38(5):1124--1129.
+\PMID{11711509}
+
+\item
+Hsieh YF, Robling AG, \WTA, Burr DB, Turner CH.  Mechanical Loading of Diaphyseal Bone In Vivo:  The 
+Strain Threshold for an Osteogenic Response Varies with Location.  Journal of Bone and Mineral 
+Research, December 2001, 16(12):2291--2297.
+\PMID{11760844}
+\DOI{10.1359/jbmr.2001.16.12.2291}
+
+\item
+Trerotola SO, Kraus M, Shah H, Namyslowski J, Johnson MS, Stecker MS, Ahmad I, McLennan G, Patel NH, O'Brien E, Lane KA, 
+\WTA.  Randomized Comparison of Split Tip versus Step Tip High-Flow Hemodialysis Catheters.  
+Kidney International, 2002, 62(1):282--289.
+\PMID{12081590}
+\DOI{10.1046/j.1523-1755.2002.00416.x}
+
+\item
+Dunn D, Harezlak J, \WTA, Austin JK, Hale B.  Teacher Assessment of Behavior in Children with New-Onset  Seizures.  Seizure, 2002, 11(3):169--175.
+\PMID{12018960}
+\DOI{10.1053/seiz.2001.0612}
+
+\item \label{ShortCoursesPaper}
+\WTA, Manatunga AK.  Intensive Short Courses in Biostatistics for Fellows and Physicians.  Statistics in Medicine, 2002, 21(18):2739--2756.
+\PMID{12228888}
+\DOI{10.1002/sim.1212}
+\label{AmitaPaper}
+
+\item
+Pratt JH, \WTA, Agarwal R, Eckert GJ, Newman S.  Racial Difference in the Activity of the 
+Amiloride-Sensitive Epithelial Sodium Channel.  Hypertension, 2002, 40(6):903--908.
+\PMID{12468577}
+
+\item
+Dunn DW, Austin JK, Harezlak J, \WTA.  ADHD and epilepsy in childhood.  Developmental Medicine \& Child Neurology, 2003, 45(1):50--54.
+\PMID{12549755}
+
+\item
+Brashear A, McAfee AL, Kuhn ER, \WTA.  Botulinum Toxin Type B in Upper Limb Spasticity.  Archives of Physical Medicine and Rehabilitation, 2003, 84(1):103--107.
+\PMID{12589629}
+\DOI{10.1053/apmr.2003.50070}
+
+\item
+Rejeski WJ, Brawley LR, \WTA, Brubaker PH, Focht BC, Foy CG, Fox LD.  Older Adults with Chronic Disease:  Benefits of Group-Mediated Counseling in the Promotion of Physically Active Lifestyles.  Health Psychology, 2003, 22(4):414--423.
+\PMID{12940398}
+
+\item
+Gorski JC, Vannaprasaht S, Hamman MA, \WTA, Bruce MA, Haehner-Daniels B, Hall SD.  The effect of 
+age, sex, and rifampin administration on intestinal and hepatic cytochrome P450 3A activity.  
+Clinical Pharmacology \& Therapeutics, 2003, 74(3):275--287.
+\PMID{12966371}
+\DOI{10.1016/S0009-9236(03)00187-5}
+
+\item
+Patel N, Sacks D, Patel RI, Moresco KP, Ouriel K, Gray R, \WTA, Lewis CA.  SIR Reporting Standards 
+for the Treatment of Acute Limb Ischemia with Use of Transluminal Removal of Arterial Thrombus.  
+Journal of Vascular and Interventional Radiology, 2003, 14(9 Pt 2):S453--S465.  
+\PMID{14514861}
+
+\item
+Nicklas BJ, \WTA, Messier SP, Miller GD, Penninx BWJH, Loeser RF, Palla S, Bleecker E, Pahor M.  
+Dietary-induced weight loss, exercise and chronic inflammation in older, obese adults:  
+a randomized controlled clinical trial.  American Journal of Clinical Nutrition, 2004, 79(4):544--551.
+\PMID{15051595}
+\DOI{10.1093/ajcn/79.4.544}
+
+\item \label{AmbrosiusLangeLangefeld}
+\WTA, Lange EM, Langefeld CD.  Power for Genetic Association Studies with Random Allele Frequencies 
+and Genotype Distributions.  American Journal of Human Genetics, 2004, 74(4):683--693.
+Epub 2004 Mar 12.  
+This paper was discussed in an Editorial at the beginning of the issue, 74(4):i--ii.
+\PMID{15024689}
+\PMCID{PMC1181944}
+\DOI{10.1086/383282}
+
+\item
+Bertoni AG, Duren-Winfield V, \WTA, McArdle J, Sueta CA, Massing MW, Peacock S, Davis J, Croft JB, Goff DC Jr.  Quality of heart failure care in managed Medicare and Medicaid patients in North Carolina.  The American Journal of Cardiology, 2004, 93(6):714--718.
+\PMID{15019875}
+\DOI{10.1016/j.amjcard.2003.11.053}
+
+\item
+\WTA, Hui SL.  Cross Calibration in Longitudinal Studies.  Statistics in Medicine, 2004, 23(18):2845--2861.  
+\PMID{15344190}
+\DOI{10.1002/sim.1868}
+\label{WTASLHB}
+
+\item
+Penninx BWJH, Abbas H, \WTA, Nicklas BJ, Davis C, Messier SP, Pahor M.  
+Inflammatory markers and physical function among older adults with knee osteoarthritis.  
+Journal of Rheumatology, 2004, 31(10):2027--2031.
+\PMID{15468370}
+
+\item 
+Carter CS, Cesari M, \WTA, Hu N, Diz D, Oden S, Sonntag WE, Pahor M.
+Angiotensin-converting enzyme inhibition, body composition, and physical performance in aged rats.
+Journal of Gerontology Series A:  Biological Sciences and Medical Sciences, 2004, 59(5):416--423.
+\PMID{15123750}
+
+\item 
+Focht BC, Brawley LR, Rejeski WJ, \WTA.
+Group-mediated activity counseling and traditional exercise therapy programs: effects on 
+health-related quality of life among older adults in cardiac rehabilitation.
+Annals of Behavioral Medicine, 2004, 28(1):52--61.
+\PMID{15249259}
+\DOI{10.1207/s15324796abm2801\textunderscore 7}
+
+\item 
+Miller GD, Nicklas BJ, Davis CC, \WTA, Loeser RF, Messier SP.
+Is serum leptin related to physical function and is it modifiable through weight loss and 
+exercise in older adults with knee osteoarthritis?
+International Journal of Obesity and Related Metabolic Disorders, 2004, 28(11):1383--1390.
+\PMID{15278105}
+\DOI{10.1038/sj.ijo.0802737}
+
+\item
+Shankar RR, Ferrari P, Dick B, \WTA, Eckert GJ, Pratt JH.  
+Activity of $11\beta$-hydroxysteroid dehydrogenase type 2 in normotensive blacks and whites.
+Ethnicity \& Disease, 2005, 15(3):407--410.
+\PMID{16108299}
+
+\item
+Cesari M, Kritchevsky SB, Baumgartner RN, Atkinson HH, Penninx BWJH, Lenchik L, Palla SL, 
+\WTA, Tracy RP, Pahor M.
+Sarcopenia, obesity, and inflammation---results from the Trial of Angiotensin Converting Enzyme 
+Inhibition and Novel Cardiovascular Risk Factors study.
+American Journal of Clinical Nutrition, 2005, 82(2):428--434.
+\PMID{16087989}
+\DOI{10.1093/ajcn.82.2.428}
+
+\item 
+Saha C, Eckert GJ, \WTA, Chun T-Y, Wagner MA, Zhao Q, Pratt JH.  
+Improvement in Blood Pressure With Inhibition of the Epithelial Sodium Channel in Blacks With 
+Hypertension.  Hypertension, 2005, 46(3):481--487.  Epub 2005 Aug 22.
+\PMID{16116042}
+\DOI{10.1161/01.HYP.0000179582.42830.1d}
+
+\item
+Holmes RP, \WTA, Assimos DG.
+Dietary Oxalate Loads and Renal Oxalate Handling.  The Journal of Urology, 2005, 174(3):943--947.
+\PMID{16094002}
+\DOI{10.1097/01.ju.0000169476.85935.e2}
+
+\item 
+Focht BC, Rejeski WJ, \WTA, Katula JA,  Messier SP.
+Exercise, Self-Efficacy, and Mobility Performance in
+Overweight and Obese Older Adults with Knee Osteoarthritis.  Arthritis \& Rheumatism, 2005, 53(5):659--665.
+\PMID{16208674}
+\DOI{10.1002/art.21466}
+
+\item
+Goff DC Jr., Massing MW, Bertoni AG, Davis J, \WTA, McArdle J, Duren-Winfield V, Sueta CA, 
+Croft JB.  Enhancing quality of heart failure care in managed Medicare and Medicaid in North Carolina:  
+results of the North Carolina Achieving Cardiac Excellence (NC ACE) Project.  
+American Heart Journal, 2005, 150(4):717--724.
+\PMID{16209973}
+\DOI{10.1016/j.ahj.2004.12.025}
+
+\item
+Crouse JR $3^{rd},$ Elam MB, Robinson JG, \WTA, Ginsberg HN.  
+Cholesterol Management: Targeting a Lower Low Density Lipoprotein Cholesterol Concentration  
+Increases Adult Treatment Panel - III Goal Attainment.  American Journal of Cardiology, 2006, 
+97(11):1667--9.  Epub 2006 Apr 19.
+\PMID{16728235}
+\DOI{10.1016/j.amjcard.2005.12.060}
+
+\item 
+Irwin RW, Watson T, Minick RP, \WTA.
+Age, Body Mass Index, and Gender Differences in Sacroiliac Joint Pathology.
+American Journal of Physical Medicine \& Rehabilitation, 2007, 86(1):37--44.
+\PMID{17304687}
+
+\item
+Chew EY, \WTA, Howard LT, Greven CM, Johnson S, Danis RP, Davis MD, Genuth S, Domanski M, for the ACCORD
+Study Group.  Rationale, Design, and Methods of the Action to Control Cardiovascular Risk in Diabetes Eye Study (ACCORD-EYE). American Journal of Cardiology, 2007, 99(12A):103i-111i.
+Epub 2007 Apr 13.
+\PMID{17599420}
+\DOI{10.1016/j.amjcard.2007.03.028}
+
+\item
+Miller DP, Furberg CD, Small RH, Millman FM, \WTA, Harshbarger JS, Ohl CA.
+Controlling prescription drug expenditures:  a case report of success.
+The American Journal of Managed Care, 2007, 13(8):473--480.
+\PMID{17685828}
+
+\item 
+Atkinson HH, Rosano C, Simonsick EM, Williamson JD, Davis C, \WTA, Rapp SR, Cesari M, Newman AB,
+Harris TB, Rubin SM, Yaffe K, Satterfield S, Kritchevsky SB, for the Health ABC study.
+Cognitive Function, Gait Speed Decline, and Comorbidities:  The Health, Aging and 
+Body Composition Study.
+Journal of Gerontology: Medical Sciences, 2007, 62A(8):844--850.
+\PMID{17702875}
+
+\item 
+\label{ACCORDGly1}
+The Action to Control Cardiovascular Risk in Diabetes (ACCORD)
+Study Group. Effects of Intensive Glucose
+Lowering in Type 2 Diabetes.  The New England Journal of Medicine, 2008, 358(24):2545--59.
+Epub 2008 Jun 6.
+I was not a member of the writing group (only one statistician was) but I performed much of the analysis including Figures 1--3 and Table 4.
+\PMID{18539917} \PMCID{PMC4551392}
+\DOI{10.1056/NEJMoa0802743}
+
+\item Wideman L, Baker CF, Brown PK, Consitt LA, \WTA, Schechter MS.
+Substrate Utilization during and after exercise in mild cystic fibrosis.
+Medicine \& Science in Sports \& Exercise, 2009, 41(2):270--8.
+\PMID{19127200}
+\DOI{10.1249/MSS.0b013e318188449b}
+
+\item 
+\label{TZD}
+\WTA, Danis RP, Goff DC Jr., Greven CM, Gerstein HC, Cohen RM, Riddle MC, Miller ME,
+Buse JB, Bonds DE, Peterson KA, Rosenberg YD, Perdue LH, Esser BA, Seaquist LA,
+Felicetta JV, Chew EY for the ACCORD Study Investigators.  
+Lack of Association Between Thiazolidinediones and Macular Edema in Type 2 Diabetes:
+The ACCORD Eye Study.  Archives of Ophthalmology, 2010, 128(3):312--318.
+A letter to the editor and our response are listed as
+number \ref{TZDLetter} on page \pageref{TZDLetter}.
+\PMID{20212201}
+\PMCID{PMC3010554}
+\DOI{10.1001/archophthalmol.2009.310}  
+
+\item 
+\label{AmbrosiusMahnken}
+\WTA, Mahnken JD.  Power for Studies with Random Group Sizes.
+Statistics in Medicine, 2010, 29:1137--1144. 
+\PMID{20222151}
+\PMCID{PMC2936967}
+ \DOI{10.1002/sim.3873}
+
+\item 
+\label{ACCORDLipid1}
+The Action to Control Cardiovascular Risk in Diabetes (ACCORD) Study Group.
+Effects of Combination Lipid Therapy in Type 2 Diabetes Mellitus.
+The New England Journal of Medicine, 2010, 362(17):1563--1574.
+Epub 2010 Mar 14.
+I was not a member of the writing group (only one statistician was) 
+but I performed much of the analysis including Figure 2.
+\PMID{20228404}
+\PMCID{PMC2879499}
+\DOI{10.1056/NEJMoa1001282}
+
+\item
+\label{ACCORDBP1}
+The Action to Control Cardiovascular Risk in Diabetes (ACCORD) Study Group.
+Effects of Intensive Blood-Pressure Control in Type 2 Diabetes Mellitus.
+The New England Journal of Medicine, 2010, 362(17):1575--1585. Epub 2010 Mar 14.
+I was not a member of the writing group (only one statistician was) 
+but I performed much of the analysis including Figure 2.
+\PMID{20228401}
+\PMCID{PMC4123215}
+\DOI{10.1056/NEJMoa1001286}
+
+\item Riddle MC, \WTA, Brillon DJ, Buse JB, Byington RP, Cohen RM,
+Goff DC Jr., Malozowski S, Margolis KL, Probstfield JL, Schnall A,
+Seaquist ER for the ACCORD Investigators.
+Epidemiologic relationships between A1c and all-cause mortality
+during a median 3.4-year follow-up of glycemic treatment
+in the ACCORD Trial.  Diabetes Care, 2010, 33(5):983--990.
+\PMID{20427682}
+\PMCID{PMC2858202}
+\DOI{10.2337/dc09-1278}
+
+\item Chew EY, \WTA, Davis MD, Danis RP, Gangaputra S, Greven CM, Hubbard L, 
+Esser BA, Lovato JF, Perdue LH, Goff DC Jr., Cushman WC, 
+Ginsberg HN, Elam MB, Genuth S, Gerstein HC, Schubart U, Fine LJ.  
+Effects of Medical Therapies on Retinopathy Progression in Type 2 Diabetes.  
+New England Journal of Medicine, 2010, 
+363(3):233--244.     Epub 2010 Jun 29.  Correction:  NEJM, 2011, 364(2):188--189.
+\PMID{20587587}  \PMCID{PMC4026164} \DOI{10.1056/NEJMoa1001288}
+\label{ACCORDEyePrimary}
+
+\item Rejeski WJ, Brubaker PH, Goff DC Jr., Bearon LB, McClelland JW,
+Perri MG, \WTA.  Translating Weight Loss and Physical Activity Programs Into the 
+Community to Preserve Mobility in Older, Obese Adults in Poor Cardiovascular Health.
+Archives of Internal Medicine, 2011, 171(10):880--886.  Epub 2011 Jan 24.
+\PMID{21263080}
+\PMCID{PMC4425192}
+\DOI{10.1001/archinternmed.2010.522}
+\label{CLIPPrimary}
+
+\item Rejeski WJ, Mihalko SL, \WTA, Bearon LB, McClelland JW.  
+Weight Loss and Self-Regulatory Eating Efficacy in Older Adults: 
+The Cooperative Lifestyle Intervention Program.  Journals of Gerontology, Series B: 
+Psychological Sciences and Social Sciences,
+2011, 66(3):279--286.  Epub 2011 Feb 3.
+\PMID{21292809}
+\PMCID{PMC3078758} 
+ \DOI{10.1093/geronb/gbq104}
+\label{CLIPEatingEfficacy}
+
+\item \WTA, Polonsky TS, Greenland P, Goff DC Jr., Perdue LH, Fortmann SP, Margolis KL, Pajewski NM.
+Design of the Value of Imaging in Enhancing the Wellness  of Your Heart (VIEW) Trial 
+and the Impact of Uncertainty on Power.  Clinical Trials, 2012, 9(2):232--246.
+Epub 2012 Feb 14.
+\PMID{22333998}
+\PMCID{PMC4475283}
+\DOI{10.1177/1740774512436882}
+\label{VIEWDesign}
+
+\item 
+Samaropoulos XF, Light L, \WTA, Marcovina SM, Probstfield J, Goff DC Jr.
+The effect of intensive risk factor management in type 2 diabetes on inflammatory biomarkers.  Diab Res Clin Pract, 2012, 95:389--398.  Epub 2011 Oct 22.
+\PMID{22019270}
+\DOI{10.1016/j.diabres.2011.09.027}
+
+\item 
+Schwartz AV, Margolis KL, Sellmeyer DE, Vittinghoff E, \WTA, Bonds DE, Josse RG,
+Schnall AM, Simmons DL, Hue TF, Palermo L, Hamilton BP, Green JB, Atkinson HH,
+O'Connor PJ, Force RW, Bauer DC.  Intensive glycemic control is not associated with
+fractures or falls in the ACCORD Randomized trial.  Diabetes Care, 2012, 35(7):1525--1531.
+\PMID{22723583}
+\PMCID{PMC3379596}
+\DOI{10.2337/dc11-2184}
+
+\item
+Brawley LR, Rejeski WJ, Gaukstern J, \WTA.
+Social-Cognitive Changes Following Weight Loss and Physical Activity Interventions
+in Obese, Older Adults in Poor Cardiovascular Health.
+Annals of Behavioral Medicine, 2012, 44:353--364.  
+\PMID{22773225}
+\PMCID{PMC3593110}
+\DOI{10.1007/s12160-012-9390-5}
+
+\item
+Gerstein HC, \WTA,  Danis R,   Ismail-Beigi F,  Cushman W, Calles J,  Banerji M,  Schubart U, Chew EY for the ACCORD Study Group.  
+Diabetic Retinopathy, its Progression and Incident Cardiovascular Events in the ACCORD trial.
+Diabetes Care, 2013, 36(5):1266--1271.  Epub 2012 Dec 13.  
+\PMID{23238658}
+\PMCID{PMC3631868}
+\DOI{10.2337/dc12-1311}
+
+\item
+Schwartz AV, Vittinghoff E, Margolis KL, Scibora LM, Palermo L, \WTA, Hue TF, %Petit MA, 
+Ensrud KE.
+Intensive Glycemic Control and Thiazolidinedione Use:  Effects on Cortical and Trabecular Bone at the Radius and Tibia.
+Calcified Tissue International, 2013, 92(5):477-486. Epub 2013 Feb 5.  
+\PMID{23377193}
+\PMCID{PMC3640571}
+\DOI{10.1007/s00223-013-9703-0}
+
+\item
+Gangaputra S, Lovato JF, Hubbard L,  Davis  MD,  Esser BA, \WTA, Chew EY,  Greven C, Perdue LH, 
+Wong WT, Condren A,  Wilkinson CP, Agrón E, Adler S, and  Danis RP for the ACCORD Eye Research Group.
+Comparison of Standardized Clinical Classification with Fundus Photograph Grading for the Assessment of Diabetic Retinopathy and Diabetic Macular Edema Severity.  Retina: The Journal of Retinal and Vitreous Diseases, 2013, 33(7):1393--1399.
+\PMID{23615341}
+\PMCID{PMC3706017}
+\DOI{10.1097/IAE.0b013e318286c952}
+
+\item Beavers KM, \WTA, Nicklas BJ, Rejeski WJ.
+Independent and combined effects of physical activity and weight loss on inflammatory biomarkers in overweight and obese older adults.
+J Am Geriatr Soc. 2013 Jul;61(7):1089-94.  Epub 2013 Jun 17.
+\PMID{23772804}
+\PMCID{PMC3714323}
+\DOI{10.1111/jgs.12321}
+
+\item Marsh AP, Janssen JA, \WTA, Burdette JH, Gaukstern JE, Morgan AR, Nesbit BA, Paolini JB, Sheedy JL, and Rejeski WJ.
+The Cooperative Lifestyle Intervention Program-II (CLIP-II): Design and Methods.
+Contemporary Clinical Trials, 2013, 36(2):382--93.   Epub 2013 Aug 23.
+\PMID{23974035}
+\PMCID{PMC3843993}
+\DOI{10.1016/j.cct.2013.08.006}
+
+\item Beavers KM, Beavers DP, Nesbit BA, \WTA, Marsh AP, Nicklas BJ, and Rejeski WJ.
+Effects of an 18-month physical activity and weight loss intervention on body composition in overweight/obese older adults.
+Obesity, 2014, 22(2):325--331. Epub 2013 Sep 20.
+\PMID{23963786}
+\PMCID{PMC3880399}
+\DOI{10.1002/oby.20607} 
+
+\item Simons-Morton D, Chan JC, Kimel AR, Giddings S, Linz PE, Stowe CL, Summerson J, \WTA.  
+Characteristics associated with informed consent for genetic studies in the ACCORD trial.
+Contemporary Clinical Trials, 2014, 37(1):155--164.   Epub 2013 Dec 17.
+\PMID{24355197}
+\PMCID{PMC3918951}
+\DOI{10.1016/j.cct.2013.12.002}
+
+\item Miller ME, Williamson JD, Gerstein HC, Byington RP, Cushman WC, Ginsberg HN, \WTA, Lovato L, and 
+Applegate WB for the ACCORD Investigators.
+Effects of Randomization to Intensive Glucose Control on Adverse Events, Cardiovascular Disease and Mortality in Older Versus Younger
+ Adults in the ACCORD Trial.  Diabetes Care, 2014, 37(3):634--43.  Epub 2013 Oct 29.
+\PMID{24170759}
+\PMCID{PMC3931381}
+\DOI{10.2337/dc13-1545} 
+ 
+\item Pahor M, Guralnik JM, \WTA, Blair S, Bonds DE, Church TS,  Espeland MA, Fielding RA, Gill TM, Groessl EJ, King AC, Kritchevsky SB,
+Manini TM, McDermott MM, Miller ME, Newman AB, Rejeski WJ, Sink KM, Williamson JD, for the LIFE Study investigators.
+Effect of structured physical activity on prevention of major mobility disability in older adults: the LIFE Study randomized clinical trial.
+Journal of the American Medical Association, 2014 June 18, 311(23):2387--96.  Epub 2014 May 27.
+\PMID{24866862}
+\PMCID{PMC4266388}
+\DOI{10.1001/jama.2014.5616}
+
+\item \WTA,  Sink KM, Foy CG, Berlowitz DR, Cheung AK, Cushman WC, Fine LJ, Goff  DC Jr., Johnson KC, Killeen AA, Lewis CE, Oparil S, Reboussin DM,
+Rocco MV, Snyder JK, Williamson JD, Wright Jr. JT, Whelton PK, and the SPRINT Study Research Group.
+The design and rationale of a multi-center clinical trial comparing two strategies for control of systolic blood pressure: The Systolic Blood Pressure Intervention Trial (SPRINT).  
+Clinical Trials, October 2014, 11(5):532--546.  Epub 2014 June 5.  
+\PMID{24902920}
+\PMCID{PMC4156910}
+\DOI{10.1177/1740774514537404} 
+Corrigendum published in Clinical Trials, April 2017, 14(2):222--222.  Epub 2017 March 31.  
+\PMID{28359193} \PMCID{PMC5380167} \DOI{10.1177/1740774517695238}
+
+\item Casanova R, Salda\~{n}a S, Chew EY, Danis RP, Greven CM, \WTA.
+Application of Random Forests methods to diabetic retinopathy classification analyses.
+PLoS ONE, 2014 June 18;9(6):e98587.  
+\PMID{24940623}
+\PMCID{PMC4062420}
+\DOI{10.1371/journal.pone.0098587}
+
+\item Mottl AK, Pajewski N, Fonseca V, Ismail-Beigi F, Chew E, \WTA, Greven C, Schubart U, Buse J.  The degree of retinopathy is equally predictive for renal and macrovascular outcomes in the ACCORD Trial.
+J Diabetes Complications, 2014 Dec 31, 28(6):874--879.   Epub 2014 July 12.
+\PMID{25123755}
+\PMCID{PMC4252726}
+\DOI{10.1016/j.jdiacomp.2014.07.001} 
+
+\item Chew E, Davis MD, Danis RP, Lovato JF, Perdue LH, Greven C, Genuth S, Goff DC Jr., Leiter LA,  Ismail-Beigi F, \WTA.
+The Effects of Medical Management on the Progression of Diabetic Retinopathy in Persons with
+Type 2 Diabetes: The ACCORD Eye Study. Ophthalmology, 2014 Dec, 121(12):2443--51.  
+Epub 2014 August 26.
+\PMID{25172198}
+\PMCID{PMC4252767}
+\DOI{10.1016/j.ophtha.2014.07.019}
+
+\item 
+Hugenschmidt CE, Lovato JF, \WTA, Bryan RN, Gerstein HC, Horowitz KR, Launer LJ, Lazar RM, Murray AM, Chew EY,
+Danis RP, Williamson JD, Miller ME, Ding J.
+The cross-sectional and longitudinal associations of diabetic retinopathy with cognitive function and brain MRI findings: The Action to Control Cardiovascular Risk in Diabetes (ACCORD) Trial.
+Diabetes Care, 2014 Dec 01, 37(12):3244--3542.  Epub 2014 September 5.
+\PMID{25193529}
+\PMCID{PMC4237980}
+\DOI{10.2337/dc14-0502}
+
+\item 
+Botoseneanu A, \WTA, Beavers DP, de Rekeneire N, Anton S, Church T, Folta SC, Goodpaster BH, King AC, Nicklas BJ, Spring B, Wang X, and Gill TM for the LIFE Study Group.
+Prevalence of Metabolic Syndrome and Its Association with Physical Capacity, Disability, and Self-Rated Health among Lifestyle Interventions and Independence for Elders (LIFE) Study Participants.
+Journal of the American Geriatrics Society (JAGS), 2015, 63(2):222--32.
+ Epub 2015 January 30.
+\PMID{25645664}
+\PMCID{PMC4333053}
+\DOI{10.1111/jgs.13205} 
+
+\item
+Bann D, Hire D, Manini T, Cooper R, Botoseneanu A, McDermott MM, Pahor M, Glynn NW, Fielding R, King AC, Church T,
+\WTA, and Gill TM for the LIFE Study Group.
+Light intensity physical activity and sedentary behavior in relation to body mass index and grip strength in older persons: cross-sectional findings from the Lifestyle Interventions and Independence for Elders (LIFE) study.
+PLos ONE, 2015, 10(2)e0116058.
+\PMID{25647685}
+\PMCID{PMC4315494}
+\DOI{10.1371/journal.pone.0116058}
+
+\item
+Fitzgerald JD, Johnson L, Hire DG, \WTA,  Anton SD, Dodson JA, Marsh AP, McDermott MM, Nocera JR, Tudor-Locke C, White DK, Yank V, Pahor M, Manini TM, Buford TW for the LIFE Study Research Group.
+Association of Objectively-measured Physical Activity with Cardiovascular Risk in Mobility-limited Older Adults. 
+Journal of the American Heart Association, 2015, 4(2), e001288.  Epub 2015 February 18.
+\PMID{25696062}
+\PMCID{PMC4345863}
+\DOI{10.1161/JAHA.114.001288}
+
+\item
+Marsh AP, Janssen JA, Ip EH,  Barnard RT, \WTA, Brubaker PR, Burdette JH, Sheedy JL, and Rejeski WJ.
+Assessing Walking Behavior in Older Adults:  Development and Validation of a Novel Computer-Animated Assessment Tool.
+Journal of Gerontology:  Medical Sciences, 2015, 70(12):1555--1561.
+Epub 2015 August 10.
+\PMID{26261044}
+\PMCID{PMC4692966}
+\DOI{10.1093/gerona/glv101}
+
+\item
+Schwartz AV, Chen H, \WTA, Sood A, Josse R, Bonds DE, Schnall A, Vittinghoff E, 
+Bauer D, Banerji MA, Cohen R, Hamilton B, Isakova T, Sellmeye D, Simmons DL, Shibli-Rahhal A, Williamson J, Margolis KL.
+Effects of TZD Use and Discontinuation on Fracture Rates in ACCORD Bone Study.
+The Journal of Clinical Endocrinology \& Metabolism, 2015, 100(11):4059--66.  Epub 2015 Aug 25.
+\PMID{26305617}
+\PMCID{PMC4702444}
+\DOI{10.1210/jc.2015-1215}
+
+\item 
+Siraj ES, Rubin DJ, Riddle MC, Miller ME, Hsu FC, Ismail-Beigi F, Chen SH, \WTA, Thomas A, Bestermann W, Buse JB, Genuth S, Joyce C, Kovacs CS, 
+O'Connor PJ, Sigal RJ, and Solomon S for the ACCORD investigators.
+Insulin Dose and Cardiovascular Mortality in the ACCORD Trial.
+Diabetes Care, 2015, 38(11):2000--2008.
+Epub 2015 October 13.
+\PMID{26464212}
+\PMCID{PMC4876773}
+\DOI{10.2337/dc15-0598}
+
+\item \label{SPRINTPrimary}
+The SPRINT  Research Group.  
+Wright JT Jr., Williamson JD, Whelton PK, Snyder JK, Sink KM, Rocco MV, Reboussin DM,  Rahman M, Oparil S, Lewis CE, Kimmel PL, Johnson KC, Goff DC Jr., Fine LJ, Cutler JA,
+Cushman WC, Cheung AK, \WTA.
+A Randomized Trial of Intensive versus Standard Blood Pressure Control.
+New England Journal of Medicine, 2015, 373(22):2103--2116.
+Epub 2015 November 9.
+\PMID{26551272}
+\PMCID{PMC4689591}
+\DOI{10.1056/NEJMoa1511939}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+The Action to Control Cardiovascular Risk in Diabetes Follow-ON (ACCORDION) Eye Study Group and the Action to Control Cardiovascular Risk in Diabetes Follow-ON (ACCORDION) Study Group.
+Chew EY, Lovato JF, Davis MD, Gerstein HC, Danis RP, Ismail-Beigi F, Genuth S, Greven CM,
+Perdue LH, Cushman WC, Elam MB, Bigger JT, Ginsberg HN, Goff DC Jr., \WTA.
+Persistent Effects of Intensive Glycemic Control on Retinopathy in Type 2 Diabetes in the Action to Control Cardiovascular Risk in Diabetes (ACCORD) Follow-On Study.
+Diabetes Care, 2016, 39(7):1089--1100.  Epub 2016 Jun 11.
+\PMID{27289122}
+\PMCID{PMC4915557}
+\DOI{10.2337/dc16-0024}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+Newman AB, Dodson JA, Church TS, Buford TW, Kritchevsky S, Beavers D, Pahor M, 
+Stafford RS, Szady AD, \WTA, McDermott MM, for the LIFE Study Group.
+Cardiovascular events in a physical activity intervention compared with a successful aging intervention: The LIFE Study randomized trial.
+JAMA Cardiology, 2016 Aug 1;1(5):568-74.  Epub 2016 Jun 29.
+\PMID{27439082}
+\PMCID{PMC5755709}
+\DOI{10.1001/jamacardio.2016.1324}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+Lewis CE, Johnson KC, Rahman M, Sink KM, \WTA.
+Let's Not SPRINT to Judgment About New Blood Pressure Goals.
+Ann Intern Med. 2016 Dec 20;165(12):889.
+\PMID{27992902}
+%\PMCID{In process}\mybox\
+\DOI{10.7326/L16-0441}
+%IGS 
+%In MyNCBI
+
+\item
+Rejeski WJ, \WTA, Burdette J, Walkup M, Marsh A.
+Community Weight Loss to Combat Obesity and Disability in at-risk Older Adults.
+J Gerontol A Biol Sci Med Sci, 2017 Oct 12;72(11):1547--1553.  Epub 2017 Jan 6.
+\PMID{28064148}
+\PMCID{PMC5861918}
+\DOI{10.1093/gerona/glw252}
+%In Google Scholar
+%In MyNCBI
+
+\item
+Botoseneanu A, Chen H, \WTA, Allore HG, Anton S, Folta SC, King AC, Nicklas BJ, Spring B, Strotmeyer ES,
+Gill TM for the LIFE Study Group.
+Effect of Metabolic Syndrome on the Mobility Benefit of a Structured Physical Activity Intervention-The Lifestyle Interventions and Independence for Elders Randomized Clinical Trial.
+J Am Geriatr Soc, 2017 Jun;65(6):1244--1250.  Epub 2017 Mar 28.
+\PMID{28369670}
+\PMCID{PMC5478451}
+\DOI{10.1111/jgs.14793}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+Manini TM, Anton SD, Beavers DP, Cauley JA, Espeland MA, Fielding RA, Kritchevsky SB, Leeuwenburgh C, Lewis KH, Liu CK, McDermott MM, Miller ME, Tracy RP, Walston JD, Radziszewska B, Lu J, Stowe C, Wu S, Newman AB, \WTA, Pahor M. For the ENRGISE Pilot study investigators.
+ENabling Reduction of Low-grade Inflammation in SEniors Pilot Study: Concept, Rationale, and Design.
+J Am Geriatr Soc, 2017, 2017 Sep;65(9):1961--1968. Epub 2017 Jul 22.
+\PMID{28734043}
+\PMCID{PMC5642998}
+\DOI{10.1111/jgs.14965}
+%In Google Scholar
+%In MyNCBI
+
+\item
+Soliman EZ, \WTA, Cushman WC, Zhang ZM, Bates JT, Neyra JA, Carson TY, Tamariz L, Ghazi L, Cho ME, Shapiro BP, He J, Fine LJ, Lewis CE; SPRINT Research Study Group.
+Effect of Intensive Blood Pressure Lowering on Left Ventricular Hypertrophy in Patients with Hypertension: The Systolic Blood Pressure Intervention (SPRINT) Trial.
+Circulation, 2017 Aug 1;136(5):440--450.
+Epub 2017 May 16.
+\PMID{28512184}
+\PMCID{PMC5538944}
+\DOI{10.1161/CIRCULATIONAHA.117.028441}  Our response to letters was published March 19, 2018 \PMID{29555717} 
+\PMCID{PMC5863582} \DOI{10.1161/CIRCULATIONAHA.117.031849}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+Beavers KM, \WTA, Rejeski WJ, Burdette JH, Walkup MP, Sheedy JL, Nesbit BA, Gaukstern JE, Nicklas BJ, Marsh AP.
+Effect of Exercise Type during Intentional Weight Loss on Body Composition in Older Adults with Obesity.
+Obesity, 2017 Nov;25(11):1823--1829.
+\PMID{29086504}
+\PMCID{PMC5678994}
+\DOI{10.1002/oby.21977}
+%IGS
+%In MyNCBI
+
+\item
+Wanigatunga AA, \WTA, Rejeski WJ, Gill TM, Glynn NW, Tudor-Locke C, Manini TM.  
+Association Between Structured Physical Activity and Sedentary Time in Older Adults.
+JAMA. 2017;318(3):297--299.  Epub 2017 July 18.
+\PMID{28719683}
+\PMCID{PMC5774303}
+\DOI{10.1001/jama.2017.7203}
+%In Google Scholar
+%In MyNCBI
+
+
+\item 
+Duncan PW, Bushnell CD, Rosamond WD, Jones Berkeley SB, Gesell SB, D'Agostino RB Jr, \WTA, Barton-Percival B, Bettger JP, Coleman SW, 
+Cummings DM, Freburger JK, Halladay J, Johnson AM, Kucharska-Newton AM, Lundy-Lamm G, Lutz BJ, Mettam LH, Pastva AM, Sissine ME, Vetter B.
+The Comprehensive Post-Acute Stroke Services (COMPASS) study: design and methods for a cluster-randomized pragmatic trial.
+BMC Neurol. 2017 Jul 17;17(1):133.
+\PMID{28716014}
+\PMCID{PMC5513078}
+\DOI{10.1186/s12883-017-0907-1}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+Chen H, Rejeski WJ, Gill TM, Guralnik J, King AC, Newman A, Blair SN, Conroy D,  Liu C, Manini T, Pahor M, \WTA, Miller ME for the LIFE Study.
+Comparison of Self-Report Indices of Major Mobility Disability to Failure on the 400-Meter Walk Test: The LIFE Study.
+J Gerontology:  Medical Sciences (Series A).  2018 Mar 14;73(4):513--518.   Epub 2017 Aug 9.
+\PMID{28958023}
+\PMCID{PMC5861858}
+\DOI{10.1093/gerona/glx153}
+%In Google Scholar
+%In MyNCbi
+
+\item
+Chen H, \WTA, Murphy TE, Fielding R, Pahor M, Santanasto A, Tudor-Locke C, Rejeski WJ, Miller ME, for the LIFE Study.
+Imputation of Gait Speed for Non-completers in the 400-meter Walk: Application to the LIFE Study.
+J American Geriatrics Society,  2017 Dec;65(12):2566--2571.   Epub 2017 Sep 8.
+\PMID{28884789}
+\PMCID{PMC5729108}
+\DOI{10.1111/jgs.15078}
+%IGS
+%In MyNCBI
+
+\item 
+Lee S-J Heo SH, \WTA, Bushnell CD.
+Factors Mediating Outcome After Stroke: Gender, Thrombolysis and Their Interaction.
+Translational Stroke Research, 2018 Jun;9(3):267--273.  Epub 2017 Oct 24.
+\PMID{29067622}
+%\PMCID{In process}\mybox\ 
+\DOI{10.1007/s12975-017-0579-6}
+%IGS
+%In MyNCBI
+
+\item 
+Cochrane SK, Chen SH, Fitzgerald JD, Dodson JA,  Fielding RA, King AC, McDermott MM, Manini TM, Marsh AP,  Newman AB, Pahor M, 
+Tudor-Locke C, \WTA, Buford TW for the LIFE Study Research Group.
+Association of Accelerometry-Measured Physical Activity and Cardiovascular Events in Mobility-limited Older Adults: The LIFE Study.
+JAHA, 2017 Dec 2;6:e007215.  Epub 2017 Dec 2.
+\PMID{29197830}
+\PMCID{PMC5779035}
+\DOI{10.1161/JAHA.117.007215}
+%IGS
+%In MyNCBI
+
+\item 
+Fanning J, Walkup MP, \WTA, Brawley LR, Ip EH, Marsh AP, Rejeski WJ.
+Change in Health-Related Quality of Life and Social Cognitive Outcomes in Obese,
+Older Adults in a Randomized Controlled Weight Loss Trial: Does Physical Activity
+Behavior Matter?
+Journal of Behavioral Medicine, 2018 Jun;41(3):299--308.  Epub 2017 Nov 22.
+\PMID{29168052}
+\PMCID{PMC5996373}
+\DOI{10.1007/s10865-017-9903-6}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+Gower EW, Lovato JF, \WTA, Chew EY, Danis RP, Davis MD, Goff DC Jr., Greven CM, for the ACCORD Study Group.
+Lack of Longitudinal Association between Thiazolidinediones and Incidence and Progression of Diabetic Eye Disease: The ACCORD EYE Study.
+American Journal of Ophthalmology,  2018 Mar;187:138--147.  Epub 2017 Dec 21.
+\PMID{29275147}
+\PMCID{PMC6381823}
+\DOI{10.1016/j.ajo.2017.12.007}
+%IGS
+%In MyNCBI
+
+\item 
+Johnson KC, Whelton PK, Cushman  WC, Cutler JA, Evans GW, Snyder JK, \WTA,  Beddhu S, Cheung AK, Fine LJ,
+Lewis CE, Rahman M, Reboussin DM, Rocco MV, Oparil S, Wright JT Jr. for the SPRINT Research Group.
+Blood Pressure Measurement in SPRINT (Systolic Blood Pressure Intervention Trial).
+Hypertension, 2018 May;71(5):848--857.  Epub 2018 Mar 12.
+\PMID{29531173}
+\PMCID{PMC5967644}
+\DOI{10.1161/HYPERTENSIONAHA.117.10479}
+%In Google Scholar
+%In MyNCBI
+
+\item 
+Yang S, \WTA, Fine LJ, Bress AP, Cushman WC, Raj DS, Rehman S, and Tamariz L.
+A new modeling and inference approach for the Systolic Blood Pressure Intervention Trial outcomes.
+Clinical Trials,  2018 Jun;15(3):305--312.  Epub 2018 Apr 19.
+\PMID{29671345}
+\PMCID{PMC7288219}
+\DOI{10.1177/1740774518769865}
+%IGS
+%In MyNCBI
+
+\item 
+Shapiro BP, \WTA, Blackshear JL, Cushman WC, Whelton PK, Oparil S, Beddhu S, Dwyer JP, Gren LH, Kostis WJ, Lioudis M, Pisoni R,
+Rosendorff C, Haley WE for the SPRINT Research Group.
+Impact of Intensive Versus Standard Blood Pressure Management by Tertiles of Blood Pressure in the Systolic Blood Pressure Intervention Trial.
+Hypertension, 2018 Jun;71(6):1064--1074.  Epub 2018 Apr 30.
+\PMID{29712745}
+\PMCID{PMC5945323}
+\DOI{10.1161/HYPERTENSIONAHA.117.10646}
+%IGS 
+%In MyNCBI 
+
+\item Custodero C, Mankowski RT, Lee SA, Chen Z, Wu S, Manini TM, Hincapie Echeverri J, Sabb\`a C, Beavers DP, Cauley JA, Espeland MA, Fielding RA, Kritchevsky SB,
+ Liu CK, McDermott MM, Miller ME, Tracy RP, Newman AB, \WTA,  Pahor M, and Anton SD. Evidence-based nutritional and pharmacological interventions targeting chronic low-grade inflammation in middle-age and older adults: a systematic review and meta-analysis.  Ageing Research Reviews, 2018 May 25;46:42--59.
+ Epub 2018 May 25.
+\PMID{29803716}
+\PMCID{PMC6235673}
+\DOI{10.1016/j.arr.2018.05.004}
+%IGS 
+%In MyNCBI 
+
+\item Cauley JA, Manini TM, Lovato L,   Talton J, Anton SD, Domanchuk K, Kennedy K, Stowe CL,   Walkup M,
+ Fielding RA, Kritchevsky SB, McDermott MM, Newman AB, \WTA, and Pahor M for the ENRGISE Investigators.
+The ENabling Reduction of low-grade Inflammation in SEniors (ENRGISE) Pilot Study:  Screening Methods and Recruitment Results.  
+Journal of Gerontology:  Medical Sciences,  2019 Jul 12;74(8):1296--1302.  Epub 2018 Sep 8.
+\PMID{30202946}
+\PMCID{PMC6625594}
+\DOI{10.1093/gerona/gly204}
+%IGS 
+%In MyNCBI 
+
+\item Beavers KM, Walkup MP, Weaver AA, Lenchik L, Kritchevsky SB, Nicklas BJ, \WTA, Stitzel JD, Register TC, 
+Shapses SA, Marsh AP, and Rejeski WJ.
+ Effect of Exercise Modality during Weight Loss on Bone Health in Older Adults with Obesity and Cardiovascular Disease or Metabolic Syndrome: A Randomized Controlled Trial.  Journal of Bone and Mineral Research.   J Bone Miner Res, 2018 Dec;33(12):2140--2149.   Epub 2018 Aug 7.
+\PMID{30088288}
+\PMCID{PMC6545884}
+\DOI{10.1002/jbmr.3555}
+%IGS
+%In MyNCBI 
+
+\item  Malhotra R, Craven T, \WTA, Killeen AA, Haley WE, Cheung AK,   Chonchol M, Sarnak M, Parikh CR, 
+Shlipak MG, Ix JH; for the SPRINT Research Group.
+Effects of Intensive Blood Pressure Lowering on Kidney Tubule Injury in CKD: A Longitudinal Subgroup Analysis in SPRINT.
+American Journal of Kidney Disease, 2019 Jan;73(1):21--30.  Epub 2018 Oct 2.
+\PMID{30291012}
+\PMCID{PMC7325694}
+\DOI{10.1053/j.ajkd.2018.07.015}
+%IGS
+%In MyNCBI 
+
+\item 
+Beddhu S, Chertow GM, Greene T, Whelton PK, \WTA, Cheung  AK, Cutler J, Fine L,  Boucher R, Wei G, 
+Zhang C, Kramer H, Bress AP, Kimmel PL, Oparil S, Lewis C, Rahman M, Cushman WC.  
+Effects of intensive systolic blood pressure lowering on cardiovascular events and mortality in persons with type 2 diabetes on standard glycemic control and in persons without diabetes: reconciling results from ACCORD BP and SPRINT.
+Journal of the American Heart Association, 2018 Sep 18;7(18):e009326.
+\PMID{30371182}
+\PMCID{PMC6222943}
+\DOI{10.1161/JAHA.118.009326}
+%IGS
+%In MyNCBI 
+
+\item 
+Supiano MA, Lovato L, \WTA, Bates J, Beddhu S, Drawz P, Dwyer JP, Hamburg NM, Kitzman D, Lash J, Lustigova E, Miracle CM,
+Oparil S, Raj DS, Weiner DE, Taylor A, Vita JA, Yunis R, Chertow GM, Chonchol M. 
+ Pulse wave velocity and central aortic pressure in systolic blood pressure intervention trial participants.
+ PLoS ONE,  2018 Sep 26;13(9):e0203305.
+\PMID{30256784 }
+\PMCID{PMC6157848}
+\DOI{10.1371/journal.pone.0203305}
+%IGS
+%In MyNCBI 
+
+\item 
+Ginsberg C, Craven TE, Chonchol M, Cheung AK, Sarnak MJ, \WTA, Killeen AA, Raphael KL, Bhat UY, Chen J, Chertow GM, Freedman BI, Oparil S, Papademetriou V, Wall BM, Wright CB, Ix JH, Shlipak MG, the SPRINT Research Group. PTH, FGF23, and Intensive Blood Pressure Lowering in Chronic Kidney Disease Participants in SPRINT.  Clinical Journal of the  American Society of  Nephrology,   
+ 2018 Dec 7;13(12):1816--1824.
+Epub 2018 Nov 13.
+\PMID{30425104}
+\PMCID{PMC6302330}
+\DOI{10.2215/CJN.05390518}
+%IGS
+%In MyNCBI 
+
+\item 
+Pahor M, Anton SD, Beavers DP, Cauley JA, Fielding RA, Kritchevsky SB, Leeuwenburgh C, Lewis KH, Liu CK, Lovato LC, Lu J, Manini TM, McDermott MM, Miller ME, Newman AB, Radziszewska B, Stowe CL, Tracy RP, Walkup MP, Wu SS, \WTA; ENRGISE study investigators.
+Effect of losartan and fish oil on plasma IL-6 and mobility in older persons. The ENRGISE Pilot randomized clinical trial.
+J Gerontol A Biol Sci Med Sci, 2019 Sep 15;74(10):1612--1619.  Epub 2018 Dec 12. 
+\PMID{30541065}
+\PMCID{PMC6748815}
+\DOI{10.1093/gerona/gly277}
+%IGS
+%In MyNCBI 
+
+\item 
+Jotwani VK, Lee AK, Estrella MM, Katz R, Garimella PS, Malhotra R, Rifkin DE, \WA, Freedman BI, Cheung AK,  Raphael KL, Drawz P, Neyra JA, Oparil S,
+Punzi H, Shlipak MG, and Ix JH for the SPRINT Research Group.
+Urinary biomarkers of tubular damage are associated with mortality but not cardiovascular risk among SPRINT participants with chronic kidney disease.
+American Journal of Nephrology, 2019;49(5):346--355. Epub 2019 Apr 2.
+\PMID{30939472}
+\PMCID{PMC6491265}
+\DOI{10.1159/000499531}
+%IGS
+%In MyNCBI
+
+\item \label{ComparatorGroups}
+Freedland K, Rebok G, Campo R, Riley W, Edinger J, \WTA, Treweek S, Mayo-Wilson E, Czajkowski S, Collins L, King A, Young-Hyman D, Cook T, Stoney C, Mohr D, Thabane L.
+The Selection of Comparators for Randomized Controlled Trials of Health-Related Behavioral Interventions: Recommendations of an NIH Expert Panel.
+Journal of Clinical Epidemiology, 2019 Jun;110:74--81.  Epub 2019 Feb 28.
+\PMID{30826377}
+\PMCID{PMC6543841}
+\DOI{10.1016/j.jclinepi.2019.02.011}
+%IGS
+%In MyNCBI
+
+\item 
+Nowak KL, Chonchol M, Jovanovich A, You Z, Bates J, Foy C, Glasser S, Killeen AA, Kostis J, Rodriguez CJ, Segal M, Simmons DL, Taylor A, Lovato LC, \WTA, Supiano MA.
+Serum Sodium and Pulse Pressure in SPRINT.  American Journal of Hypertension.  
+2019 Jun 11;32(7):649-656
+Epub 2019 Apr 12.
+\PMID{30977767}
+\PMCID{PMC6558665}
+\DOI{10.1093/ajh/hpz055}
+%IGS
+%In MyNCBI
+
+\item 
+Garimella PS, Lee AK, \WTA, Bhatt, U, Cheung AK, Chonchol M, Craven T, Hawfield AT, Jotwani V, Killeen A, Punzi H, Sarnak MJ, Wall BM, Ix JH and Shlipak MG. Markers of Kidney Tubule Function and Risk of Cardiovascular Disease Events and Mortality in the SPRINT Trial. Eur H Journal, \AR{2019 Nov 1};40(42):3486--3493.  Epub 2019 Jun 30.
+\PMID{31257404}
+\PMCID{PMC6837159}
+\DOI{10.1093/eurheartj/ehz392}
+%IGS
+%In MyNCBI
+
+\item 
+Rejeski WJ, Marsh AP, Fanning J, \WTA, Walkup MP, Nicklas BJ.  
+Dietary Weight Loss, Exercise, and Inflammation in Older Adults who are Overweight or Obese with Cardiometabolic Disease.
+Obesity, \AR{2019 Nov;27(11):1805--1811. Epub 2019 Nov 05.}
+\PMID{31689007}
+\PMCID{PMC6941888}
+\DOI{10.1002/oby.22600}
+%IGS
+%In MyNCBI
+
+
+\item 
+ Kammire DE, Walkup MP, \WTA, Lenchik L, Shapses SA,  Nicklas BJ,  Houston DK,  Marsh AP, Rejeski WJ, and  Beavers KM.
+ Effect of Weight Change Following Intentional Weight Loss on Bone Health in Older Adults with Obesity.
+ Obesity, \AR{2019 Nov;27(11):1839--1845.  Epub 2019 Sep 4.}
+\PMID{31486297}
+\PMCID{PMC6832808}
+\DOI{10.1002/oby.22604}
+%IGS
+%In MyNCBI
+
+\item 
+Lee AK, Katz R, Jotwani V, Garimella PS, \WTA, Cheung AK, Gren LH, Neyra JA, Punzi H, Raphael KL, Shlipak MG, Ix JH.
+Distinct Dimensions of Kidney Health and Risk of Cardiovascular Disease, Heart Failure, and Mortality.
+Hypertension, \AR{2019 Oct;74(4):872--879.
+ Epub 2019 Aug 5.}
+\PMID{31378102}
+\PMCID{PMC6739187}
+\DOI{10.1161/HYPERTENSIONAHA.119.13339}
+%IGS
+%In MyNCBI
+
+\item 
+Balachandran A, Gundermann DM, Walkup MP, King AC, \WTA, Kritchevsky SB, Pahor M, Newman AB, and Manini TM.
+Association of Fish Oil and Physical Activity on Mobility Disability in Older Adults.
+Medicine \& Science in Sports \& Exercise.  \AR{2020 Apr;52(4):859--867.  Epub 2019 Nov 01.}
+\PMID{31688650}
+\PMCID{PMC7123515}
+\DOI{10.1249/MSS.0000000000002195}
+%IGS
+%In MyNCBI
+
+\item 
+Pahor M, Guralnik JM, Anton SD, \WTA, Blair SN, Church TS, Espeland MA, Fielding RA, Gill TM, Glynn NW, Groessl EJ, King AC,
+Kritchevsky SB, Manini TM, McDermott MM, Miller ME, Newman AB, Williamson JD.
+Impact and Lessons Learned from the Lifestyle Interventions and Independence for Elders (LIFE) Clinical Trials of Physical Activity to Prevent Mobility Disability.
+Journal of the American Geriatric Society.  \AR{2020 Apr;68(4):872--881. Epub 2020 Feb 27.}
+\PMID{32105353}
+\PMCID{PMC7187344}
+\DOI{10.1111/jgs.16365}
+%IGS
+%In MyNCBI
+
+
+\item 
+Malhotra R, Katz R, Jotwani V, \WTA, Raphael KL, Haley W, Rastogi A, Cheung AK, Freedman BI, Punzi H, Rocco MV, Ix JH*, Shlipak MG*. *These authors contributed equally. Urine Markers of Kidney Tubule Cell Injury and Kidney Function Decline in SPRINT Trial Participants with CKD. Clin J Am Soc Nephrol.  \AR{2020 Mar 6;15(3):349--358. Epub 2020 Feb 28.}
+\PMID{32111704}
+\PMCID{PMC7057300}
+\DOI{10.2215/CJN.02780319}
+%IGS
+%In MyNCBI
+
+\item 
+Check J, Jensen ET, Skelton JA, \WTA, O'Shea TM. Early growth outcomes in very low birth weight infants with bronchopulmonary dysplasia or fetal growth restriction. Pediatric Research, 2020. 2020 Oct;88(4):601--604. \AR{Epub 2020 Feb 15.}   
+\PMID{32061195}
+\PMCID{In Process}\mybox\ 
+\DOI{10.1038/s41390-020-0808-7}
+%IGS
+%In MyNCBI
+
+
+\item 
+Soliman E, Rahman AKM, Zhang ZM,  Rodriguez C, 
+Chang, T, Bates, J, DeBakey ME, Ghazi L, Blackshear J, Chonchol M, Fine LJ, \WTA, Lewis C.
+Effect of Intensive Blood Pressure Lowering on the Risk of Atrial Fibrillation in the Systolic Blood Pressure Intervention Trial (SPRINT).
+Hypertension, \AR{2020 Jun;75(6):1491--1496. Epub 2020 May 4.}  \emph{This paper was selected by Hypertension as a High Impact Paper for Summer 2020 in the category of Clinical science.}
+\PMID{32362229}
+\PMCID{PMC7225060}
+\DOI{10.1161/HYPERTENSIONAHA.120.14766}
+%IGS
+%In MyNCBI
+
+\item 
+Singleton MJ, German CA, Bertoni AG, \WTA, Bhave PD, Soliman EZ, Yeboah J.
+Association of Silent Myocardial Infarction With Major Cardiovascular
+Events in Diabetes: The ACCORD Trial.
+Diabetes Care. \AR{2020 Apr};43(4):e45--e46. 
+\PMID{32179509}
+\PMCID{In Process}\mybox\ 
+\DOI{10.2337/dc19-2201}
+%IGS
+%In MyNCBI
+
+\item
+Duncan PW, Bushnell CD, Jones SB, Psioda MA, Gesell SB, D'Agostino Jr RB, Sissine ME, Coleman SW, Johnson AM, Barton-Percival BF,  Prvu-Bettger J, Calhoun AG, Cummings DM, Freburger JK, Halladay JR, Kucharska-Newton AM, Lundy-Lamm G, Lutz BJ, 
+Mettam LH, Pastva AM, Xenakis JG, \WTA, Radman MD, Vetter  B, Rosamond WD, COMPASS Site Investigators and Teams.
+Randomized Pragmatic Trial of Stroke Transitional Care: The COMPASS Study.
+Circ Cardiovasc Qual Outcomes. \AR{2020 Jun;13(6):e006285. Epub 2020 Jun 1.}
+\PMID{32475159}
+\PMCID{In Process}\mybox\ 
+\DOI{10.1161/CIRCOUTCOMES.119.006285}
+%IGS
+%In MyNCBI
+
+\item 
+Ginsberg C, Katz R, Chonchol MB, Bullen AL, Raphael KL, Zhang WR, \WTA, Bates JT, Neyra JA, Killeen AA, Punzi H, 
+Shlipak MG, Ix JH.  
+The Effects of Intensive Blood Pressure Lowering on Markers of Mineral Metabolism in Persons With CKD in SPRINT.
+Clin J Am Soc Nephrol.  \AR{2020 Jun 8;15(6):852--854. Epub 2020 May 6.}
+\PMID{32376678}
+\PMCID{PMC7274286} 
+\DOI{10.2215/CJN.01400220}
+%IGS
+%In MyNCBI
+
+\item 
+Ilkun OL, Greene T, Cheung AK, Whelton PK, Wei G, Boucher RE, \WTA,  Chertow GM, Beddhu S.  
+The influence of baseline diastolic blood pressure on the effects of intensive blood pressure lowering on cardiovascular outcomes and all-cause mortality in type 2 diabetes mellitus.
+Diabetes Care. \AR{2020 Aug;43(8):1878--1884. Epub 2020 May 4.}
+\PMID{32366577}
+\PMCID{PMC7372050} 
+\DOI{10.2337/dc19-2047}
+%IGS
+%In MyNCBI
+
+
+\item 
+Custodero C, Anton SD, Beavers DP, Mankowski RT, Lee SA, McDermott MM, Fielding RA, Newman AB, Tracy RP, Kritchevsky SB, \WTA, Pahor M, Manini TM, ENRGISE study investigators.
+The relationship between interleukin-6 levels and physical performance in mobility-limited older adults with chronic low-grade inflammation: The ENRGISE Pilot study.
+Archives of Gerontology and Geriatrics.  
+\AR{Sep--Oct 2020;90:104131.  Epub 2020 May 30}.
+\PMID{32554219}
+\PMCID{PMC7434645} 
+\DOI{10.1016/j.archger.2020.104131}
+%IGS
+%In MyNCBI
+
+
+\item \label{CACWorkshop}
+Greenland P, Michos ED, Redmond N, Fine LJ, Alexander KP, \WTA, Bibbins-Domingo K, Blaha MJ, Blankstein R, Fortmann SP, Khera A, Lloyd-Jones DM, Maron DJ, Min JK, Muhlestein JB, Nasir K, Sterling MR, Thanassoulis G. Primary Prevention Trial Designs Using Coronary Imaging: A National Heart, Lung, and Blood Institute Workshop. JACC Cardiovasc Imaging. 
+\AR{Epub 2020 Sep 11.}  S1936-878X(20)30650-1.
+\PMID{32950442}
+\PMCID{In Process}\mybox\ 
+\DOI{10.1016/j.jcmg.2020.06.042}
+%IGS
+%In MyNCBI
+
+\item 
+Potok OA, Ix JH, Shlipak MG, Katz R, Hawfield AT, Rocco MV, \WTA, Cho ME, Pajewski NM, Rastogi A, Rifkin DE.
+The Difference Between Cystatin C– and Creatinine-Based Estimated GFR and Associations With Frailty and Adverse Outcomes: 
+A Cohort Analysis of the Systolic Blood Pressure Intervention Trial (SPRINT).
+American Journal of Kidney Diseases. 2020 Jul 12;S0272--6386(20)30787-3. Epub 2020 Jul 16.
+\PMID{32682697}
+\PMCID{In Process}\mybox\ 
+\DOI{10.1053/j.ajkd.2020.05.017}
+%NIGS
+%In MyNCBI
+
+\item 
+Sanford JA, Nogiec CD, Lindholm ME, Adkins JN, Amar D, Dasari S, Drugan JK, Fernández FM, 
+Radom-Aizik S, Schenk S, Snyder MP, Tracy RP, Vanderboom P, Trappe S, and Walsh MJ for
+the Molecular Transducers of Physical Activity Consortium.
+Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping the Dynamic Responses to Exercise.
+Cell. 2020 Jun 25;181(7):1464--1474.
+doi: 10.1016/j.cell.2020.06.004. 
+\PMID{32589957}
+\PMCID{In Process}\mybox\ 
+\DOI{https://doi.org/10.1016/j.cell.2020.06.004}  \emph{I was listed as another contributor on this paper.  I spent almost three years working on MoTrPAC
+and came off when PROVE and PREVENTABLE got funded.  I contributed to study design and study startup.}
+%IGS
+%In MyNCBI
+
+\item 
+Jovanovich A, Ginsberg C,You Z, Katz R, \WTA, Berlowitz D, Cheung AK, Cho M, Lee AK, Punzi H, Rehman S, Roumie C, Supiano MA,
+Wright CB, Shlipak M, Ix JH, Chonchol M.
+FGF23, Frailty, and Falls in SPRINT.
+Journal of the American Geriatric Society, 2021 Feb;69(2):467--473. Epub 2020 Dec 1.
+\PMID{33289072}
+\PMCID{PMC7372050}
+\DOI{10.1111/jgs.16895}
+%IGS
+%In MyNCBI
+
+\item 
+Wright CB, Auchus AP, Lerner A, \WTA, Ay H, Bates JT, Chen J, Meschia JF, Oparil S, Pancholi S, Papademetriou V, Rastogi A, Sweeney M, Yee J, and Willard JJ, for the SPRINT Research Group.
+Effect of Intensive Versus Standard Blood Pressure Control on Stroke Subtypes.
+Hypertension.  2021 Apr;77(4):1391--1398.
+Epub 2021 Feb 15.  
+\PMID{33583199}
+\PMCID{In Process} \mybox\ 
+\DOI{10.1161/HYPERTENSIONAHA.120.16027}  
+%IGS
+%In MyNCBI
+
+\item 
+Lewis CE, Fine LJ, Beddhu S, Cheung AK, Cushman WC, Cutler JA, Evans GW, Johnson KC, Kitzman DW, Oparil S, Rahman M, Reboussin DM, Rocco MV, Sink KM, Snyder JK, Whelton PK, Williamson JD, Wright JT, and \WTA\ for the SPRINT Research Group.
+Final Report of a Trial of Intensive versus Standard Blood Pressure Control.
+New England Journal of Medicine,  2021 May 20;384(20):1921--1930. 
+\PMID{34010531}
+\PMCID{In Process}\mybox\ 
+\DOI{10.1056/NEJMoa1901281}
+%Not IGS  ***********
+%In MyNCBI
+
+\item 
+Botoseneanu A, Chen H, \WTA, Allore HG, Anton S, Folta SC, King AC, Nicklas BJ, Spring B, Strotmeyer ES, Gill TM.  
+Metabolic syndrome and the benefit of a physical activity intervention on
+lower-extremity function: Results from a randomized clinical trial.
+Experimental Gerontology, 
+Epub 2021 Apr 10.  \mybox\ 
+\PMID{33848565}
+\PMCID{In Process} \mybox\ 
+\DOI{10.1016/j.exger.2021.111343} 
+%IGS
+%In MyNCBI
+
+
+\item 
+German CA, Elfassy T, Singleton MJ, Rodriguez CJ, \WTA, Yeboah J.
+Trajectories of Blood Pressure Control a Year after Randomization and Incident Cardiovascular Outcomes in SPRINT.
+American Journal of Hypertension, In Press\mybox.  Epub 2021 Apr 16.
+\PMID{33861306}
+\PMCID{In Process} \mybox \ 
+\DOI{10.1093/ajh/hpab059}
+%IGS
+%Not In MyNCBI
+
+\item 
+Beavers DP, Kritchevsky SB, Gill TM, \WTA, Anton SD, Fielding RA, King AC, Rejeski WJ, Lovato L, McDermott MM, Newman AB, Pahor M, Walkup MP, Tracy RP, and Manini TM.
+Elevated IL-6 and CRP Levels Are Associated With Incident Self-Reported Major Mobility Disability:  A Pooled Analysis of Older Adults With Slow Gait Speed.
+Journals of Gerontology:  Medical Sciences, In Press\mybox.  Epub 2021 Apr 5.
+\PMID{33822946}
+\PMCID{In Process} \mybox\ 
+\DOI{10.1093/gerona/glab093}
+%IGS
+%In MyNCBI
+
+
+\item 
+Lee DH, Agrón E, Keenan TDL, Lovato JF, \WTA, Chew EY, on behalf of the ACCORD Eye Study Research Group.
+Visual Acuity Outcomes after Cataract Surgery in Type 2 Diabetes: The Action to Control Cardiovascular Risk in Diabetes (ACCORD) Study.
+British Journal of Ophthalmology, In Press.  \mybox
+\PMID{In Process}
+\PMCID{In Process} \mybox\ 
+\DOI{In Process}
+%Not IGS
+%Not In MyNCBI
+
+
+
+\begin{comment}
+******** Accepted
+
+
+*********************Submitted
+
+
+*********************Submitted, awaiting resubmission
+
+
+*********************Soon to submit/In preparation
+LIFE Buford paper15
+The R package with Jon Mahnken and his student.
+Paper with Tony and his 2000 MS student thesis.
+\end{comment}
+
+\end{enumerate}
+
+
+
+\mysubsection{Invited Book Chapters/Reviews}
+\begin{enumerate}
+\item Case LD and \WTA, Power and Sample Size, in \emph{Topics in Biostatistics\/}, 
+Humana Press, Totowa, New Jersey, 2007, 377--408.
+\PMID{18450060}
+\href{http://doi.org/10.1007/978-1-59745-530-5_19}{doi:{10.1007/978-1-59745-530-5\_19}.}
+\end{enumerate}
+
+\mysubsection{Books}
+\begin{enumerate}
+\item \WTA, editor, \emph{Topics in Biostatistics\/}, 
+Humana Press, Totowa, New Jersey, 2007, ISBN 978-1-58829-531-6, 528 pp.
+Available at 
+\href{http://link.springer.com/book/10.1007/978-1-59745-530-5}{http://link.springer.com/book/10.1007/978-1-59745-530-5}.
+(Review:  Srivastava M and Abbas M, Topics in Biostatistics, 
+Journal of Applied Statistics, 2009, 36(4):467--468.   \DOI{10.1080/02664760802340325})  The book's front matter and the review are presented in Appendix~\ref{TIBApp}.
+\label{TIB}
+\end{enumerate}
+
+
+\mysubsection{Miscellaneous Publications}
+\begin{enumerate}
+\item
+\WTA. Weighted linear regression parameter estimators under stratified random sampling.  
+Senior Honors Thesis, Washington University, 1991.
+
+\item
+\WTA.  Deformable templates and image compression, Ph.D. Dissertation, The University of Chicago, 1995.
+
+\item \WTA.  Deformable Templates and Image Compression.  
+Available at 
+%\url{http://www.ambrosius.net/walter/Professional/DefTempImComp.pdf}.
+\url{http://www.phs.wakehealth.edu/public/wambrosi/pdfs/DefTempImComp.pdf}.
+%\hl{FIX}
+
+
+
+\item
+\WTA, Hui SL.  Cross Calibration in Longitudinal Studies.  American Statistical Association, Proceedings of the Biometrics Section, August 1998.
+
+\item
+\WTA, Manatunga AK.  Intensive Short-Courses for Fellows and Physicians.  
+American Statistical Association, Proceedings of the Section on Teaching of Statistics 
+in the Health Sciences, August 1999.
+
+\markboth{BIBLIOGRAPHY (Continued)}{Miscellaneous Publications (Continued)}
+
+\item \WTA. AssocPow Version 2.0, Power for Genetic
+Association Studies.  Available at 
+\url{http://www.phs.wakehealth.edu/public/wambrosi/Power/index.html}.
+This is software for the methods
+published in ``Power for Genetic Association Studies with Random Allele Frequencies 
+and Genotype Distributions'' (paper \ref{AmbrosiusLangeLangefeld}, page \pageref{AmbrosiusLangeLangefeld}).
+
+\item
+\WTA, Danis RP, Riddle MC, Goff  DC Jr., Gerstein HC, Greven CM, Chew EY.
+Macular Edema and Thiazolidinediones.  Archives of Ophthalmology, 2010, 128(12):1630--1632.
+This is a letter to the editor and our response for paper \ref{TZD} on page \pageref{TZD}.
+\label{TZDLetter}
+
+
+\end{enumerate}
+
+
+
+
+
+\mysubsection{Presentations at Professional Meetings}
+\begin{enumerate}
+
+\item
+Bloem LJ, Foroud TM, \WTA, Guo C, Sorbel J, Hanna M, Pratt JH.  The angiotensinogen gene and blood pressure regulation in blacks.  The 22nd International Aldosterone Conference, San Francisco, June 10--11, 1996.
+	
+\item
+Bloem LJ, Foroud TM, \WTA, Tewksbury DA, Pratt JH.  The relationship of an angiotensinogen concentration and blood pressure in blacks and whites.  The American Heart Association 50th Annual Fall Conference and Scientific Sessions of the Council for High Blood Pressure Research, Chicago, September 17--20, 1996.
+	
+\item
+Johnson MS, Shah H, Harris VJ, Snidow JJ, Trerotola SO, \WTA. Comparison of cut film and digital subtraction angiography in the evaluation of suspected thoracic aortic injury.  The Radiological Society of North America, Chicago, December 1--6, 1996.
+
+\item
+Stockberger SM, Hichlin J, Liang Y, Rogers WJ, Wass JL, Kopecky KK, \WTA.  Spiral CT: A comparison of ionic and nonionic contrast use on patient motion.  The Radiological Society of North America, Chicago, December 1--6, 1996.
+	
+
+\item
+Carmody TJ, Peters CR, Trerotola SO, Pressen RJ, \WTA.  Does addition of Urokinase enhance the resolution of iatrogenic pulmonary emboli?  The Radiological Society of North America, Chicago, December 1--6, 1996.
+	
+\item
+Tepper RS, Eigen H, Stevens J, Angelicchio C, Kisling J, \WA, Heilman D.  Corticosteroid treatment for cystic fibrosis (CF) infants hospitalized for lower respiratory illness.  The European Respiratory Society, Stockholm, Sweden, September 7--11, 1996.
+
+\item
+Saxen MA, \WTA, Rehemtula AF, and Russell AL.  Clinical Results in an Oral Pain Model, International Society for Rheumatic Therapy, Paris, May 18, 1996.
+
+\item
+Johnson MS, Shah H, Harris VJ, \WTA, Trerotola SO, and Snidow JJ.  Digital Subtraction Arteriography: The New Gold Standard in the Evaluation of Suspected Thoracic Aortic Injury, Society of Cardiovascular and Interventional Radiology, 22nd Annual Meeting, Washington, DC, March 8--13, 1997.
+
+\item
+Trerotola SO, Johnson MS, Shah H, Kraus MA, McKuskey M, \WTA, Harris VJ, Snidow JJ.  Randomized study of silver coating (Silvergard) for prevention of infection in tunneled hemodialysis catheters: Final report.  Radiological Society of North America, Chicago, 1997.
+
+\item
+\WTA, Hui SL.  Quality Control in Longitudinal Clinical Trials, American Statistical Association, Anaheim, CA, August 10--14, 1997.
+	
+\item
+Peacock M, Hui S, Liu G, Carey M, \WTA, Johnston CC.  Effect of Oral Calcium and Vitamin D on Bone Mineral Density at the Hip in Elderly Men and Women.  American Society of Bone and Mineral Research, September 10--14, 1997, Cincinnati.
+	
+\item
+Pratt JH, \WTA, Tewksbury DA, The Relation of Body Size, Sex Hormones, and Genotype to the Serum Angiotensinogen Concentration in Blacks and Whites.  51st Annual Fall Conference and Scientific Sessions of the Council for High Blood Pressure Research, American Heart Association, Washington DC, September 16--19, 1997.
+
+\item
+Pratt JH, \WTA, Bloem LJ, Guo C, Wagner MA, Rebhun JF, Variations in the Human Amiloride-Sensitive Epithelial Sodium Channel.  International Aldosterone Conference, New Orleans, LA, June 22--23, 1998.
+
+\item
+\WTA, Hui SL.  Cross Calibration in Longitudinal Trials, American Statistical Association, Dallas, TX, August 9--13, 1998.
+
+\markboth{BIBLIOGRAPHY (Continued)}{Presentations at Professional Meetings (Continued)}
+
+\item
+Trerotola SO, Shah H, Johnson M, Namyslowski J, Moresco K, Patel N, Kraus M, Gassensmith C, \WTA, Randomized Study of Conventional Versus High Flow Hemodialysis Catheters, The Society of Cardiovascular and Interventional Radiology, Orlando, FL, March 1999.
+
+\item
+Johnson MS, McLennan G, Stookey KR, Sasadeucz K, Zhang Z, Fife WK, \WTA, Harezlak J, Dreesen RG.  Sustained release of heparin by percutaneous immobilization within an alginate hydrogel at the peri-adventitial surface of arteries.  Radiological Society of North America, Chicago, IL, November 1999.
+
+\item
+McLennan G, Johnson MS, Zhang Z, Fife WK, \WTA.  Comparison of HPLC and Scintillation Heparin Assays.  Society for Vascular Medicine and Biology, Washington DC, June 1999.
+
+\item
+\WTA, Manatunga AK.  Intensive Short-Courses for Fellows and Physicians, American Statistical Association, Baltimore, MD, August 8--12, 1999.
+\label{AmitaAbstract}
+
+\item
+Broderick LS, Conces DJ, Tarver RD, \WTA.  Evaluation of Questionable Nodules on Chest Radiographs: Fluroscopy vs CT.  Scientific Paper Presentation, 85th Scientific Assembly and Annual Meeting of the Radiological Society of North America, Chicago, IL, November 1999.
+
+\item
+Pratt JH, \WTA, Bloem LJ, Zhou L, Snyder PM, Wagner MA, Guo C.  Molecular Variations in the Epithelial Sodium Channel in Relation to Aldosterone and Potassium Excretion and Hypertension American Heart Association, Council for High Blood Research, Orlando, FL Sept 13--16, 1999.
+
+\item
+Dunn DW, Austin JK, Harezlak J, \WTA.  Behavioral Problems in Childhood Epilepsy.  Annual Meeting of the American Academy of Child and Adolescent Psychiatry, New York, NY, October 24--29, 2000.
+
+\item
+Austin JK, Dunn DW, Harezlak J, McNelis AM, \WTA.  Informant Agreement in Behavior Ratings of Children with Epilepsy.  American Epilepsy Society, Los Angeles, CA, December 1--6, 2000.
+
+\item
+Dunn DW, Austin JK, Harezlak J, \WTA.  Attention Deficit Hyperactivity Disorder and Chronic Epilepsy in Childhood.  American Epilepsy Society, Los Angeles, CA, December 1--6, 2000.  American Epilepsy Society, Los Angeles, CA, December 6, 2000.
+
+\item
+Shankar RR, Ferrari P, Wu Y, \WTA, Pratt JH.  Gender differences in the activity of 11   hydroxysteroid dehydrogenase type 2 (11 HSD2).  Annual meeting of the Endocrine Society, Denver, CO, June 20--23, 2001.
+
+\item
+Shankar RR, Ferrari P, Wu Y, \WTA, Pratt JH.  Gender differences in the activity of 11   hydroxysteroid dehydrogenase type 2 (11 HSD2).  Pediatric Endocrine Society, Montreal, Canada, July 6--10, 2001.
+
+\item
+Austin JK, Dunn DW, Harezlak J, \WTA, Hale B, Perkins S.  Is psychosocial care related to self-concept and depression in adolescents with epilepsy?  American Epilepsy Society, Philadelphia, November 30--December 5, 2001.
+
+\item
+Dunn DW, Austin JK, Harezlak J, Perkins S, \WTA.  Do Behavioral problems vary by recurrence of seizures?  American Epilepsy Society, Philadelphia, November 30--December 5, 2001.
+
+\item
+Pahor M, Nicklas B, \WTA, Kritchevsky S, Miller G, Kuasney M, Bleecker E, Messier S, Mychaleckyj, Newman A, Rich S.  Gene Polymorphisms and Prevention of Disability.  National Institute of Aging Genetic Epidemiology Conference, San Francisco, Feb 1--2, 2002.
+
+\item
+Nicklas B, Messier S, Miller G, Penninx B, Loeser R, \WA, Bleecker E, Pahor M.  Caloric restriction, but not exercise, reduces c-reactive protein and IL-6 concentrations in older, obese adults:  a randomized, controlled clinical trial.  Claude D. Pepper Older Americans Independence Centers 2002 Annual Symposium, Galveston, TX, February 22--23, 2002.  
+
+\item
+Pratt JH, \WTA, Agarwal R, Eckert GJ.  Racial Differences in Retention of Sodium, Annual Fall Conference and Scientific Sessions of the Council for High Blood Pressure Research, American Heart Association, Orlando, FL, September 25--28, 2002.
+
+\item
+Shankar RR, Eckert GJ, \WTA, Saha C, Pratt JH, Tu W.  Puberty and Sexual Dimorphism in Blood Pressure.  Annual Fall Conference and Scientific Sessions of the Council for High Blood Pressure Research, American Heart Association, Orlando, FL, September 25--28, 2002.
+
+\item
+Shankar RR, Ferrari P, \WTA, Pratt JH.  Sex Hormones and Activity of 11 B-Hydroxysteroid Dehydrogenase Type 2.  Annual Fall Conference and Scientific Sessions of the Council for High Blood Pressure Research, American Heart Association, Orlando, FL, September 25--28, 2002.
+
+\item
+Nicklas B, \WA, Messier S, Miller G, Penninx B, Loeser R, Pahor M.  Caloric Restriction and Exercise Reduce Inflammatory Markers in Older, Obese Adults.  Gerontological Society of America, Boston, MA, November 22--26, 2002.
+
+\item
+Miller GD, Nicklas B, Davis CC, \WTA, Messier SP.  Is leptin related to physical function and inflammatory biomarkers in older overweight and obese adults with knee osteoarthritis?  American College of Sports Medicine, San Francisco, CA, July 2--5, 2003.
+
+\item
+Ellis TM, Miller GD, Nicklas B, Davis CC, \WTA, Loeser RF, Messier SP.  Effect of weight loss and exercise on plasma leptin levels in older adults.  American College of Sports Medicine, San Francisco, CA, July 2--5, 2003.
+
+\item
+Wideman L, Brown P, Consitt MS, \WTA, Rimm-Hewitt S, Baker CF.  Maximal and submaximal exercise energy expenditure in healthy adolescents and those with cystic fibrosis.  American College of Sports Medicine, San Francisco, CA, July 2--5, 2003.
+
+\item
+\WTA, Lange EM, Langefeld CD.  Power for Genetic Association Studies with Random Allele Frequencies and Genotype Distributions, Joint Statistical Meetings, San Francisco, CA, August 3--7, 2003.
+
+\item
+Goff DC Jr., Massing MW, Bertoni AG, Davis J, \WTA, McArdle J, Duren-Winfield V, Sueta C, Croft JB.  Enhancing quality of heart failure care in managed Medicare and Medicaid in North Carolina: Results of the North Carolina Achieving Cardiac Excellence (NC ACE) Project.  JACC  2004, 43:406A.  Abstract presented at the 53rd Annual Scientific Session of the American College of Cardiology, 2004.
+
+\item
+Nicklas BJ, Penninx BWJH, \WTA, Messier , Pahor M.  Inflammatory markers and physical function among older adults 
+with knee osteoarthritis, American  Geriatric Society, Las Vegas, NV, May 2004.
+
+\item Washburn LK, Nixon PA, \WTA, O'Shea TM.  Steroid Exposure, Growth, and Blood Pressure at 8--10 Years of Age in
+Very Low Birth Weight Infants, Society for Epidemiologic Research, Salt Lake City, UT, June 2004.
+
+\item Greven CM, \WTA, Bonds D, Buse JB, Chew EY, Cohen RM, Danis RP, Felicetta J,
+Gerstein H, Goff DC Jr., Howard LT, Johnson S, Miller ME, Peterson K,
+Riddle M, Rosenberg Y, Seaquist L.  
+Thiazolidinediones and Diabetic Macular Edema:  Is There an Association?
+American Academy of Ophthalmology, Retina Subspecialty Day, Las Vegas, NV, November 11, 2006.
+
+\item Miller DP, Furberg CD, Small RH, Millman FM, \WTA, Harshbarger JS, Ohl CA.
+Controlling Prescription Drug Expenditures:  A Report of Success.
+Society of General Internal Medicine Annual Meeting, Toronto, Canada, April 25-28, 2007.
+
+\item Margolis KL, Schwartz AV, Palermo L, \WTA, Bonds D, Ding J, Ensrud KE, Lenchik L, 
+Riddle M, Schnall A, Seaquist ER, Simmons DL. Association of lean mass and fat mass with 
+bone mineral density in older diabetic adults: the ACCORD-BONE study. 
+Poster presentation at the $68^{th}$ Scientific Sessions of the American Diabetes Association, 
+San Francisco, CA, June 8, 2008. Diabetes 2008; 57 (Suppl 1): A260.
+
+\item \WTA, Tooze JA, Shively C, Ellis S.  Establishing a Statistician-Community Partnership:
+A Complicated Journey.  American Statistical Association, Joint Statistical Meetings, Denver, CO, August 3, 2008.
+
+\hskip -4.5\parskip
+{\bfseries Note}:  I no longer track abstracts.
+
+\end{enumerate}
+
+
+
+\mysection{INVITED EXTRAMURAL PRESENTATIONS}
+\begin{enumerate}
+\item January 20, 1998, \WTA\ and Hui SL.  Quality Control and Longitudinal Clinical Trials, 
+Department of Statistics, Purdue University, 
+West Lafayette, IN.
+\item August 10, 1999, \WTA\ and Manatunga AK.  Intensive Short-Courses for Fellows and Physicians, 
+American Statistical Association, Joint Statistical Meetings, Baltimore, MD.
+\item August 3, 2008, \WTA, Tooze JA, Shively C, and Ellis S.  Establishing a Statistician-Community 
+Partnership: A Complicated Journey.  American Statistical Association, Joint Statistical Meetings,
+ Denver, CO.
+\item February 9, 2009, \WTA\ and Mahnkhen JD. Power for Observational Studies with Random Group 
+Sizes, Department of Biostatistics and Bioinformatics and the Duke Clinical Research Institute,
+Duke University, Durham, NC.
+\item April 21, 2009, \WTA, Mahnkhen JD. Power for Observational Studies with Random Group 
+Sizes, Department of Preventive Medicine Grand Rounds, Rush University Medical Center,
+Chicago, IL.
+\item August 1, 2009, \WTA\ and Mahnkhen JD. Power for Observational Studies with Random Group 
+Sizes, Association of Clinical and Translational Statisticians, Washington, DC.
+\item August 4, 2009, \WTA.  Setting Consulting Rates.  Luncheon discussion for the Section on 
+Statistical Consulting, American Statistical Association, Washington, DC.
+\item May 20, 2012, \WTA.  Systolic Pressure Intervention Trial (SPRINT):  Main Trial Design and Trial
+Status.  American Society of Hypertension, New York, NY. 
+\item July 2, 2012, \WTA.  
+Design of the Value of Imaging in Enhancing the Wellness of Your Heart (VIEW) Trial and the Impact of Uncertainty on Power.
+Department of Biostatistics, Indiana University School of Medicine, Indianapolis, IN.
+\item February 20, 2013, \WTA.  
+Design of the Value of Imaging in Enhancing the Wellness of Your Heart (VIEW) Trial and the Impact of Uncertainty on Power.
+Department of Mathematics, Wake Forest University, Winston-Salem, NC.
+\item April 14, 2016, \WTA\ and Wells BJ. Statistical Considerations for EHR Research.
+Translational Science 2016, Association for Clinical and Translational Science, Washington, DC.
+\item April 20, 2017,  Wells BJ and \WTA. Statistical Considerations for EHR Research.
+Translational Science 2017, Association for Clinical and Translational Science, Washington, DC.
+\item May 8, 2017, \WTA.  Early Study Termination:  Stopping for harm (ACCORD) vs. stopping for benefit (SPRINT), Society for Clinical Trials,
+Liverpool, UK.
+\end{enumerate}
+
+\markboth{INVITED EXTRAMURAL PRESENTATIONS (Continued)}{\ }
+
+\mysection{DIDACTIC/SYSTEMATIC INSTRUCTION}
+
+\begin{enumerate}
+
+\item Indiana University School of Medicine, Department of Medicine, Division of Biostatistics, Instructor, G652 Introduction to Biostatistics, 3 hours/week for 5 weeks/year, 1996--1997
+\item Indiana University School of Medicine, Department of Public Health, Instructor, G652 Introduction to Biostatistics for Public Health, 3 hours/week for 5 weeks/year, 1999--2000
+\item Wake Forest School of Medicine, Division of Public Health Sciences, HSRP 730 Introduction to Biostatistics, 4 hours/week for 15 weeks, 2004--2005.
+\item Wake Forest School of Medicine, Division of Public Health Sciences, CPTS 741 Research Grant Preparation, 6 hours/week for 6 weeks, 2019 (co-taught with Elsayed Soliman).
+\end{enumerate}
+
+
+%\mysubsection{Peer Reviewed Electronic Publications}
+
+
+%\markboth{BIBLIOGRAPHY (Continued)}{Miscellaneous (Continued)}
+
+
+%\mysubsection{Contributed Lectures}
+%\begin{enumerate}
+%\item September 2, 1992, \WTA.  Application of power to stability designs: Presented at Searle Pharmaceutical Company.
+%\item January 31, 1996, \WTA.  Deformable templates and image compression, Central Indiana Chapter, American Statistical Association.
+%\item August 14, 1997, \WTA, Hui SL.  Quality Control and Longitudinal Clinical Trials, American Statistical Association, Anaheim, CA.
+%\item November 5, 1997, \WTA, Hui SL.  Quality Control and Longitudinal Clinical Trials, Regenstrief Institute, Indianapolis, IN.
+%\item August 10, 1998, \WTA, Hui SL.  Cross Calibration in Longitudinal Studies, American Statistical Association, Dallas, TX.
+%\item December 2, 1998, \WTA, Hui SL.  Cross Calibration in Longitudinal Studies, Regenstrief Institute, Indianapolis, IN.
+%\item August 5, 2003, \WTA, Lange EM, Langefeld CD.  Power for Genetic Association Studies with Random
+%Allele Frequencies and Genotype Distributions, American Statistical Association, San Francisco, CA.
+%\end{enumerate}
+
+
+\mysection{MENTORING RELATIONSHIPS}
+
+\mysubsection{Graduate Students}
+
+\begin{enumerate}
+
+\item Kurt Daniel, D.O.  I served on the thesis committee for his Master's of Science in
+Health Sciences Research, Division of Public Health Sciences, WFSM, May 2007.  Dr. Daniel was 
+a fellow in the Section on Cardiology, Department of Internal Medicine, WFSM.
+
+\item Charles DeComarmond, M.D.  I served on the thesis committee for
+his Master of Science in Health Sciences Research, Division of Public Health Sciences, WFSM
+(never finished).  Dr. DeComarmond was a fellow in the Section on Infections Diseases,
+Department of Internal Medicine, WFSM.
+
+\item Darryl Prime, M.D.  I served on the thesis committee for 
+his Master of Science in Health Sciences Research, Division of Public Health Sciences,
+WFSM, May 2009.  Dr. Prime was a 
+fellow in the Section on Cardiology, Department of Internal Medicine, WFSM.
+
+\markboth{MENTORING RELATIONSHIPS (Continued)}{Graduate Students (Continued)}
+
+\item Cate Glendenning.  I served on the thesis committee for 
+her Master of Science in Health and Exercise Science, WFU, December 2016.  
+
+\item Jennifer F. Check, M.D.  I served on the thesis committee for 
+her Master of Science in Clinical and Population Translational Sciences, WFSM, December 2016.  
+Dr. Check was an Assistant Professor in the Section on Neonatology, Department of Pediatrics, WFSM.
+
+\item Ashish Khanna, M.D.  Since August 2020, I have served on Dr. Khanna's KL2 mentoring committee through the CTSI.  Dr. Khanna is an Associate Professor in the Department of
+Anesthesiology, WFSM.
+
+\end{enumerate} 
+
+\mysubsection{Faculty}
+\begin{enumerate}
+\item 2004--2010, Haiying Chen, PhD, Assistant Professor, Faculty Mentor
+\item 2011--2017, Daniel Beavers, PhD, Assistant Professor, Faculty Mentor
+\item \AR{2020--Present, Kevin Gibbs, MD, Assistant Professor, Faculty Mentor}
+\item \AR{2020--Present, Ashish Khanna, MD, Associate Professor, KL2 Mentoring Committee Member}
+\end{enumerate} 
+%\markboth{GRADUATE STUDENTS/RESIDENTS/FELLOWS ADVISED}{\ }
+%{\qquad\large FELLOWS ADVISED}
+%\markboth{\ }{\ }
+
+
+
+\vfil
+%\label{LastPageWTA}
+%\end{document}
+\pagebreak
+
+%Commented out for ASA application in 2021
+\begin{comment}
+
+\markboth{\ }{\ }
+%\setcounter{page}{0}
+\begin{center}
+{\bfseries\Large PERSONAL STATEMENT}\\
+ {\normalfont\emph{(Last updated 2020-09-06)}}
+\end{center}
+
+{\parindent=0.5in 
+\parskip=1pt
+
+
+There are three areas where I have a national reputation.  These are the 
+the coordination of multi-center randomized clinical trials (RCTs), the statisticians involved with the Clinical and Translational Science Awards (CTSAs) and
+statistical consulting, and as a leader of groups of department chairs.
+I also describe an example of methodological work leading to study design considerations for a 30,000 participant trial and touch on my teaching efforts.
+
+\section*{RCTs}
+My interest in randomized trials began when I was at Indiana University early in my career.
+Shortly after I arrived at Wake Forest School of Medicine, I was asked to join the ACCORD Coordinating Center team.  It was my first experience with a multi-center RCT.  At my first staff meeting there was a discussion of the Morbidity and Mortality Committee but it was described as M\&M; I wondered:  plain or peanut and where were they?
+
+I have had the opportunity to play major roles in ACCORD (N=10,251), LIFE (N=1,635), and SPRINT (N=9,361).  
+On all of these, I've had the pleasure of working with a wonderful group of faculty and staff from WFSM and from many other universities.  This is team science at its best and I have learned much from this work.  
+
+I was asked to lead the coordinating center for the ACCORD-Eye substudy which examined the effects of the ACCORD 
+treatments on incidence and progression of diabetic retinopathy.  
+Along with Dr. Emily Chew (NEI), I developed and wrote the protocol.  I also
+negotiated the overall study budget with the ACCORD Clinical Center Networks and directed the 
+coordinating center's efforts for the Eye Study.  This resulted in a paper published in the New England Journal of Medicine (\ref{ACCORDEyePrimary}).
+It was a tremendous opportunity which taught me a lot about the incredible amount of work that goes on in a large trial before you ever get to publish the primary results paper.  
+
+Working in a coordinating center is deeply personally gratifying as the science is high impact and has led to the two biggest Eureka moments in my career.  The first came when I was preparing a DSMB report for ACCORD and noticed that there was an excess of deaths in the intensive glycemia arm which had not been present earlier.  I walked down the hall to a colleague's office, showed the results to him, and watched his eyes get big when he saw the same thing.  This kicked off a year of analyses trying to figure out what was happening and if we could pin the blame on one of the medications in the formulary (ACCORD was testing a strategy that targeted a HbA1c of $<6$\% vs.  a strategy that targeted a HbA1c of 7.0\% to 7.9\%).  
+The results were contrary to the prevailing wisdom and so we wanted to be certain that there wasn't a simple explanation.  
+We never did find a smoking gun and concluded that it was the strategy which was to blame.  This trial was stopped early for harm and the results were published in 2008 (see paper \ref{ACCORDGly1}).
+ My second Eureka moment came when preparing the DSMB report for SPRINT.  We had been seeing a positive trend but that report showed a huge jump in the Z-score which crossed the monitoring bounds for both the primary outcome and all-cause mortality.  In this case, the trial was stopped early for benefit and the results were published in 2015 (see paper
+  \ref{SPRINTPrimary}).  In both Eureka moments, it was really cool to be the first person in the world to know the results of these highly influential RCTs!
+  
+Currently, most of my external funding comes from multi-center randomized trials and their derivatives.  
+I am a multiple principal investigator (and PI of the data coordinating center (DCC)) for PRagmatic EValuation of evENTs And Benefits of Lipid-lowering in oldEr adults (PREVENTABLE, 1U19AG065188, N=20,000).  This trial is comparing atorvastatin to placebo on a composite primary outcome of all-cause mortality, dementia, and persistent physical disability in older adults
+at least 75 years of age who do not have existing cardiovascular disease.  
+The \href{https://www.nia.nih.gov/news/could-taking-statins-prevent-dementia-disability}{NIA press release} on PREVENTABLE includes a description of the study.
+I am also PI of the DCC for PROmote weight loss in obese PAD patients to preVEnt mobility Loss: The PROVE Trial (1U24HL141732, N=212) which is comparing weight loss plus exercise to exercise alone on the distance walked in six minutes in adults with peripheral artery disease.
+I am a subcontract PI for a single-site trial, CLIP-OA (5R01AG050725), and for a SPRINT ancillary study (5R01HL144112).
+
+I currently serve on 8 external DSMBs and chair the WFSM Comprehensive Cancer Center DSMB.
+
+\section*{GCRC, CTSA, ASA Leadership, and Statistical Consulting}
+When I first joined Indiana University, I became involved with their General Clinical Research Center (GCRC), an NIH-funded center.
+The Association of GCRC Statisticians (AGS) had a small annual meeting with 35--40 statisticians, all of whom were doing similar work.  
+The AGS met as a satellite meeting to the Joint Statistical Meetings (JSM) which is huge and overwhelming at first but the AGS was a great way to
+meet colleagues in a smaller setting.
+When I moved to WFSM in 2001, I was the President-Elect of the AGS (2000--2001) so I asked to work with the WFSM GCRC which I continued until the last GCRC grant expired in 2011.
+I served as AGS President (2002--2003) and Past-President (2004--2005).
+The main task as President was to organize the annual meeting.  The first meeting I organized was August 10--11, 2002.  I understand it was a great meeting but I wasn't there.  My wife gave birth to our only child on the evening of August 9 and I was by her side.  I also organized and attended the 2003 meeting (August 2--3, 2003), but I had to look those dates up!
+
+My AGS connections led to several opportunities.  I was invited to give a talk at the 1999 JSM which won the best invited paper from the Section on Teaching of Statistics in the Health Sciences (TSHS) of the American Statistical Association (ASA).  This paper was subsequently published in 2002 (see paper \ref{ShortCoursesPaper}).  The 1999 award led to an invitation to serve as the Program Chair for TSHS in 2002 and then Chair-Elect (2004), Chair (2005), and Past-Chair (2006) of the Section.
+It also led to a strong interest in statistical consulting and an invitation to serve as Program Chair (2010), Chair-Elect (2013), Chair (2014), and Past-Chair (2015)
+for the ASA's Section on Statistical Consulting.
+
+My interest in consulting led me to be the first director of the WFSM Design and Analysis Unit (DAU) which was an hourly consulting unit which I led from 2006 to 2012.  It was housed in the WFSM Office of Research.  The DAU had two funding sources.  We had money from the Dean to provide free pre-award design work for all WFSM faculty members.  For post-award work and all industry work, we operated as an internal consulting center and charged hourly for our time.  
+We had run a small consulting operation from my department prior to 2006 but rates hadn't been updated in a decade, they weren't covering costs, and it wasn't run as a business.  When I started the DAU, we established standard procedures,  developed an algorithm for setting hourly rates,  built a tracking system, and  covered our costs. Basically, we ran it like a small business.
+We also adopted the International Committee of Medical Journal Editors (ICMJE) 
+\href{http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html}{definition of authorship} which simplified the discussions with clients who said that because we were getting paid then we didn't deserve authorship.
+
+From 2012--2015 other colleagues led the DAU.  
+When our CTSA grant was first funded in 2015, the DAU was rolled into the Biostatistics, Epidemiology, and Research Design (BERD) Program and I became the Program Director.  
+From then on, we also had funding to provide free analytic support for all WFSM early career faculty members in addition to our earlier missions.  Since 2015, other colleagues served as head of the consulting unit of the BERD.
+
+
+
+\section*{Institutional Leadership, Department Chair, and National Leadership of Chairs}
+I have had a long interest in faculty governance.  From 1999--2001, I was an elected member of the Indiana University-Purdue
+University Indianapolis (IUPUI) Faculty Council and from 2009--2010 I was a member of the Dean’s Advisory Committee at WFSM.  
+The Dean's Advisory Committee provided advice to the Dean but it didn't really represent the faculty.  
+I served on a Dean's Advisory Committee subcommittee drafting the Guidelines and Functions of the Faculty Representative
+Council (FRC) in 2010.   The FRC was envisioned to be very much like a traditional Faculty Senate except restricted to the Medical School.  I served on the FRC from 2010--2012 and was the first 
+ chair-elect (2010--2011) and the second chair (2011--2012).
+ 
+ As FRC chair, I worked with the executive leadership team of the FRC to set the monthly agendas and invite speakers.  I also ran the meetings.  My overarching goal was to represent the WFSM faculty and to ensure that issues of concern to the faculty were brought to institutional leadership for discussion.  During my time as FRC chair, WFSM instituted the 75\% funding expectation for faculty and the 1:3 match.  This was a difficult time to serve as it was clear that WFSM needed the 75\% expectation to be financially viable but it caused great angst for many colleagues whose funding was below 75\%.  I knew that I would not be able to head off the policy entirely but I was able to make substantive improvements.  
+ As an example, the initial policy stated that the 1:3 match would only be available for grants paying the full federal indirect rate.  I pointed out that this would mean that pilot grants from foundations (\emph{e.g.}, Kate B. Reynolds) and professional societies (\emph{e.g.}, American Heart Association) would not count and that these pilot funds are often essential for obtaining subsequent NIH funding.
+ 
+ During my year as FRC chair, I was asked by some colleagues to apply to be the next department chair.  I was selected as the next chair but deferred my start date until July 1, 2012 so that I could finish my FRC chair term.  I've now been chair for over 8 years and am still enjoying most of it.  Fundamentally, I believe that my job is to advocate for our faculty and staff, get them the resources needed to do their jobs, and get out of their way.  It is also about being empathetic and recognizing that my success as chair is measured by the success of others.
+ 
+ I have been active nationally in two organizations of chairs.  For the North American Biostatistics Chairs Committee, I have served as Co-Chair Elect
+(2018--2019), Co-Chair (2019--2020), and Past Co-Chair (2020--2021).  The Co-Chair (a Chair of Biostatistics at another institution) and I were planning our annual in-person meeting for March 22, 2020.  Needless to say, that meeting did not happen in person due to the novel coronavirus.  Instead, we pivoted and held a series of three Webex meetings where biostatistics department chairs strategized about how to respond to the pandemic and the changing landscape of academic medicine.  I have also been active in the American Statistical Association's Caucus of Academic Representatives and have recently been elected as the 
+Region 4 \& 5 Representative for 2020--2023.
+
+\section*{Methods and Study Design}
+Most of my career has been focused on collaborative research but I have written some methodological papers 
+motivated by unsolved problems in my collaborative research.  For example, I have published two papers on the incorporation of uncertainty into the calculation of statistical power
+(\ref{AmbrosiusLangeLangefeld},\ref{AmbrosiusMahnken}).  This background was quite helpful in the design of the Value of Imaging in Enhancing the Wellness of Your Heart (VIEW) which had, by far, the most complicated study design and power calculation for any study I have ever seen.  VIEW was a proposed 30,000 subject randomized trial to examine the benefit of coronary artery calcium screening on cardiovascular events.  VIEW was submitted in October 2011 as two linked R01s with the data coordinating center (DCC) at WFSM with me as PI and the clinical coordinating center at Northwestern University with Philip Greenland as PI.  
+Unfortunately, VIEW was not funded.  Had it been, the VIEW DCC would have provided 95 FTE-years of funding at WFSM, a direct cost of \$31.6M, and a total cost of \$43.6M.  To support this application, I have (with colleagues) written a paper describing the statistical methods developed for this trial.  The paper was published by \emph{Clinical Trials} (\ref{VIEWDesign}).  
+%We anticipate that VIEW may not be funded the first cycle (the total direct cost is \$83M) but this paper should have appeared in print prior to the resubmission of the grant.
+%My work began on this project in the Summer of 2010 after Dr. Greenland realized he needed to partner with an experienced data coordinating center.  David Goff had already been involved with the planning of VIEW
+%and suggested that WFSM might be able to serve as the data coordinating center.  Dr. Goff and I discussed this and I readily agreed to lead the effort.  Prior to grant submission, we worked closely with NHLBI staff  prior to submission of the letter requesting assignment.  (Investigators proposing a grant with direct costs in excess of \$500,000 in any year must obtain preapproval prior to submission.)  I presented the proposed study design to the investigative team, NHLBI staff, and to potential clinics.
+
+\section*{Teaching}
+My teaching activities are described in the Portfolio of Educational Achievements but teaching is not a large part of my department's mission.  Briefly, I have repeatedly participated in the
+ Summer Institute on Design and Conduct of Randomized Clinical Trials 
+Involving Behavioral Interventions that is sponsored by the Office of Behavioral and Social Sciences Research (OBSSR) at NIH (2004--2019 and had been invited to the cancelled 2020 edition).  
+I edited an introductory biostatistics book 
+that appeared in 2007.  (See Appendix~\ref{TIBApp} in the Portfolio of Educational Achievements for the frontmatter and a review.)  For this book,
+I developed the outline, solicited contributors, 
+encouraged authors to finish their chapters, and edited chapters.
+
+
+
+%In summary, my academic career has been a combination of research, service, and teaching.
+%During the last few years, I've devoted huge amounts of time to a large multi-center 
+%clinical trial, to the renewal of the GCRC, and to the CTSA submission.  
+%In all three areas, I have played a vital role in the success of the projects.
+}
+\markboth{PERSONAL STATEMENT (Continued)}{\ }
+
+
+
+
+
+
+
+\vfil\pagebreak
+
+
+
+\begin{center}
+{\bfseries\Large WAKE FOREST SCHOOL OF MEDICINE\\
+PORTFOLIO OF EDUCATIONAL ACHIEVEMENTS}
+\end{center}
+
+\markboth{\ }{\ }
+
+
+\mysection{PHILOSOPHY OF EDUCATION {\normalfont\emph{(Last updated 2020-09-13)}}}
+
+{\parindent=0.5in
+\parskip=1pt
+
+ 
+
+\hskip 0.5in 
+Teaching is important to me for selfish and altruistic reasons.  
+Selfishly, I learn by teaching, both in the preparation of course material and in answering 
+questions.
+I have often found that I really do not understand a concept until I explain it to others.
+Altruistically, it is satisfying to help students to perform their own research at a higher level.
+As with my research activities, I hope that this will play a small role in improving public health.
+
+Due to the nature of our Department, formal classroom teaching is not one of my 
+major responsibilities.  
+However, I have been involved as a teacher in several capacities.  These include teaching one-on-one, in 
+a graduate-level introduction to biostatistics course, co-teaching a grant writing course, in
+a biostatistics short course, in various lectures both intramurally and extramurally, and by editing
+a book.
+
+Much of my teaching occurs in one-on-one interactions with faculty and staff from 
+throughout the medical school.  Within my Department, I serve as a resource for my faculty and staff
+colleagues on a daily basis.  
+(Of course, I also benefit tremendously from these discussions!  They often force me to 
+dig deeper into a subject or serve to provide a beneficial review.)
+In my collaborative research, I also participate in one-on-one teaching with WFU
+faculty and investigators at other institutions while explaining why
+a particular study design or statistical method is appropriate for the current application.
+
+While at Wake Forest I have taught the semester-long Introduction to Biostatistics twice (2004 and 2005).
+As our Department teaches three courses a year and we have 25 faculty, we are not expected to teach in
+a formal setting each year.  Even though the title contains ``Introduction,'' the course covers
+some advanced topics (see syllabus in Appendix~\ref{HSRP730IM}).  My teaching
+evaluations are provided in Appendix~\ref{HSRP730TE}.
+In the Summer of 2019, I was course co-director (with Elsayed Soliman) of CPTS 741, Research Grant Preparation.  My teaching evaluations are provided in Appendix~\ref{CPTS741Evals}.
+
+
+While at Indiana University, prior to coming to Wake Forest in 2001, I was involved with a short course
+entitled ``Biostatistics for Physicians:  A Short Course.''  Recognizing the need for such
+a course at Wake Forest, we have are teaching  a similar course as part of the 
+Biostatistics, Epidemiology, and Research Design (BERD) Program
+the Wake Forest Clinical and Translational Science Institute.
+My interest in the challenges of teaching statistics in a medical school led 
+to a paper I co-authored with Amita Manatunga (Emory University).  
+I presented it in 1999 at the Joint Statistical Meetings 
+(abstract \ref{AmitaAbstract}, page \pageref{AmitaAbstract}).
+The paper  was awarded ``Best Invited Paper'' and was subsequently
+published in Statistics in Medicine (paper \ref{AmitaPaper}, page \pageref{AmitaPaper}).
+\AR{The WFSM BERD has given a similar course entitled ``Clinical Research Methods Short Course'' in 2017 and 2019 and I served as the course director.}
+
+Extramurally, every year since 2004 (\AR{2020 was cancelled due to the pandemic}) I have been involved 
+with the Summer Institute on Design and Conduct of Randomized Clinical Trials 
+Involving Behavioral Interventions that is sponsored by NIH.  
+My participation with the Institute is one week of the two week course.
+During this week I give a lecture or two, serve as leader of
+small group discussions, and meet individually with students as requested.
+Each teacher is evaluated by the students.  I have received favorable evaluations
+every year (see Appendix~\ref{OBSSRTE} for all evaluations I have) and continue to be invited back.  
+
+Finally, I edited a book entitled ``Topics in Biostatistics'' (see page~\pageref{TIB})
+that was originally designed as a basic biostatistics book.  It grew in scope so that it, while 
+still including much basic material, contained too many advanced topics to still be considered
+as a basic book.  
+My goal was to develop a book that would serve two purposes.
+The primary purpose was to provide scientists with a broad survey of biostatistical methods illustrated with
+examples that can be performed with paper, pencil, and a calculator.  The secondary purpose was
+to introduce more complicated statistical methods requiring either collaboration with a biostatistician or use of
+a statistical package.  
+The book was positively reviewed in the Journal of Applied Statistics
+(Srivastava M and Abbas M, Topics in Biostatistics, 
+Journal of Applied Statistics, 2009, 36(4):467--468.)
+The front matter and review are included as Appendix~\ref{TIBApp}.
+}
+
+\mysection{EDUCATIONAL ROLES AND RESPONSIBILITIES}
+
+\mysubsection{Intramural}  See Table~\ref{imteach} on page~\pageref{imteach}.
+
+\mysubsection{Extramural} See Table~\ref{exteach} on page~\pageref{exteach}.
+
+\mysection{COMMITTEES AND ADMINISTRATION (RELATED TO EDUCATION)}
+\mysubsection{Intramural}  
+\begin{enumerate}
+\item Course Director for HSRP 730, Introduction to Biostatistics, Fall of 2004 and 2005.
+\item Member of Biostatistics Curriculum Committee, 
+          Department of Biostatistics and Data Science,
+          Division of Public Health Sciences, WFSM, 2005--2006.
+\item Course Co-Director (with Elsayed Soliman), CPTS 741, Research Grant Preparation, Summer 2019.
+\end{enumerate}
+
+\mysubsection{Extramural}
+\begin{enumerate}
+\item I served as a reviewer on NIH-NHLBI Special Emphasis Panels on
+``Summer Institute for
+Training in Biostatistics (SIBS)'' in 2003 (item~\ref{SIBS1} on page~\pageref{SIBS1}), 
+ 2006 (item~\ref{SIBS2} on page~\pageref{SIBS2}), and 2015 (item~\ref{SIBS3} on page~\pageref{SIBS3}).
+\item I have organized two invited sessions at the Joint Statistical Meetings on teaching:
+``Teaching Outside of the Classroom'' (2002) and ``Summer Institutes for Training
+in Biostatistics (SIBS):  Addressing the Biostatistician Shortage'' (2007).  See page 
+\pageref{SessionsOrganized}.
+\end{enumerate}
+
+\markboth{WFSM PORTFOLIO OF EDUCATIONAL}{\qquad \large ACHIEVEMENTS (Continued)}
+
+\mysection{TEACHING EVALUATIONS}
+\mysubsection{Intramural}  
+See Appendix~\ref{HSRP730TE} for teaching evaluations from the Introduction to Biostatistics course in 2004 and 2005, 
+Appendix~\ref{CPTS742Evals} for evaluations from CPTS 742, Clinical Trials Methods in 2011, and 
+Appendix~\ref{CPTS741Evals} for evaluations from CPTS 741, Research Grant Preparation in 2019.
+
+\mysubsection{Extramural}  
+See Appendix~\ref{OBSSRTE} for 
+teaching evaluations from the 
+Summer Institute on Design and Conduct of Randomized Clinical Trials Involving Behavioral Interventions in 
+2004--2007.
+
+\mysection{RECOGNITION OF TEACHING ACHIEVEMENTS}
+
+\begin{enumerate}
+\item ``Best Invited Paper,'' Section on Teaching Statistics in the Health Sciences, American
+Statistical Association, Baltimore, MD, 1999.
+
+\item Repeatedly invited back to present at the 
+Summer Institute on Design and Conduct of Randomized Clinical Trials Involving Behavioral Interventions,
+Office of Behavioral and Social Sciences Research (OBSSR), National Institutes of Health,
+2004--2019.
+
+\end{enumerate}
+
+
+\mysection{PROFESSIONAL DEVELOPMENT ACTIVITIES (SPECIFIC TO EDUCATION)}
+\begin{enumerate}
+\item Teaching Advancement Program 2005--2006, 
+Wake Forest School of Medicine, Certificate of Completion.
+\end{enumerate}
+
+\mysection{EXAMPLES OF INSTRUCTIONAL MATERIALS}
+
+\begin{enumerate}
+
+\item HSRP 730, Introduction to Biostatistics (2004--2005),
+See Appendix~\ref{HSRP730IM} for the syllabus and three examples of SAS code 
+distributed to students and discussed in class.
+
+\item ``Mixed Effects, Growth Curves, and Longitudinal Models,'' presented 
+at the Summer Institute on Design and Conduct of
+Randomized Clinical Trials Involving Behavioral Interventions, 
+Airlie Conference Center, Warrenton, VA, 
+2004--2007. See Appendix~\ref{OBSSRIM} for my slides.
+
+\item ``How Many Subjects Do I Need?,'' presented at the GCRC/TSI Seminar Series, 
+May 8, 2002 and September 26, 2007.
+See Appendix~\ref{GCRCIM} for my slides.
+
+\item ``Sample Size, Power, and Intention to Treat,'' presented as a guest lecture in CPTS 742, WFSM, February 17, 2011.  See
+Appendix~\ref{CPTS742Slides} for my slides and Appendix~\ref{CPTS742Evals} for my evaluations.
+
+\item ``Randomization,'' presented 
+at the Summer Institute on Design and Conduct of
+Randomized Clinical Trials Involving Behavioral Interventions, 
+Airlie Conference Center, Warrenton, VA, 
+2008--2016. See Appendix~\ref{OBSSRIM2} for my slides.
+
+\item ``Establishing a Design and Analysis Plan'' presented 
+at the Summer Institute on Design and Conduct of
+Randomized Clinical Trials Involving Behavioral Interventions, 
+Airlie Conference Center, Warrenton, VA, 
+2008--2016. See Appendix~\ref{OBSSRIM3} for my slides.
+
+\end{enumerate}
+
+\mysection{EDUCATIONAL SERVICE AND RESEARCH}
+I have served as Program Chair (2002) and Section Chair (2005) of the Section 
+on Teaching of Statistics  
+in the Health Sciences (TSHS) of the American Statistical Association.
+I presented at the Joint Statistical Meetings (JSM,
+the world's largest statistical meeting) in 
+1999 (abstract \ref{AmitaAbstract}, page \pageref{AmitaAbstract}) on 
+running a short course in biostatistics.  This presentation was awarded 
+the ``Best Invited Paper'' presented
+at TSHS sessions that year.  The paper was subsequently
+published in Statistics in Medicine (paper \ref{AmitaPaper}, page 
+\pageref{AmitaPaper}).
+In 2002 and 2007, I organized sessions at JSM on teaching, 
+as described on page~\pageref{SessionsOrganized}.
+%Finally, as Director of the 
+%Research Design, Epidemiology, Biostatistics, and Clinical Research Ethics
+%Program of the Wake Forest University Translational Science Institute, I headed up planning
+%for a short course in 
+%study design, biostatistics, clinical research ethics, and regulatory compliance
+%that will be offered once the Clinical and Translational Science Award (CTSA) is funded.
+
+\mysection{INTERNSHIP MENTOR}
+\begin{enumerate}
+\item
+January 3-19, 2007.  I served as a mentor for Kaitlin Pollock, a junior at Salem Academy.  
+We discussed medical research in general, possible career paths in public health research, and
+what a typical work day is like as a biostatistician.  She learned some of the fundamentals of
+clinical trials, biostatistics, and statistical computing packages.
+\end{enumerate}
+
+\vfil
+\pagebreak
+
+\begin{table}[H]
+\caption{Intramural Teaching.  Notes are on page~\pageref{mynotes}.}
+\label{imteach}
+\begin{center}
+\begin{tabular}{l p{2in} p{1.6in} p{1.6in}}
+\hline
+\hline
+{\bfseries Date} & {\bfseries Name/Type of Program} & {\bfseries Role} & {\bfseries Audience}\\ 
+\hline
+\hline
+
+1995--1999  & GCRC, IUSM & Preceptor & Residents [\ref{GCRCOneOnOne}] \\
+\hline
+
+1996, 1999 & Biostatistics for Physicians: A Short Course, IUSM & Lecturer & 
+Practicing \phantom{llllllllllllllllll} Physicians [\ref{MRAC}]\\
+\hline
+
+1996& Fellows Course, IUSM&Director& Fellows [\ref{IUFellows}]\\
+\hline
+
+1996--1999 & Biostatistics G652, IUSM & Lecturer & Graduate Students [\ref{G652}]\\
+\hline
+
+1997--1998 & Radiology Short Course, \phantom{llllllll} IUSM & Lecturer & Fellows [\ref{IURadSC}]\\
+\hline
+
+1999--2000 & Biostatistics for Public Health, G652, IUSM & Lecturer & Graduate Students [\ref{G652PH}]\\
+\hline
+
+1999--2000 & IU School of Nursing & Lecturer & Nursing Students and Faculty [\ref{IUSN}]\\
+\hline
+
+2001--2004  & Standardized Patient Assessment, Part II, WFSM & Evaluator & Medical Students [\ref{SPA}]\\
+\hline
+
+2002, 2007 & GCRC Clinical Research Series, WFSM & Lecturer &Graduate Students [\ref{GCRC}]\\
+\hline
+
+2003--2005 & Charles DeComarmond, M.D., WFSM &M.S. Thesis Committee &Fellow [\ref{CD}]\\
+\hline
+
+2004--2005 & Introduction to Biostatistics, HSRP 730, WFSM&
+Course Director& Graduate Students \hphantom{bli}  and Fellows [\ref{ITB}]\\
+\hline
+
+2004--2010 & Haiying Chen, Ph.D., \phantom{llllllllllll} WFSM &Faculty Mentor &Junior Faculty [\ref{HC}]\\
+\hline
+
+2006--2007 & Kurt Daniel, D.O., WFSM & M.S. Thesis Committee & Fellow [\ref{KD}]\\
+\hline
+
+2007--2008 & Darryl Prime, M.D., WFSM & M.S. Thesis Committee & Fellow [\ref{DP}]\\
+\hline
+
+2009 & Surgical Critical Care Conference, WFSM & Lecturer & Faculty and Fellows [\ref{SCC}]\\
+\hline
+
+2010--2013 & MMTS/PATH 742, WFSM & Guest Lecturer & Graduate Students [\ref{MMTS742}]\\
+\hline
+
+2011--2018 & CPTS 742, WFSM & Guest Lecturer & Graduate Students [\ref{CPTS742}]\\
+\hline
+
+2011--2017 & Daniel Beavers, Ph.D., WFSM & Faculty Mentor &Junior Faculty [\ref{DB}]\\\hline
+
+2015--2016 & Jennifer Check, MD, WFSM & CPTS M.S. Thesis Committee & Asstistant Professor [\ref{JC}] \\\hline
+
+2016 & Cate Glendenning, Reynolda &  HES M.S. Thesis Committee & Graduate Student [\ref{CG}] \\\hline
+
+2018 & Brian Wells, MD, PhD, WFSM&  Mentoring Committee Member & Faculty [\ref{BW}]\\\hline
+
+2018--2020 & \AR{BERD Lunch \& Learn, WFSM} & \AR{Lecturer} & Junior Faculty [\ref{LunchLearn}]\\\hline
+
+2018, 2020& \AR{CPTS 741, WFSM} & \AR{Mock Study Section Reviewer} & Graduate Students [\ref{MSS}] \\\hline
+
+2019 & CPTS 741, WFSM & Course Director (with Elsayed Soliman) & Graduate Students and Fellows [\ref{Sayed}]\\\hline
+
+{2020} & \AR{CPTS 742, WFSM} & \AR{Guest Lecturer} & Graduate Students [\ref{PragmaticLecture}] \\\hline
+
+2020 & \AR{Kevin Gibbs, MD} & \AR{Mentoring Committee Member} & Faculty [\ref{Gibbs}] \\\hline
+
+{2020} & \AR{Ashish Khanna, MD} & \AR{KL2 Mentoring Committee Member} & {Faculty} [\ref{Khanna}] \\
+
+\hline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+\begin{table}[!h]
+\caption{Extramural Teaching.  Notes are on page~\pageref{mynotes}.}
+\label{exteach}
+\begin{center}
+\begin{tabular}{l p{3in} l p{1.5in}}
+\hline
+\hline
+{\bfseries Date} & {\bfseries Name/Type of Program} & {\bfseries Role} & {\bfseries Audience}\\ 
+\hline
+\hline
+
+2004--2019, 2020* & 
+\AR{Summer Institute on Design and Conduct of Randomized Clinical Trials
+Involving Behavioral Interventions}
+&Lecturer&Junior faculty, fellows, practicing physicians [\ref{SIRCT}]\\
+
+%\hline
+%2008 & Seminar, Society of Behavioral Medicine,
+%&Lecturer&Fellows, practicing \phantom{bla} physicians [\ref{SBM}]\\
+
+\hline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\vfil
+
+%\pagebreak
+
+\mysection{NOTES FROM TABLES 1 AND 2}
+\label{mynotes}
+\begin{packed_enum}
+\item I taught introductory biostatistics to residents who rotated through the GCRC.
+\label{GCRCOneOnOne}
+
+\item  I gave a lecture on Multiple Regression and Analysis of Covariance.
+\label{MRAC}
+
+\item I organized the first 8 weeks of the Biostatistics section of the new two-year course for all fellows 
+and I taught two of the lectures.  There were approximately 100 fellows in the course.
+\label{IUFellows}
+
+\item I taught one third of this course, which is the second semester in the
+year-long introduction to Biostatistics taught by the Division of Biostatistics.
+\label{G652}
+
+\item Two lecturers each year.
+\label{IURadSC}
+
+\item Similar to Biostatistics G652 but geared towards Public Health students.
+\label{G652PH}
+
+\item Two lectures.
+\label{IUSN}
+
+\item Graded 12 presentations. 
+\label{SPA}
+
+\item ``How Many Subjects Do I Need?'' May 8, 2002 and September 26, 2007.
+\label{GCRC}
+
+\item I served on the thesis committee for
+Charles DeComarmond, M.D.  for
+his Master of Science in Health Sciences Research, Division of Public Health Sciences,
+Wake Forest School of Medicine, (never finished).  
+Dr. DeComarmond was a fellow in the Section on Infections Diseases,
+Department of Internal Medicine.
+\label{CD}
+
+\item I taught this semester-long course in the Fall of 2004 and the Fall of 2005. There were 27 and 21 students, respectively.
+\label{ITB}
+
+\item  I  served as the mentor for Haiying Chen since she arrived at Wake Forest in 2004.  In this
+capacity, I  met with her regularly to discuss her progress and to discuss statistical and 
+study management issues as they have arisen.
+\label{HC}
+
+\item 
+I served on the thesis committee for Kurt Daniel, D.O.  
+for his Master's of Science in
+Health Sciences Research, Division of Public Health Sciences, May 2007.  Dr. Daniel was 
+a Cardiology Fellow in the Section on Cardiology, Department of Internal Medicine, WFSM.
+\label{KD}
+
+\item 
+I served on the thesis committee for Darryl Prime, M.D.  
+for his Master's of Science in
+Health Sciences Research, Division of Public Health Sciences, May 2009.  Dr. 
+Prime was 
+a Cardiology Fellow in the Section on Cardiology, Department of Internal Medicine, WFSM.
+\label{DP}
+
+\item ``How Many Subjects Do I Need?,'' presented at the Surgical Critical Care
+Conference, September 1, 2009.
+\label{SCC}
+
+\item ``How Many Subjects Do I Need?,'' presented at MMTS/PATH 724,
+February 8, 2010,  February 10, 2011, February 7, 2012, and February 5, 2013.
+\label{MMTS742}
+
+\item ``Sample Size, Power, and Intention to Treat,'' presented at CPTS 742,
+February 17, 2011,  March 6, 2012, March 4, 2014,  March 3, 2015, March 1, 2016, February 14, 2017, and February 8, 2018.
+\label{CPTS742}
+
+\item I serve as a member of the formal mentoring committee for Daniel Beavers.
+\label{DB}
+
+\item I served as a member of the Clinical and Population Translational Science (CPTS) MS thesis committee
+for Jennifer Check, MD, Assistant Professor, Department of Pediatrics, WFSM.
+\label{JC}
+
+\item I served as a member of the Health and Exercise Science MS thesis committee
+for Cate Glendenning.
+\label{CG}
+
+\item I serve on the faculty mentoring committee for Brian Wells.  \label{BW}
+
+\item ``Statistical Power:  Understanding the inputs and how you come up with them,'' presented in the BERD Lunch \& Learn series on March 21, 2018, May 15, 2019, May 6, 2020, 
+ November 18, 2020.  \label{LunchLearn}
+\item I reviewed one grant and provided oral and written feedback on June 26, 2018.  \label{MSS}
+
+\item Elsayed Soliman and I served as co-directors for this 3 credit hour course.  We met 6 hours a week for 6 weeks. There were six students.\label{Sayed}
+
+\item ``Pragmatic Trials:  An Introduction," presented in CPTS 742, April 28, 2020. \label{PragmaticLecture}
+
+\item \AR{I serve on the faculty mentoring committee for Kevin Gibbs, MD.  He is an assistant professor in the Section on Pulmonology, Department of Internal Medicine, WFSM}.  \label{Gibbs}
+
+\item \AR{I serve on the KL2 mentoring committee for Ashish Khanna, MD.  He is an associate professor in the Department of Anesthesiology, WFSM}.  \label{Khanna}
+
+
+%External Stuff here.
+\item Sponsored by the NIH Office of Behavioral and Social Sciences Research (OBSSR), 
+Airlie Conference Center, Warrenton, VA (2004--2918) and Bolger Conference Center, Potomac, MD (2019), Lectures, leader of small group discussions, met individually with students.  July 18--23, 2004, July 24--29, 2005, July 16--21, 2006, July 22--27, 2007, July 20--25, 2008,
+July 12--17, 2009, July 11--16, 2010, July 10--15, 2011, July 15--20, 2012,  July 14--19, 2013,  July 20--25, 2014,  July 12--17, 2015,  July 10--15, 2016, July 9--14, 2017,  July 8--13, 2018, and \AR{July 7--12, 2019.  I was invited to the 2020 Summer Institute but it was cancelled due to COVID-19;} I have been invited back for 2021.
+See Appendices~\ref{OBSSRIM2} and \ref{OBSSRIM3} for  slide set examples.
+\label{SIRCT}
+
+\end{packed_enum}
+%Commented out for ASA application in 2021
+\end{comment}
+\label{LastPageWTA}
+
+
+\vfil\break
+
+%\end{document}
+
+%Now do the appendices
+
+\rhead{}
+\cfoot{}
+\pagestyle{plain}
+\appendix
+
+%Delete section titles
+\renewcommand{\mysection}[1]{\invisiblesection{}\vfil\begin{center}\Huge APPENDIX \thesection: #1\end{center}\vfil\vfil\markboth{\ }{\ }}
+\renewcommand{\sectionmark}[1]{\markright{\ }}
+\renewcommand{\mysubsection}[1]{\invisiblesubsection{}\vfil\begin{center}\huge Appendix \thesubsection: #1\end{center}\vfil\vfil\markboth{\ }{\ }}
+\renewcommand{\subsectionmark}[1]{\markright{\ }}
+
+%Commented out all of this for the ASA application in 2021.
+\begin{comment}
+\mysection{\\Teaching Evaluations}
+\break
+
+\mysubsection{\\HSRP 730, Introduction to Biostatistics,\\2004 and 2005}
+\label{HSRP730TE}
+\break
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/HSRP_730.pdf}
+
+
+\mysubsection{\\CPTS 742, Clinical Trials Methods,\\ Guest Lecture, February 17, 2011}
+\label{CPTS742Evals}
+\break
+\includepdf[landscape=false,pagecommand={\thispagestyle{plain}}]{Misc/Spring2011CPTS742_Walter.pdf}
+
+
+\mysubsection{\\CPTS 741, Research Grant Preparation,\\Course Co-Director, May and June 2019}
+\label{CPTS741Evals}
+\break
+\includepdf[landscape=false,pagecommand={\thispagestyle{plain}}]{Misc/CPTS.741-Summer2019-ResearchGrantPreparation_WalterAmbrosius.pdf}
+
+
+
+\mysubsection{\\The Summer Institute on Design and Conduct of Randomized Clinical 
+Trials Involving Behavioral Interventions, 2004--2016}
+\label{OBSSRTE}
+\break
+\includepdf[pagecommand={\thispagestyle{plain}}]{Misc/KarinaThankYou.pdf}
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/OBSSR_RCT.pdf}
+
+
+
+\mysection{\\Instructional Materials}
+\break
+
+\mysubsection{\\HSRP 730, Introduction to Biostatistics, WFSM}
+\label{HSRP730IM}
+\break
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/HSRP730Syllabus2005.pdf}
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/090105.pdf}
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/091305.pdf}
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/091505.pdf}
+
+\mysubsection{\\The Summer Institute on Design and Conduct of Randomized Clinical Trials Involving Behavioral Interventions:
+\\ Mixed Effects, Growth Curves, and Longitudinal Models}
+\label{OBSSRIM}
+\break
+\includepdf[nup=2x3,frame=true,offset=15 0, scale=0.95,pages=-,pagecommand={\thispagestyle{plain}}]{Misc/MixedEffects.pdf}
+
+
+\mysubsection{\\GCRC/TSI Seminar: 
+\\How Many Subjects Do I Need?}
+\label{GCRCIM}
+\break
+\includepdf[nup=2x3,frame=true,offset=15 0, scale=0.95,pages=-,pagecommand={\thispagestyle{plain}}]{Misc/SampleSize1.pdf}
+
+
+\mysubsection{\\CPTS 742 Guest Lecture}
+\label{CPTS742Slides}
+\break
+\includepdf[nup=2x3,frame=true,pages=-,offset=15 0,scale=0.95,pagecommand={\thispagestyle{plain}}]{Misc/SampleSize2.pdf}
+
+
+\mysubsection{\\The Summer Institute on Design and Conduct of Randomized Clinical Trials Involving Behavioral Interventions: 
+\\Randomization}
+\label{OBSSRIM2}
+\break
+\includepdf[nup=2x3,frame=true,pages=-,offset=15 0,scale=0.95,pagecommand={\thispagestyle{plain}}]{Misc/Randomization.pdf}
+
+\mysubsection{\\The Summer Institute on Design and Conduct of Randomized Clinical Trials Involving Behavioral Interventions: 
+\\Establishing a Design and Analysis Plan}
+\label{OBSSRIM3}
+\break
+\includepdf[nup=2x3,frame=true,pages=-,offset=15 0,scale=0.95,pagecommand={\thispagestyle{plain}}]{Misc/StatisticalSection.pdf}
+
+
+%Commented out for ASA application in 2021
+\end{comment}
+
+\mysection{\\Topics in Biostatistics}
+\label{TIBApp}
+\break
+
+\mysubsection{\\Frontmatter}
+\break
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/Humana.pdf}
+
+
+\mysubsection{\\Review}
+\break
+\includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Misc/HumanaReview2.pdf}
+
+\end{document}
+
+
+
+
+
+
+
